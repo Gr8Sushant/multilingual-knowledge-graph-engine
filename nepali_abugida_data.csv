@@ -1,0 +1,54 @@
+﻿Type,Character,Additional_Form,IPA,Transliteration,Audio
+Vowel,अ,-,/ʌ/,a,a.mp3
+Vowel,आ,ा,/a/,aa,aa.mp3
+Vowel,इ,ि,/i/,i,i.mp3
+Vowel,ई,ी,/i/,ii,ii.mp3
+Vowel,उ,ु,/u/,u,u.mp3
+Vowel,ऊ,ू,/u/,uu,uu.mp3
+Vowel,ए,े,/e/,e,e.mp3
+Vowel,ऐ,ै,/ʌi/,ai,ai.mp3
+Vowel,ओ,ो,/o/,o,o.mp3
+Vowel,औ,ौ,/ʌu/,au,au.mp3
+Vowel,ऋ,ृ,/ri/,ri,ri.mp3
+Vowel,अं,ं,/ʌm/ or /ʌ̃/,am,am.mp3
+Vowel,अः,ः,/ʌhʌ/,ah,ah.mp3
+Consonant,क,-,/kʌ/,ka,ka.mp3
+Consonant,ख,-,/kʰʌ/,kha,kha.mp3
+Consonant,ग,-,/ɡʌ/,ga,ga.mp3
+Consonant,घ,-,/ɡʱʌ/,gha,gha.mp3
+Consonant,ङ,-,/ŋʌ/,nga,nga.mp3
+Consonant,च,-,/tsʌ/,ca,ca.mp3
+Consonant,छ,-,/tsʰʌ/,cha,cha.mp3
+Consonant,ज,-,/dzʌ/,ja,ja.mp3
+Consonant,झ,-,/dzʱʌ/,jha,jha.mp3
+Consonant,ञ,-,/ɲʌ/ (often /nʌ/),yna,yna.mp3
+Consonant,ट,-,/ʈʌ/,ta,ta.mp3
+Consonant,ठ,-,/ʈʰʌ/,tha,tha.mp3
+Consonant,ड,-,/ɖʌ/,da,da.mp3
+Consonant,ढ,-,/ɖʱʌ/,dha,dha.mp3
+Consonant,ण,-,/ɳʌ/ (often /nʌ/),na,na_retro.mp3
+Consonant,त,-,/tʌ/,ta,ta_dental.mp3
+Consonant,थ,-,/tʰʌ/,tha,tha_dental.mp3
+Consonant,द,-,/dʌ/,da,da_dental.mp3
+Consonant,ध,-,/dʱʌ/,dha,dha_dental.mp3
+Consonant,न,-,/nʌ/,na,na.mp3
+Consonant,प,-,/pʌ/,pa,pa.mp3
+Consonant,फ,-,/pʰʌ/ or /fʌ/,pha,pha.mp3
+Consonant,ब,-,/bʌ/,ba,ba.mp3
+Consonant,भ,-,/bʱʌ/,bha,bha.mp3
+Consonant,म,-,/mʌ/,ma,ma.mp3
+Consonant,य,-,/jʌ/,ya,ya.mp3
+Consonant,र,-,/rʌ/,ra,ra.mp3
+Consonant,ल,-,/lʌ/,la,la.mp3
+Consonant,व,-,/wʌ/ or /bʌ/,wa,wa.mp3
+Consonant,श,-,/sʌ/,sha,sha.mp3
+Consonant,ष,-,/sʌ/,sha_retro,sha_retro.mp3
+Consonant,स,-,/sʌ/,sa,sa.mp3
+Consonant,ह,-,/hʌ/,ha,ha.mp3
+Conjunct,क्ष,क् + ष,/ksʌ/,kshya,kshya.mp3
+Conjunct,त्र,त् + र,/trʌ/,tra,tra.mp3
+Conjunct,ज्ञ,ज् + ञ,/ɡjʌ̃/,gya,gya.mp3
+Conjunct,श्र,श् + र,/srʌ/,shra,shra.mp3
+Conjunct,द्य,द् + य,/djʌ/,dya,dya.mp3
+Conjunct,द्व,द् + व,/dwʌ/,dwa,dwa.mp3
+Conjunct,त्त,त् + त,/ttʌ/,tta,tta.mp3
