@@ -1,0 +1,30 @@
+Type,Character,Additional_Form,IPA,Transliteration,Audio
+Vowel,a,A,/aː/,a,a.mp3
+Vowel,ă,Ă,/a/,aw,a_breve.mp3
+Vowel,â,Â,/ə/,aa,a_circumflex.mp3
+Vowel,e,E,/ɛ/,e,e.mp3
+Vowel,ê,Ê,/e/,ee,e_circumflex.mp3
+Vowel,i,I,/i/,i,i.mp3
+Vowel,o,O,/ɔ/,o,o.mp3
+Vowel,ô,Ô,/o/,oo,o_circumflex.mp3
+Vowel,ơ,Ơ,/əː/,ow,o_horn.mp3
+Vowel,u,U,/u/,u,u.mp3
+Vowel,ư,Ư,/ɨ/,uw,u_horn.mp3
+Vowel,y,Y,/i/,y,y.mp3
+Consonant,b,B,/ɓ/,b,b.mp3
+Consonant,c,C,/k/,c,c.mp3
+Consonant,d,D,/j/ or /z/,d,d.mp3
+Consonant,đ,Đ,/ɗ/,dd,d_strike.mp3
+Consonant,g,G,/ɣ/,g,g.mp3
+Consonant,h,H,/h/,h,h.mp3
+Consonant,k,K,/k/,k,k.mp3
+Consonant,l,L,/l/,l,l.mp3
+Consonant,m,M,/m/,m,m.mp3
+Consonant,n,N,/n/,n,n.mp3
+Consonant,p,P,/p/,p,p.mp3
+Consonant,q,Q,/k/ or /kw/,q,q.mp3
+Consonant,r,R,/r/ or /z/,r,r.mp3
+Consonant,s,S,/ʂ/ or /s/,s,s.mp3
+Consonant,t,T,/t/,t,t.mp3
+Consonant,v,V,/v/ or /j/,v,v.mp3
+Consonant,x,X,/s/,x,x.mp3

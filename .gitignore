@@ -1,0 +1,19 @@
+# Python
+*.pyc
+__pycache__/
+env/
+venv/
+.venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+*.ipynb_checkpoints/
+
+
+# MacOS
+.DS_Store
+Thumbs.db
+
