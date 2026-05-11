@@ -7,6 +7,18 @@ import pandas as pd
 from nltk.corpus import wordnet as wn
 
 
+"""
+1. Reads a Mapping List
+2. Cleans the Data
+3. Looks up the Category (Domain)
+4. Handles Duplicates 
+5. Saves the Results 
+
+bref, it reads the mapping file, figures out the semantic category for every single word using a dictionary database, and gives us back a clean, sorted table.
+
+"""
+
+
 def ensure_wordnet():
     resources = ["wordnet", "omw-1.4"]
     for resource in resources:
@@ -17,19 +29,27 @@ def ensure_wordnet():
 
 
 def normalize_column_name(name):
+    """
+    Helper to clean up column names. It removes everything except lowercase letters and numbers    
+    """
     return re.sub(r"[^a-z0-9]+", "", str(name).strip().lower())
 
 
 def find_column(df, aliases, required_tokens=None):
+    """
+    Finds the specific columns I need (like concept ID or WordNet ID). 
+    """
     normalized_to_original = {
         normalize_column_name(column): column for column in df.columns
     }
 
+    # First, check if any of the exact aliases match
     for alias in aliases:
         alias_norm = normalize_column_name(alias)
         if alias_norm in normalized_to_original:
             return normalized_to_original[alias_norm]
 
+    # If no alias is found, check if the column contains the required tokens
     if required_tokens:
         for norm_name, original_name in normalized_to_original.items():
             if all(token in norm_name for token in required_tokens):
@@ -39,6 +59,7 @@ def find_column(df, aliases, required_tokens=None):
 
 
 def is_missing(value):
+   
     if value is None:
         return True
     if pd.isna(value):
@@ -48,6 +69,7 @@ def is_missing(value):
 
 
 def load_tsv(path):
+
     df = pd.read_csv(
         path,
         sep="\t",
@@ -56,6 +78,7 @@ def load_tsv(path):
         keep_default_na=False,
     )
 
+    # Looking for the UKC concept ID column
     concept_col = find_column(
         df,
         aliases=[
@@ -68,6 +91,7 @@ def load_tsv(path):
         required_tokens=["concept", "id"],
     )
 
+    # Looking for the WordNet 3.0 ID column
     wn30_col = find_column(
         df,
         aliases=[
@@ -97,6 +121,7 @@ def load_tsv(path):
             f"Could not detect a wn30_id column. Available columns: {list(df.columns)}"
         )
 
+    # Standardize the dataframe layout.
     normalized_df = df.rename(
         columns={
             concept_col: "concept_id",
@@ -111,11 +136,17 @@ def load_tsv(path):
 
 
 def resolve_synset(wn30_id):
+    """
+    This function takes a WordNet ID string from our dataset and tries to convert it into a valid 
+    NLTK Synset object using predefined functions like `wn.synset()` or `wn.synset_from_pos_and_offset()`.
+    
+    """
     if is_missing(wn30_id):
         return None
 
     text = str(wn30_id).strip()
 
+    # Sometimes the ID is already a standard synset name (like 'dog.n.01')
     try:
         return wn.synset(text)
     except Exception:
@@ -123,6 +154,7 @@ def resolve_synset(wn30_id):
 
     compact = text.replace(" ", "")
 
+    # Check for different patterns like '02084071-n' or 'n-02084071'
     patterns = [
         r"^(?:eng-30-)?(\d{8})-([nvars])$",
         r"^([nvars])-(\d{8})$",
@@ -140,11 +172,13 @@ def resolve_synset(wn30_id):
         else:
             pos, offset_str = groups[0].lower(), groups[1]
 
+        # The predefined `wn.synset_from_pos_and_offset` function fetches the exact node from the database.
         try:
             return wn.synset_from_pos_and_offset(pos, int(offset_str))
         except Exception:
             return None
 
+    # Fallback to just splitting by dash
     parts = compact.split("-")
     if len(parts) >= 2:
         for i in range(len(parts) - 1):
@@ -160,6 +194,9 @@ def resolve_synset(wn30_id):
 
 
 def resolve_domain(wn30_id):
+    """
+    Resolves the conceptual domain of a WordNet ID using NLTK's lexname function.
+    """
     synset = resolve_synset(wn30_id)
     if synset is None:
         return "unknown"
@@ -171,7 +208,12 @@ def resolve_domain(wn30_id):
 
 
 def build_concept_domain_table(df):
+    """
+    okay, so this is the main processing loop. we iterate over every row in the dataframe, resolve its domain, 
+    and store the result in a dictionary. We also keep track of how many rows are unresolved.
+    """
     total_rows = len(df)
+    
     unique_concepts_found = df.loc[
         ~df["concept_id"].apply(is_missing), "concept_id"
     ].nunique()
@@ -215,12 +257,14 @@ def build_concept_domain_table(df):
         ):
             concept_map[concept_id] = candidate
 
+    #  construct a new pandas DataFrame from the resulting dictionary.
     result_df = pd.DataFrame(
         concept_map.values(),
         columns=["concept_id", "wn30_id", "domain"],
     )
 
     if not result_df.empty:
+        # sort_values() and reset_index() functions sort the data and reset the row index cleanly.
         result_df = result_df.sort_values("concept_id").reset_index(drop=True)
 
     domains_resolved = int((result_df["domain"] != "unknown").sum()) if not result_df.empty else 0
@@ -236,10 +280,14 @@ def build_concept_domain_table(df):
 
 
 def main():
+    """
+    parse command-line arguments to get the input/output paths,
+    load the TSV, process the domains, and export the results to a CSV file.
+    """
     ensure_wordnet()
 
-    input_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("ukc_wn30_mappings (1).tsv")
-    output_path = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("concept_domain.csv")
+    input_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("../data/ukc_wn30_mappings (1).tsv")
+    output_path = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("../data/concept_domain.csv")
 
     df = load_tsv(input_path)
     concept_domain_df, summary = build_concept_domain_table(df)
