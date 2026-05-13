@@ -33,4 +33,5 @@ After multiple iterations, I settled the final weight as:
 * 15% shared ancestor depth
 * 10% concept specificity
 * 5% same direct hypernym
+<img width="601" height="772" alt="Screenshot 2026-05-13 at 14 41 10" src="https://github.com/user-attachments/assets/5b6ba9c6-a0be-43e3-a5dd-ce322812064d" />
 
