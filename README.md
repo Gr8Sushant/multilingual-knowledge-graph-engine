@@ -18,7 +18,7 @@ Currently, the project is structured around the **Phase 1 Prototype**, which foc
 - test_wn_mappings.py: An interactive debugging and testing script used to explore WordNet mapping behaviors. It loads UKC-to-WordNet mappings and prompts users to input pairs of UKC Concept IDs. It then uses NLTK to print out the exact WordNet synsets, their human-readable definitions, their closest shared ancestor (Lowest Common Hypernym), and topological distance metrics.
 
 ### Concept_semantic_similarity
-#### Current Implementation
+#### Details on current implementation
 The current implementation computes one final similarity score between two concepts.
 
 It combines:
@@ -34,5 +34,8 @@ After multiple iterations, I settled the final weight as:
 * 15% shared ancestor depth
 * 10% concept specificity
 * 5% same direct hypernym
-<img width="601" height="772" alt="Screenshot 2026-05-13 at 14 41 10" src="https://github.com/user-attachments/assets/5b6ba9c6-a0be-43e3-a5dd-ce322812064d" />
-<img width="558" height="618" alt="Screenshot 2026-05-13 at 14 42 10" src="https://github.com/user-attachments/assets/4a9dc79b-a3bf-42b9-893d-987b29d32c81" />
+
+## Some snapshots of implementation of Morphology_game
+
+<img width="400" height="500" alt="Screenshot 2026-05-13 at 14 41 10" src="https://github.com/user-attachments/assets/5b6ba9c6-a0be-43e3-a5dd-ce322812064d" />
+<img width="400" height="500" alt="Screenshot 2026-05-13 at 14 42 10" src="https://github.com/user-attachments/assets/4a9dc79b-a3bf-42b9-893d-987b29d32c81" />
