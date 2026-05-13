@@ -1,3 +1,4 @@
+<img width="558" height="618" alt="Screenshot 2026-05-13 at 14 42 10" src="https://github.com/user-attachments/assets/4a9dc79b-a3bf-42b9-893d-987b29d32c81" />
 # Multilingual Knowledge Graph Engine
 
 A robust, multilingual graph engine designed to ingest diverse linguistic lexicons and abugida (script/phonology) data into a unified, pedagogical semantic network. 
