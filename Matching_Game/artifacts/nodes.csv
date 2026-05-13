@@ -289855,144 +289855,351 @@ abugida_roman:np:tta,Lemma-roman-abugida,,,,np,tta,,,,,
 audio:np:tta.mp3,Audio,,,,np,,,,tta.mp3,,
 grapheme:vn:a,Grapheme,,,,vn,,a,,,Vowel,
 grapheme:vn:A,Grapheme,,,,vn,,A,,,Vowel,uppercase
-phoneme:vn:/aː/,Phoneme,,,,vn,,,/aː/,,,
-latin_roman:vn:a,Lemma-roman-latin,,,,vn,a,,,,,
+phoneme:vn:/aː˧/,Phoneme,,,,vn,,,/aː˧/,,,
+latin_roman:vn:-,Lemma-roman-latin,,,,vn,-,,,,,
 audio:vn:a.mp3,Audio,,,,vn,,,,a.mp3,,
+grapheme:vn:á,Grapheme,,,,vn,,á,,,Vowel (Toned),
+grapheme:vn:Á,Grapheme,,,,vn,,Á,,,Vowel (Toned),uppercase
+phoneme:vn:/aː˧˥/,Phoneme,,,,vn,,,/aː˧˥/,,,
+audio:vn:a_sac.mp3,Audio,,,,vn,,,,a_sac.mp3,,
+grapheme:vn:à,Grapheme,,,,vn,,à,,,Vowel (Toned),
+grapheme:vn:À,Grapheme,,,,vn,,À,,,Vowel (Toned),uppercase
+phoneme:vn:/aː˨˩/,Phoneme,,,,vn,,,/aː˨˩/,,,
+audio:vn:a_huyen.mp3,Audio,,,,vn,,,,a_huyen.mp3,,
+grapheme:vn:ả,Grapheme,,,,vn,,ả,,,Vowel (Toned),
+grapheme:vn:Ả,Grapheme,,,,vn,,Ả,,,Vowel (Toned),uppercase
+phoneme:vn:/aː˧˩˧/,Phoneme,,,,vn,,,/aː˧˩˧/,,,
+audio:vn:a_hoi.mp3,Audio,,,,vn,,,,a_hoi.mp3,,
+grapheme:vn:ã,Grapheme,,,,vn,,ã,,,Vowel (Toned),
+grapheme:vn:Ã,Grapheme,,,,vn,,Ã,,,Vowel (Toned),uppercase
+phoneme:vn:/aː˧ˀ˥/,Phoneme,,,,vn,,,/aː˧ˀ˥/,,,
+audio:vn:a_nga.mp3,Audio,,,,vn,,,,a_nga.mp3,,
+grapheme:vn:ạ,Grapheme,,,,vn,,ạ,,,Vowel (Toned),
+grapheme:vn:Ạ,Grapheme,,,,vn,,Ạ,,,Vowel (Toned),uppercase
+phoneme:vn:/aː˧˨ˀ/,Phoneme,,,,vn,,,/aː˧˨ˀ/,,,
+audio:vn:a_nang.mp3,Audio,,,,vn,,,,a_nang.mp3,,
 grapheme:vn:ă,Grapheme,,,,vn,,ă,,,Vowel,
 grapheme:vn:Ă,Grapheme,,,,vn,,Ă,,,Vowel,uppercase
-phoneme:vn:/a/,Phoneme,,,,vn,,,/a/,,,
-latin_roman:vn:aw,Lemma-roman-latin,,,,vn,aw,,,,,
+phoneme:vn:/a˧/,Phoneme,,,,vn,,,/a˧/,,,
 audio:vn:a_breve.mp3,Audio,,,,vn,,,,a_breve.mp3,,
+grapheme:vn:ắ,Grapheme,,,,vn,,ắ,,,Vowel (Toned),
+grapheme:vn:Ắ,Grapheme,,,,vn,,Ắ,,,Vowel (Toned),uppercase
+phoneme:vn:/a˧˥/,Phoneme,,,,vn,,,/a˧˥/,,,
+audio:vn:a_breve_sac.mp3,Audio,,,,vn,,,,a_breve_sac.mp3,,
+grapheme:vn:ằ,Grapheme,,,,vn,,ằ,,,Vowel (Toned),
+grapheme:vn:Ằ,Grapheme,,,,vn,,Ằ,,,Vowel (Toned),uppercase
+phoneme:vn:/a˨˩/,Phoneme,,,,vn,,,/a˨˩/,,,
+audio:vn:a_breve_huyen.mp3,Audio,,,,vn,,,,a_breve_huyen.mp3,,
+grapheme:vn:ẳ,Grapheme,,,,vn,,ẳ,,,Vowel (Toned),
+grapheme:vn:Ẳ,Grapheme,,,,vn,,Ẳ,,,Vowel (Toned),uppercase
+phoneme:vn:/a˧˩˧/,Phoneme,,,,vn,,,/a˧˩˧/,,,
+audio:vn:a_breve_hoi.mp3,Audio,,,,vn,,,,a_breve_hoi.mp3,,
+grapheme:vn:ẵ,Grapheme,,,,vn,,ẵ,,,Vowel (Toned),
+grapheme:vn:Ẵ,Grapheme,,,,vn,,Ẵ,,,Vowel (Toned),uppercase
+phoneme:vn:/a˧ˀ˥/,Phoneme,,,,vn,,,/a˧ˀ˥/,,,
+audio:vn:a_breve_nga.mp3,Audio,,,,vn,,,,a_breve_nga.mp3,,
+grapheme:vn:ặ,Grapheme,,,,vn,,ặ,,,Vowel (Toned),
+grapheme:vn:Ặ,Grapheme,,,,vn,,Ặ,,,Vowel (Toned),uppercase
+phoneme:vn:/a˧˨ˀ/,Phoneme,,,,vn,,,/a˧˨ˀ/,,,
+audio:vn:a_breve_nang.mp3,Audio,,,,vn,,,,a_breve_nang.mp3,,
 grapheme:vn:â,Grapheme,,,,vn,,â,,,Vowel,
 grapheme:vn:Â,Grapheme,,,,vn,,Â,,,Vowel,uppercase
-phoneme:vn:/ə/,Phoneme,,,,vn,,,/ə/,,,
-latin_roman:vn:aa,Lemma-roman-latin,,,,vn,aa,,,,,
+phoneme:vn:/ə˧/,Phoneme,,,,vn,,,/ə˧/,,,
 audio:vn:a_circumflex.mp3,Audio,,,,vn,,,,a_circumflex.mp3,,
+grapheme:vn:ấ,Grapheme,,,,vn,,ấ,,,Vowel (Toned),
+grapheme:vn:Ấ,Grapheme,,,,vn,,Ấ,,,Vowel (Toned),uppercase
+phoneme:vn:/ə˧˥/,Phoneme,,,,vn,,,/ə˧˥/,,,
+audio:vn:a_circumflex_sac.mp3,Audio,,,,vn,,,,a_circumflex_sac.mp3,,
+grapheme:vn:ầ,Grapheme,,,,vn,,ầ,,,Vowel (Toned),
+grapheme:vn:Ầ,Grapheme,,,,vn,,Ầ,,,Vowel (Toned),uppercase
+phoneme:vn:/ə˨˩/,Phoneme,,,,vn,,,/ə˨˩/,,,
+audio:vn:a_circumflex_huyen.mp3,Audio,,,,vn,,,,a_circumflex_huyen.mp3,,
+grapheme:vn:ẩ,Grapheme,,,,vn,,ẩ,,,Vowel (Toned),
+grapheme:vn:Ẩ,Grapheme,,,,vn,,Ẩ,,,Vowel (Toned),uppercase
+phoneme:vn:/ə˧˩˧/,Phoneme,,,,vn,,,/ə˧˩˧/,,,
+audio:vn:a_circumflex_hoi.mp3,Audio,,,,vn,,,,a_circumflex_hoi.mp3,,
+grapheme:vn:ẫ,Grapheme,,,,vn,,ẫ,,,Vowel (Toned),
+grapheme:vn:Ẫ,Grapheme,,,,vn,,Ẫ,,,Vowel (Toned),uppercase
+phoneme:vn:/ə˧ˀ˥/,Phoneme,,,,vn,,,/ə˧ˀ˥/,,,
+audio:vn:a_circumflex_nga.mp3,Audio,,,,vn,,,,a_circumflex_nga.mp3,,
+grapheme:vn:ậ,Grapheme,,,,vn,,ậ,,,Vowel (Toned),
+grapheme:vn:Ậ,Grapheme,,,,vn,,Ậ,,,Vowel (Toned),uppercase
+phoneme:vn:/ə˧˨ˀ/,Phoneme,,,,vn,,,/ə˧˨ˀ/,,,
+audio:vn:a_circumflex_nang.mp3,Audio,,,,vn,,,,a_circumflex_nang.mp3,,
 grapheme:vn:e,Grapheme,,,,vn,,e,,,Vowel,
 grapheme:vn:E,Grapheme,,,,vn,,E,,,Vowel,uppercase
-phoneme:vn:/ɛ/,Phoneme,,,,vn,,,/ɛ/,,,
-latin_roman:vn:e,Lemma-roman-latin,,,,vn,e,,,,,
+phoneme:vn:/ɛ˧/,Phoneme,,,,vn,,,/ɛ˧/,,,
 audio:vn:e.mp3,Audio,,,,vn,,,,e.mp3,,
+grapheme:vn:é,Grapheme,,,,vn,,é,,,Vowel (Toned),
+grapheme:vn:É,Grapheme,,,,vn,,É,,,Vowel (Toned),uppercase
+phoneme:vn:/ɛ˧˥/,Phoneme,,,,vn,,,/ɛ˧˥/,,,
+audio:vn:e_sac.mp3,Audio,,,,vn,,,,e_sac.mp3,,
+grapheme:vn:è,Grapheme,,,,vn,,è,,,Vowel (Toned),
+grapheme:vn:È,Grapheme,,,,vn,,È,,,Vowel (Toned),uppercase
+phoneme:vn:/ɛ˨˩/,Phoneme,,,,vn,,,/ɛ˨˩/,,,
+audio:vn:e_huyen.mp3,Audio,,,,vn,,,,e_huyen.mp3,,
+grapheme:vn:ẻ,Grapheme,,,,vn,,ẻ,,,Vowel (Toned),
+grapheme:vn:Ẻ,Grapheme,,,,vn,,Ẻ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɛ˧˩˧/,Phoneme,,,,vn,,,/ɛ˧˩˧/,,,
+audio:vn:e_hoi.mp3,Audio,,,,vn,,,,e_hoi.mp3,,
+grapheme:vn:ẽ,Grapheme,,,,vn,,ẽ,,,Vowel (Toned),
+grapheme:vn:Ẽ,Grapheme,,,,vn,,Ẽ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɛ˧ˀ˥/,Phoneme,,,,vn,,,/ɛ˧ˀ˥/,,,
+audio:vn:e_nga.mp3,Audio,,,,vn,,,,e_nga.mp3,,
+grapheme:vn:ẹ,Grapheme,,,,vn,,ẹ,,,Vowel (Toned),
+grapheme:vn:Ẹ,Grapheme,,,,vn,,Ẹ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɛ˧˨ˀ/,Phoneme,,,,vn,,,/ɛ˧˨ˀ/,,,
+audio:vn:e_nang.mp3,Audio,,,,vn,,,,e_nang.mp3,,
 grapheme:vn:ê,Grapheme,,,,vn,,ê,,,Vowel,
 grapheme:vn:Ê,Grapheme,,,,vn,,Ê,,,Vowel,uppercase
-phoneme:vn:/e/,Phoneme,,,,vn,,,/e/,,,
-latin_roman:vn:ee,Lemma-roman-latin,,,,vn,ee,,,,,
+phoneme:vn:/e˧/,Phoneme,,,,vn,,,/e˧/,,,
 audio:vn:e_circumflex.mp3,Audio,,,,vn,,,,e_circumflex.mp3,,
+grapheme:vn:ế,Grapheme,,,,vn,,ế,,,Vowel (Toned),
+grapheme:vn:Ế,Grapheme,,,,vn,,Ế,,,Vowel (Toned),uppercase
+phoneme:vn:/e˧˥/,Phoneme,,,,vn,,,/e˧˥/,,,
+audio:vn:e_circumflex_sac.mp3,Audio,,,,vn,,,,e_circumflex_sac.mp3,,
+grapheme:vn:ề,Grapheme,,,,vn,,ề,,,Vowel (Toned),
+grapheme:vn:Ề,Grapheme,,,,vn,,Ề,,,Vowel (Toned),uppercase
+phoneme:vn:/e˨˩/,Phoneme,,,,vn,,,/e˨˩/,,,
+audio:vn:e_circumflex_huyen.mp3,Audio,,,,vn,,,,e_circumflex_huyen.mp3,,
+grapheme:vn:ể,Grapheme,,,,vn,,ể,,,Vowel (Toned),
+grapheme:vn:Ể,Grapheme,,,,vn,,Ể,,,Vowel (Toned),uppercase
+phoneme:vn:/e˧˩˧/,Phoneme,,,,vn,,,/e˧˩˧/,,,
+audio:vn:e_circumflex_hoi.mp3,Audio,,,,vn,,,,e_circumflex_hoi.mp3,,
+grapheme:vn:ễ,Grapheme,,,,vn,,ễ,,,Vowel (Toned),
+grapheme:vn:Ễ,Grapheme,,,,vn,,Ễ,,,Vowel (Toned),uppercase
+phoneme:vn:/e˧ˀ˥/,Phoneme,,,,vn,,,/e˧ˀ˥/,,,
+audio:vn:e_circumflex_nga.mp3,Audio,,,,vn,,,,e_circumflex_nga.mp3,,
+grapheme:vn:ệ,Grapheme,,,,vn,,ệ,,,Vowel (Toned),
+grapheme:vn:Ệ,Grapheme,,,,vn,,Ệ,,,Vowel (Toned),uppercase
+phoneme:vn:/e˧˨ˀ/,Phoneme,,,,vn,,,/e˧˨ˀ/,,,
+audio:vn:e_circumflex_nang.mp3,Audio,,,,vn,,,,e_circumflex_nang.mp3,,
 grapheme:vn:i,Grapheme,,,,vn,,i,,,Vowel,
 grapheme:vn:I,Grapheme,,,,vn,,I,,,Vowel,uppercase
-phoneme:vn:/i/,Phoneme,,,,vn,,,/i/,,,
-latin_roman:vn:i,Lemma-roman-latin,,,,vn,i,,,,,
+phoneme:vn:/i˧/,Phoneme,,,,vn,,,/i˧/,,,
 audio:vn:i.mp3,Audio,,,,vn,,,,i.mp3,,
+grapheme:vn:í,Grapheme,,,,vn,,í,,,Vowel (Toned),
+grapheme:vn:Í,Grapheme,,,,vn,,Í,,,Vowel (Toned),uppercase
+phoneme:vn:/i˧˥/,Phoneme,,,,vn,,,/i˧˥/,,,
+audio:vn:i_sac.mp3,Audio,,,,vn,,,,i_sac.mp3,,
+grapheme:vn:ì,Grapheme,,,,vn,,ì,,,Vowel (Toned),
+grapheme:vn:Ì,Grapheme,,,,vn,,Ì,,,Vowel (Toned),uppercase
+phoneme:vn:/i˨˩/,Phoneme,,,,vn,,,/i˨˩/,,,
+audio:vn:i_huyen.mp3,Audio,,,,vn,,,,i_huyen.mp3,,
+grapheme:vn:ỉ,Grapheme,,,,vn,,ỉ,,,Vowel (Toned),
+grapheme:vn:Ỉ,Grapheme,,,,vn,,Ỉ,,,Vowel (Toned),uppercase
+phoneme:vn:/i˧˩˧/,Phoneme,,,,vn,,,/i˧˩˧/,,,
+audio:vn:i_hoi.mp3,Audio,,,,vn,,,,i_hoi.mp3,,
+grapheme:vn:ĩ,Grapheme,,,,vn,,ĩ,,,Vowel (Toned),
+grapheme:vn:Ĩ,Grapheme,,,,vn,,Ĩ,,,Vowel (Toned),uppercase
+phoneme:vn:/i˧ˀ˥/,Phoneme,,,,vn,,,/i˧ˀ˥/,,,
+audio:vn:i_nga.mp3,Audio,,,,vn,,,,i_nga.mp3,,
+grapheme:vn:ị,Grapheme,,,,vn,,ị,,,Vowel (Toned),
+grapheme:vn:Ị,Grapheme,,,,vn,,Ị,,,Vowel (Toned),uppercase
+phoneme:vn:/i˧˨ˀ/,Phoneme,,,,vn,,,/i˧˨ˀ/,,,
+audio:vn:i_nang.mp3,Audio,,,,vn,,,,i_nang.mp3,,
 grapheme:vn:o,Grapheme,,,,vn,,o,,,Vowel,
 grapheme:vn:O,Grapheme,,,,vn,,O,,,Vowel,uppercase
-phoneme:vn:/ɔ/,Phoneme,,,,vn,,,/ɔ/,,,
-latin_roman:vn:o,Lemma-roman-latin,,,,vn,o,,,,,
+phoneme:vn:/ɔ˧/,Phoneme,,,,vn,,,/ɔ˧/,,,
 audio:vn:o.mp3,Audio,,,,vn,,,,o.mp3,,
+grapheme:vn:ó,Grapheme,,,,vn,,ó,,,Vowel (Toned),
+grapheme:vn:Ó,Grapheme,,,,vn,,Ó,,,Vowel (Toned),uppercase
+phoneme:vn:/ɔ˧˥/,Phoneme,,,,vn,,,/ɔ˧˥/,,,
+audio:vn:o_sac.mp3,Audio,,,,vn,,,,o_sac.mp3,,
+grapheme:vn:ò,Grapheme,,,,vn,,ò,,,Vowel (Toned),
+grapheme:vn:Ò,Grapheme,,,,vn,,Ò,,,Vowel (Toned),uppercase
+phoneme:vn:/ɔ˨˩/,Phoneme,,,,vn,,,/ɔ˨˩/,,,
+audio:vn:o_huyen.mp3,Audio,,,,vn,,,,o_huyen.mp3,,
+grapheme:vn:ỏ,Grapheme,,,,vn,,ỏ,,,Vowel (Toned),
+grapheme:vn:Ỏ,Grapheme,,,,vn,,Ỏ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɔ˧˩˧/,Phoneme,,,,vn,,,/ɔ˧˩˧/,,,
+audio:vn:o_hoi.mp3,Audio,,,,vn,,,,o_hoi.mp3,,
+grapheme:vn:õ,Grapheme,,,,vn,,õ,,,Vowel (Toned),
+grapheme:vn:Õ,Grapheme,,,,vn,,Õ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɔ˧ˀ˥/,Phoneme,,,,vn,,,/ɔ˧ˀ˥/,,,
+audio:vn:o_nga.mp3,Audio,,,,vn,,,,o_nga.mp3,,
+grapheme:vn:ọ,Grapheme,,,,vn,,ọ,,,Vowel (Toned),
+grapheme:vn:Ọ,Grapheme,,,,vn,,Ọ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɔ˧˨ˀ/,Phoneme,,,,vn,,,/ɔ˧˨ˀ/,,,
+audio:vn:o_nang.mp3,Audio,,,,vn,,,,o_nang.mp3,,
 grapheme:vn:ô,Grapheme,,,,vn,,ô,,,Vowel,
 grapheme:vn:Ô,Grapheme,,,,vn,,Ô,,,Vowel,uppercase
-phoneme:vn:/o/,Phoneme,,,,vn,,,/o/,,,
-latin_roman:vn:oo,Lemma-roman-latin,,,,vn,oo,,,,,
+phoneme:vn:/o˧/,Phoneme,,,,vn,,,/o˧/,,,
 audio:vn:o_circumflex.mp3,Audio,,,,vn,,,,o_circumflex.mp3,,
+grapheme:vn:ố,Grapheme,,,,vn,,ố,,,Vowel (Toned),
+grapheme:vn:Ố,Grapheme,,,,vn,,Ố,,,Vowel (Toned),uppercase
+phoneme:vn:/o˧˥/,Phoneme,,,,vn,,,/o˧˥/,,,
+audio:vn:o_circumflex_sac.mp3,Audio,,,,vn,,,,o_circumflex_sac.mp3,,
+grapheme:vn:ồ,Grapheme,,,,vn,,ồ,,,Vowel (Toned),
+grapheme:vn:Ồ,Grapheme,,,,vn,,Ồ,,,Vowel (Toned),uppercase
+phoneme:vn:/o˨˩/,Phoneme,,,,vn,,,/o˨˩/,,,
+audio:vn:o_circumflex_huyen.mp3,Audio,,,,vn,,,,o_circumflex_huyen.mp3,,
+grapheme:vn:ổ,Grapheme,,,,vn,,ổ,,,Vowel (Toned),
+grapheme:vn:Ổ,Grapheme,,,,vn,,Ổ,,,Vowel (Toned),uppercase
+phoneme:vn:/o˧˩˧/,Phoneme,,,,vn,,,/o˧˩˧/,,,
+audio:vn:o_circumflex_hoi.mp3,Audio,,,,vn,,,,o_circumflex_hoi.mp3,,
+grapheme:vn:ỗ,Grapheme,,,,vn,,ỗ,,,Vowel (Toned),
+grapheme:vn:Ỗ,Grapheme,,,,vn,,Ỗ,,,Vowel (Toned),uppercase
+phoneme:vn:/o˧ˀ˥/,Phoneme,,,,vn,,,/o˧ˀ˥/,,,
+audio:vn:o_circumflex_nga.mp3,Audio,,,,vn,,,,o_circumflex_nga.mp3,,
+grapheme:vn:ộ,Grapheme,,,,vn,,ộ,,,Vowel (Toned),
+grapheme:vn:Ộ,Grapheme,,,,vn,,Ộ,,,Vowel (Toned),uppercase
+phoneme:vn:/o˧˨ˀ/,Phoneme,,,,vn,,,/o˧˨ˀ/,,,
+audio:vn:o_circumflex_nang.mp3,Audio,,,,vn,,,,o_circumflex_nang.mp3,,
 grapheme:vn:ơ,Grapheme,,,,vn,,ơ,,,Vowel,
 grapheme:vn:Ơ,Grapheme,,,,vn,,Ơ,,,Vowel,uppercase
-phoneme:vn:/əː/,Phoneme,,,,vn,,,/əː/,,,
-latin_roman:vn:ow,Lemma-roman-latin,,,,vn,ow,,,,,
+phoneme:vn:/əː˧/,Phoneme,,,,vn,,,/əː˧/,,,
 audio:vn:o_horn.mp3,Audio,,,,vn,,,,o_horn.mp3,,
+grapheme:vn:ớ,Grapheme,,,,vn,,ớ,,,Vowel (Toned),
+grapheme:vn:Ớ,Grapheme,,,,vn,,Ớ,,,Vowel (Toned),uppercase
+phoneme:vn:/əː˧˥/,Phoneme,,,,vn,,,/əː˧˥/,,,
+audio:vn:o_horn_sac.mp3,Audio,,,,vn,,,,o_horn_sac.mp3,,
+grapheme:vn:ờ,Grapheme,,,,vn,,ờ,,,Vowel (Toned),
+grapheme:vn:Ờ,Grapheme,,,,vn,,Ờ,,,Vowel (Toned),uppercase
+phoneme:vn:/əː˨˩/,Phoneme,,,,vn,,,/əː˨˩/,,,
+audio:vn:o_horn_huyen.mp3,Audio,,,,vn,,,,o_horn_huyen.mp3,,
+grapheme:vn:ở,Grapheme,,,,vn,,ở,,,Vowel (Toned),
+grapheme:vn:Ở,Grapheme,,,,vn,,Ở,,,Vowel (Toned),uppercase
+phoneme:vn:/əː˧˩˧/,Phoneme,,,,vn,,,/əː˧˩˧/,,,
+audio:vn:o_horn_hoi.mp3,Audio,,,,vn,,,,o_horn_hoi.mp3,,
+grapheme:vn:ỡ,Grapheme,,,,vn,,ỡ,,,Vowel (Toned),
+grapheme:vn:Ỡ,Grapheme,,,,vn,,Ỡ,,,Vowel (Toned),uppercase
+phoneme:vn:/əː˧ˀ˥/,Phoneme,,,,vn,,,/əː˧ˀ˥/,,,
+audio:vn:o_horn_nga.mp3,Audio,,,,vn,,,,o_horn_nga.mp3,,
+grapheme:vn:ợ,Grapheme,,,,vn,,ợ,,,Vowel (Toned),
+grapheme:vn:Ợ,Grapheme,,,,vn,,Ợ,,,Vowel (Toned),uppercase
+phoneme:vn:/əː˧˨ˀ/,Phoneme,,,,vn,,,/əː˧˨ˀ/,,,
+audio:vn:o_horn_nang.mp3,Audio,,,,vn,,,,o_horn_nang.mp3,,
 grapheme:vn:u,Grapheme,,,,vn,,u,,,Vowel,
 grapheme:vn:U,Grapheme,,,,vn,,U,,,Vowel,uppercase
-phoneme:vn:/u/,Phoneme,,,,vn,,,/u/,,,
-latin_roman:vn:u,Lemma-roman-latin,,,,vn,u,,,,,
+phoneme:vn:/u˧/,Phoneme,,,,vn,,,/u˧/,,,
 audio:vn:u.mp3,Audio,,,,vn,,,,u.mp3,,
+grapheme:vn:ú,Grapheme,,,,vn,,ú,,,Vowel (Toned),
+grapheme:vn:Ú,Grapheme,,,,vn,,Ú,,,Vowel (Toned),uppercase
+phoneme:vn:/u˧˥/,Phoneme,,,,vn,,,/u˧˥/,,,
+audio:vn:u_sac.mp3,Audio,,,,vn,,,,u_sac.mp3,,
+grapheme:vn:ù,Grapheme,,,,vn,,ù,,,Vowel (Toned),
+grapheme:vn:Ù,Grapheme,,,,vn,,Ù,,,Vowel (Toned),uppercase
+phoneme:vn:/u˨˩/,Phoneme,,,,vn,,,/u˨˩/,,,
+audio:vn:u_huyen.mp3,Audio,,,,vn,,,,u_huyen.mp3,,
+grapheme:vn:ủ,Grapheme,,,,vn,,ủ,,,Vowel (Toned),
+grapheme:vn:Ủ,Grapheme,,,,vn,,Ủ,,,Vowel (Toned),uppercase
+phoneme:vn:/u˧˩˧/,Phoneme,,,,vn,,,/u˧˩˧/,,,
+audio:vn:u_hoi.mp3,Audio,,,,vn,,,,u_hoi.mp3,,
+grapheme:vn:ũ,Grapheme,,,,vn,,ũ,,,Vowel (Toned),
+grapheme:vn:Ũ,Grapheme,,,,vn,,Ũ,,,Vowel (Toned),uppercase
+phoneme:vn:/u˧ˀ˥/,Phoneme,,,,vn,,,/u˧ˀ˥/,,,
+audio:vn:u_nga.mp3,Audio,,,,vn,,,,u_nga.mp3,,
+grapheme:vn:ụ,Grapheme,,,,vn,,ụ,,,Vowel (Toned),
+grapheme:vn:Ụ,Grapheme,,,,vn,,Ụ,,,Vowel (Toned),uppercase
+phoneme:vn:/u˧˨ˀ/,Phoneme,,,,vn,,,/u˧˨ˀ/,,,
+audio:vn:u_nang.mp3,Audio,,,,vn,,,,u_nang.mp3,,
 grapheme:vn:ư,Grapheme,,,,vn,,ư,,,Vowel,
 grapheme:vn:Ư,Grapheme,,,,vn,,Ư,,,Vowel,uppercase
-phoneme:vn:/ɨ/,Phoneme,,,,vn,,,/ɨ/,,,
-latin_roman:vn:uw,Lemma-roman-latin,,,,vn,uw,,,,,
+phoneme:vn:/ɨ˧/,Phoneme,,,,vn,,,/ɨ˧/,,,
 audio:vn:u_horn.mp3,Audio,,,,vn,,,,u_horn.mp3,,
+grapheme:vn:ứ,Grapheme,,,,vn,,ứ,,,Vowel (Toned),
+grapheme:vn:Ứ,Grapheme,,,,vn,,Ứ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɨ˧˥/,Phoneme,,,,vn,,,/ɨ˧˥/,,,
+audio:vn:u_horn_sac.mp3,Audio,,,,vn,,,,u_horn_sac.mp3,,
+grapheme:vn:ừ,Grapheme,,,,vn,,ừ,,,Vowel (Toned),
+grapheme:vn:Ừ,Grapheme,,,,vn,,Ừ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɨ˨˩/,Phoneme,,,,vn,,,/ɨ˨˩/,,,
+audio:vn:u_horn_huyen.mp3,Audio,,,,vn,,,,u_horn_huyen.mp3,,
+grapheme:vn:ử,Grapheme,,,,vn,,ử,,,Vowel (Toned),
+grapheme:vn:Ử,Grapheme,,,,vn,,Ử,,,Vowel (Toned),uppercase
+phoneme:vn:/ɨ˧˩˧/,Phoneme,,,,vn,,,/ɨ˧˩˧/,,,
+audio:vn:u_horn_hoi.mp3,Audio,,,,vn,,,,u_horn_hoi.mp3,,
+grapheme:vn:ữ,Grapheme,,,,vn,,ữ,,,Vowel (Toned),
+grapheme:vn:Ữ,Grapheme,,,,vn,,Ữ,,,Vowel (Toned),uppercase
+phoneme:vn:/ɨ˧ˀ˥/,Phoneme,,,,vn,,,/ɨ˧ˀ˥/,,,
+audio:vn:u_horn_nga.mp3,Audio,,,,vn,,,,u_horn_nga.mp3,,
+grapheme:vn:ự,Grapheme,,,,vn,,ự,,,Vowel (Toned),
+grapheme:vn:Ự,Grapheme,,,,vn,,Ự,,,Vowel (Toned),uppercase
+phoneme:vn:/ɨ˧˨ˀ/,Phoneme,,,,vn,,,/ɨ˧˨ˀ/,,,
+audio:vn:u_horn_nang.mp3,Audio,,,,vn,,,,u_horn_nang.mp3,,
 grapheme:vn:y,Grapheme,,,,vn,,y,,,Vowel,
 grapheme:vn:Y,Grapheme,,,,vn,,Y,,,Vowel,uppercase
-latin_roman:vn:y,Lemma-roman-latin,,,,vn,y,,,,,
 audio:vn:y.mp3,Audio,,,,vn,,,,y.mp3,,
+grapheme:vn:ý,Grapheme,,,,vn,,ý,,,Vowel (Toned),
+grapheme:vn:Ý,Grapheme,,,,vn,,Ý,,,Vowel (Toned),uppercase
+audio:vn:y_sac.mp3,Audio,,,,vn,,,,y_sac.mp3,,
+grapheme:vn:ỳ,Grapheme,,,,vn,,ỳ,,,Vowel (Toned),
+grapheme:vn:Ỳ,Grapheme,,,,vn,,Ỳ,,,Vowel (Toned),uppercase
+audio:vn:y_huyen.mp3,Audio,,,,vn,,,,y_huyen.mp3,,
+grapheme:vn:ỷ,Grapheme,,,,vn,,ỷ,,,Vowel (Toned),
+grapheme:vn:Ỷ,Grapheme,,,,vn,,Ỷ,,,Vowel (Toned),uppercase
+audio:vn:y_hoi.mp3,Audio,,,,vn,,,,y_hoi.mp3,,
+grapheme:vn:ỹ,Grapheme,,,,vn,,ỹ,,,Vowel (Toned),
+grapheme:vn:Ỹ,Grapheme,,,,vn,,Ỹ,,,Vowel (Toned),uppercase
+audio:vn:y_nga.mp3,Audio,,,,vn,,,,y_nga.mp3,,
+grapheme:vn:ỵ,Grapheme,,,,vn,,ỵ,,,Vowel (Toned),
+grapheme:vn:Ỵ,Grapheme,,,,vn,,Ỵ,,,Vowel (Toned),uppercase
+audio:vn:y_nang.mp3,Audio,,,,vn,,,,y_nang.mp3,,
 grapheme:vn:b,Grapheme,,,,vn,,b,,,Consonant,
 grapheme:vn:B,Grapheme,,,,vn,,B,,,Consonant,uppercase
 phoneme:vn:/ɓ/,Phoneme,,,,vn,,,/ɓ/,,,
-latin_roman:vn:b,Lemma-roman-latin,,,,vn,b,,,,,
 audio:vn:b.mp3,Audio,,,,vn,,,,b.mp3,,
 grapheme:vn:c,Grapheme,,,,vn,,c,,,Consonant,
 grapheme:vn:C,Grapheme,,,,vn,,C,,,Consonant,uppercase
 phoneme:vn:/k/,Phoneme,,,,vn,,,/k/,,,
-latin_roman:vn:c,Lemma-roman-latin,,,,vn,c,,,,,
 audio:vn:c.mp3,Audio,,,,vn,,,,c.mp3,,
 grapheme:vn:d,Grapheme,,,,vn,,d,,,Consonant,
 grapheme:vn:D,Grapheme,,,,vn,,D,,,Consonant,uppercase
-phoneme:vn:/j/ or /z/,Phoneme,,,,vn,,,/j/ or /z/,,,
-latin_roman:vn:d,Lemma-roman-latin,,,,vn,d,,,,,
+phoneme:vn:/z/ or /j/,Phoneme,,,,vn,,,/z/ or /j/,,,
 audio:vn:d.mp3,Audio,,,,vn,,,,d.mp3,,
 grapheme:vn:đ,Grapheme,,,,vn,,đ,,,Consonant,
 grapheme:vn:Đ,Grapheme,,,,vn,,Đ,,,Consonant,uppercase
 phoneme:vn:/ɗ/,Phoneme,,,,vn,,,/ɗ/,,,
-latin_roman:vn:dd,Lemma-roman-latin,,,,vn,dd,,,,,
 audio:vn:d_strike.mp3,Audio,,,,vn,,,,d_strike.mp3,,
 grapheme:vn:g,Grapheme,,,,vn,,g,,,Consonant,
 grapheme:vn:G,Grapheme,,,,vn,,G,,,Consonant,uppercase
 phoneme:vn:/ɣ/,Phoneme,,,,vn,,,/ɣ/,,,
-latin_roman:vn:g,Lemma-roman-latin,,,,vn,g,,,,,
 audio:vn:g.mp3,Audio,,,,vn,,,,g.mp3,,
 grapheme:vn:h,Grapheme,,,,vn,,h,,,Consonant,
 grapheme:vn:H,Grapheme,,,,vn,,H,,,Consonant,uppercase
 phoneme:vn:/h/,Phoneme,,,,vn,,,/h/,,,
-latin_roman:vn:h,Lemma-roman-latin,,,,vn,h,,,,,
 audio:vn:h.mp3,Audio,,,,vn,,,,h.mp3,,
 grapheme:vn:k,Grapheme,,,,vn,,k,,,Consonant,
 grapheme:vn:K,Grapheme,,,,vn,,K,,,Consonant,uppercase
-latin_roman:vn:k,Lemma-roman-latin,,,,vn,k,,,,,
 audio:vn:k.mp3,Audio,,,,vn,,,,k.mp3,,
 grapheme:vn:l,Grapheme,,,,vn,,l,,,Consonant,
 grapheme:vn:L,Grapheme,,,,vn,,L,,,Consonant,uppercase
 phoneme:vn:/l/,Phoneme,,,,vn,,,/l/,,,
-latin_roman:vn:l,Lemma-roman-latin,,,,vn,l,,,,,
 audio:vn:l.mp3,Audio,,,,vn,,,,l.mp3,,
 grapheme:vn:m,Grapheme,,,,vn,,m,,,Consonant,
 grapheme:vn:M,Grapheme,,,,vn,,M,,,Consonant,uppercase
 phoneme:vn:/m/,Phoneme,,,,vn,,,/m/,,,
-latin_roman:vn:m,Lemma-roman-latin,,,,vn,m,,,,,
 audio:vn:m.mp3,Audio,,,,vn,,,,m.mp3,,
 grapheme:vn:n,Grapheme,,,,vn,,n,,,Consonant,
 grapheme:vn:N,Grapheme,,,,vn,,N,,,Consonant,uppercase
 phoneme:vn:/n/,Phoneme,,,,vn,,,/n/,,,
-latin_roman:vn:n,Lemma-roman-latin,,,,vn,n,,,,,
 audio:vn:n.mp3,Audio,,,,vn,,,,n.mp3,,
 grapheme:vn:p,Grapheme,,,,vn,,p,,,Consonant,
 grapheme:vn:P,Grapheme,,,,vn,,P,,,Consonant,uppercase
 phoneme:vn:/p/,Phoneme,,,,vn,,,/p/,,,
-latin_roman:vn:p,Lemma-roman-latin,,,,vn,p,,,,,
 audio:vn:p.mp3,Audio,,,,vn,,,,p.mp3,,
 grapheme:vn:q,Grapheme,,,,vn,,q,,,Consonant,
 grapheme:vn:Q,Grapheme,,,,vn,,Q,,,Consonant,uppercase
 phoneme:vn:/k/ or /kw/,Phoneme,,,,vn,,,/k/ or /kw/,,,
-latin_roman:vn:q,Lemma-roman-latin,,,,vn,q,,,,,
 audio:vn:q.mp3,Audio,,,,vn,,,,q.mp3,,
 grapheme:vn:r,Grapheme,,,,vn,,r,,,Consonant,
 grapheme:vn:R,Grapheme,,,,vn,,R,,,Consonant,uppercase
-phoneme:vn:/r/ or /z/,Phoneme,,,,vn,,,/r/ or /z/,,,
-latin_roman:vn:r,Lemma-roman-latin,,,,vn,r,,,,,
+phoneme:vn:/z/ or /r/,Phoneme,,,,vn,,,/z/ or /r/,,,
 audio:vn:r.mp3,Audio,,,,vn,,,,r.mp3,,
 grapheme:vn:s,Grapheme,,,,vn,,s,,,Consonant,
 grapheme:vn:S,Grapheme,,,,vn,,S,,,Consonant,uppercase
-phoneme:vn:/ʂ/ or /s/,Phoneme,,,,vn,,,/ʂ/ or /s/,,,
-latin_roman:vn:s,Lemma-roman-latin,,,,vn,s,,,,,
+phoneme:vn:/s/ or /ʂ/,Phoneme,,,,vn,,,/s/ or /ʂ/,,,
 audio:vn:s.mp3,Audio,,,,vn,,,,s.mp3,,
 grapheme:vn:t,Grapheme,,,,vn,,t,,,Consonant,
 grapheme:vn:T,Grapheme,,,,vn,,T,,,Consonant,uppercase
 phoneme:vn:/t/,Phoneme,,,,vn,,,/t/,,,
-latin_roman:vn:t,Lemma-roman-latin,,,,vn,t,,,,,
 audio:vn:t.mp3,Audio,,,,vn,,,,t.mp3,,
 grapheme:vn:v,Grapheme,,,,vn,,v,,,Consonant,
 grapheme:vn:V,Grapheme,,,,vn,,V,,,Consonant,uppercase
 phoneme:vn:/v/ or /j/,Phoneme,,,,vn,,,/v/ or /j/,,,
-latin_roman:vn:v,Lemma-roman-latin,,,,vn,v,,,,,
 audio:vn:v.mp3,Audio,,,,vn,,,,v.mp3,,
 grapheme:vn:x,Grapheme,,,,vn,,x,,,Consonant,
 grapheme:vn:X,Grapheme,,,,vn,,X,,,Consonant,uppercase
 phoneme:vn:/s/,Phoneme,,,,vn,,,/s/,,,
-latin_roman:vn:x,Lemma-roman-latin,,,,vn,x,,,,,
 audio:vn:x.mp3,Audio,,,,vn,,,,x.mp3,,
