@@ -1,0 +1,16 @@
+{
+    "tense_markers": {
+      "present": "ka",
+      "future": "ghadi "
+    },
+    "pronouns": {
+      "ana": {"prefix": "n", "suffix": ""},
+      "nta": {"prefix": "t", "suffix": ""},
+      "nti": {"prefix": "t", "suffix": "i"},
+      "huwa": {"prefix": "y", "suffix": ""},
+      "hiya": {"prefix": "t", "suffix": ""},
+      "7na": {"prefix": "n", "suffix": "u"},
+      "ntuma": {"prefix": "t", "suffix": "u"},
+      "huma": {"prefix": "y", "suffix": "u"}
+    }
+  }
