@@ -1,19 +1,13 @@
 # Python
 *.pyc
-__pycache__/
-env/
-venv/
-.venv/
-.env
-*.egg-info/
-dist/
-build/
+Matching_Game/__pycache__/
+Matching_Game/venv/
+Matching_Game/.venv/
+Matching_Game/.env
 
 # Jupyter Notebooks
-*.ipynb_checkpoints/
-
+Matching_Game/*.ipynb_checkpoints/
 
 # MacOS
 .DS_Store
 Thumbs.db
-

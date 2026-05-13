@@ -312,8 +312,8 @@ def main():
     """
     ensure_wordnet()
 
-    ukc_to_wn = load_mappings("ukc_wn30_mappings (1).tsv")
-    ukc_to_lemmas = load_lemmas("nepali_english_ukc_lexicon_transliterated.csv")
+    ukc_to_wn = load_mappings("../data/ukc_wn30_mappings (1).tsv")
+    ukc_to_lemmas = load_lemmas("../data/nepali_english_ukc_lexicon_transliterated.csv")
 
     while True:
         id1 = input("\nEnter first UKC Concept ID (or 'q' to quit): ").strip()
