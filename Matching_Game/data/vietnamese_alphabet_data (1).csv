@@ -1,30 +1,90 @@
 Type,Character,Additional_Form,IPA,Transliteration,Audio
-Vowel,a,A,/aː/,a,a.mp3
-Vowel,ă,Ă,/a/,aw,a_breve.mp3
-Vowel,â,Â,/ə/,aa,a_circumflex.mp3
-Vowel,e,E,/ɛ/,e,e.mp3
-Vowel,ê,Ê,/e/,ee,e_circumflex.mp3
-Vowel,i,I,/i/,i,i.mp3
-Vowel,o,O,/ɔ/,o,o.mp3
-Vowel,ô,Ô,/o/,oo,o_circumflex.mp3
-Vowel,ơ,Ơ,/əː/,ow,o_horn.mp3
-Vowel,u,U,/u/,u,u.mp3
-Vowel,ư,Ư,/ɨ/,uw,u_horn.mp3
-Vowel,y,Y,/i/,y,y.mp3
-Consonant,b,B,/ɓ/,b,b.mp3
-Consonant,c,C,/k/,c,c.mp3
-Consonant,d,D,/j/ or /z/,d,d.mp3
-Consonant,đ,Đ,/ɗ/,dd,d_strike.mp3
-Consonant,g,G,/ɣ/,g,g.mp3
-Consonant,h,H,/h/,h,h.mp3
-Consonant,k,K,/k/,k,k.mp3
-Consonant,l,L,/l/,l,l.mp3
-Consonant,m,M,/m/,m,m.mp3
-Consonant,n,N,/n/,n,n.mp3
-Consonant,p,P,/p/,p,p.mp3
-Consonant,q,Q,/k/ or /kw/,q,q.mp3
-Consonant,r,R,/r/ or /z/,r,r.mp3
-Consonant,s,S,/ʂ/ or /s/,s,s.mp3
-Consonant,t,T,/t/,t,t.mp3
-Consonant,v,V,/v/ or /j/,v,v.mp3
-Consonant,x,X,/s/,x,x.mp3
+Vowel,a,A,/aː˧/,-,a.mp3
+Vowel (Toned),á,Á,/aː˧˥/,-,a_sac.mp3
+Vowel (Toned),à,À,/aː˨˩/,-,a_huyen.mp3
+Vowel (Toned),ả,Ả,/aː˧˩˧/,-,a_hoi.mp3
+Vowel (Toned),ã,Ã,/aː˧ˀ˥/,-,a_nga.mp3
+Vowel (Toned),ạ,Ạ,/aː˧˨ˀ/,-,a_nang.mp3
+Vowel,ă,Ă,/a˧/,-,a_breve.mp3
+Vowel (Toned),ắ,Ắ,/a˧˥/,-,a_breve_sac.mp3
+Vowel (Toned),ằ,Ằ,/a˨˩/,-,a_breve_huyen.mp3
+Vowel (Toned),ẳ,Ẳ,/a˧˩˧/,-,a_breve_hoi.mp3
+Vowel (Toned),ẵ,Ẵ,/a˧ˀ˥/,-,a_breve_nga.mp3
+Vowel (Toned),ặ,Ặ,/a˧˨ˀ/,-,a_breve_nang.mp3
+Vowel,â,Â,/ə˧/,-,a_circumflex.mp3
+Vowel (Toned),ấ,Ấ,/ə˧˥/,-,a_circumflex_sac.mp3
+Vowel (Toned),ầ,Ầ,/ə˨˩/,-,a_circumflex_huyen.mp3
+Vowel (Toned),ẩ,Ẩ,/ə˧˩˧/,-,a_circumflex_hoi.mp3
+Vowel (Toned),ẫ,Ẫ,/ə˧ˀ˥/,-,a_circumflex_nga.mp3
+Vowel (Toned),ậ,Ậ,/ə˧˨ˀ/,-,a_circumflex_nang.mp3
+Vowel,e,E,/ɛ˧/,-,e.mp3
+Vowel (Toned),é,É,/ɛ˧˥/,-,e_sac.mp3
+Vowel (Toned),è,È,/ɛ˨˩/,-,e_huyen.mp3
+Vowel (Toned),ẻ,Ẻ,/ɛ˧˩˧/,-,e_hoi.mp3
+Vowel (Toned),ẽ,Ẽ,/ɛ˧ˀ˥/,-,e_nga.mp3
+Vowel (Toned),ẹ,Ẹ,/ɛ˧˨ˀ/,-,e_nang.mp3
+Vowel,ê,Ê,/e˧/,-,e_circumflex.mp3
+Vowel (Toned),ế,Ế,/e˧˥/,-,e_circumflex_sac.mp3
+Vowel (Toned),ề,Ề,/e˨˩/,-,e_circumflex_huyen.mp3
+Vowel (Toned),ể,Ể,/e˧˩˧/,-,e_circumflex_hoi.mp3
+Vowel (Toned),ễ,Ễ,/e˧ˀ˥/,-,e_circumflex_nga.mp3
+Vowel (Toned),ệ,Ệ,/e˧˨ˀ/,-,e_circumflex_nang.mp3
+Vowel,i,I,/i˧/,-,i.mp3
+Vowel (Toned),í,Í,/i˧˥/,-,i_sac.mp3
+Vowel (Toned),ì,Ì,/i˨˩/,-,i_huyen.mp3
+Vowel (Toned),ỉ,Ỉ,/i˧˩˧/,-,i_hoi.mp3
+Vowel (Toned),ĩ,Ĩ,/i˧ˀ˥/,-,i_nga.mp3
+Vowel (Toned),ị,Ị,/i˧˨ˀ/,-,i_nang.mp3
+Vowel,o,O,/ɔ˧/,-,o.mp3
+Vowel (Toned),ó,Ó,/ɔ˧˥/,-,o_sac.mp3
+Vowel (Toned),ò,Ò,/ɔ˨˩/,-,o_huyen.mp3
+Vowel (Toned),ỏ,Ỏ,/ɔ˧˩˧/,-,o_hoi.mp3
+Vowel (Toned),õ,Õ,/ɔ˧ˀ˥/,-,o_nga.mp3
+Vowel (Toned),ọ,Ọ,/ɔ˧˨ˀ/,-,o_nang.mp3
+Vowel,ô,Ô,/o˧/,-,o_circumflex.mp3
+Vowel (Toned),ố,Ố,/o˧˥/,-,o_circumflex_sac.mp3
+Vowel (Toned),ồ,Ồ,/o˨˩/,-,o_circumflex_huyen.mp3
+Vowel (Toned),ổ,Ổ,/o˧˩˧/,-,o_circumflex_hoi.mp3
+Vowel (Toned),ỗ,Ỗ,/o˧ˀ˥/,-,o_circumflex_nga.mp3
+Vowel (Toned),ộ,Ộ,/o˧˨ˀ/,-,o_circumflex_nang.mp3
+Vowel,ơ,Ơ,/əː˧/,-,o_horn.mp3
+Vowel (Toned),ớ,Ớ,/əː˧˥/,-,o_horn_sac.mp3
+Vowel (Toned),ờ,Ờ,/əː˨˩/,-,o_horn_huyen.mp3
+Vowel (Toned),ở,Ở,/əː˧˩˧/,-,o_horn_hoi.mp3
+Vowel (Toned),ỡ,Ỡ,/əː˧ˀ˥/,-,o_horn_nga.mp3
+Vowel (Toned),ợ,Ợ,/əː˧˨ˀ/,-,o_horn_nang.mp3
+Vowel,u,U,/u˧/,-,u.mp3
+Vowel (Toned),ú,Ú,/u˧˥/,-,u_sac.mp3
+Vowel (Toned),ù,Ù,/u˨˩/,-,u_huyen.mp3
+Vowel (Toned),ủ,Ủ,/u˧˩˧/,-,u_hoi.mp3
+Vowel (Toned),ũ,Ũ,/u˧ˀ˥/,-,u_nga.mp3
+Vowel (Toned),ụ,Ụ,/u˧˨ˀ/,-,u_nang.mp3
+Vowel,ư,Ư,/ɨ˧/,-,u_horn.mp3
+Vowel (Toned),ứ,Ứ,/ɨ˧˥/,-,u_horn_sac.mp3
+Vowel (Toned),ừ,Ừ,/ɨ˨˩/,-,u_horn_huyen.mp3
+Vowel (Toned),ử,Ử,/ɨ˧˩˧/,-,u_horn_hoi.mp3
+Vowel (Toned),ữ,Ữ,/ɨ˧ˀ˥/,-,u_horn_nga.mp3
+Vowel (Toned),ự,Ự,/ɨ˧˨ˀ/,-,u_horn_nang.mp3
+Vowel,y,Y,/i˧/,-,y.mp3  
+Vowel (Toned),ý,Ý,/i˧˥/,-,y_sac.mp3
+Vowel (Toned),ỳ,Ỳ,/i˨˩/,-,y_huyen.mp3
+Vowel (Toned),ỷ,Ỷ,/i˧˩˧/,-,y_hoi.mp3
+Vowel (Toned),ỹ,Ỹ,/i˧ˀ˥/,-,y_nga.mp3
+Vowel (Toned),ỵ,Ỵ,/i˧˨ˀ/,-,y_nang.mp3
+Consonant,b,B,/ɓ/,-,b.mp3
+Consonant,c,C,/k/,-,c.mp3
+Consonant,d,D,/z/ or /j/,-,d.mp3
+Consonant,đ,Đ,/ɗ/,-,d_strike.mp3
+Consonant,g,G,/ɣ/,-,g.mp3
+Consonant,h,H,/h/,-,h.mp3
+Consonant,k,K,/k/,-,k.mp3
+Consonant,l,L,/l/,-,l.mp3
+Consonant,m,M,/m/,-,m.mp3
+Consonant,n,N,/n/,-,n.mp3
+Consonant,p,P,/p/,-,p.mp3
+Consonant,q,Q,/k/ or /kw/,-,q.mp3
+Consonant,r,R,/z/ or /r/,-,r.mp3
+Consonant,s,S,/s/ or /ʂ/,-,s.mp3
+Consonant,t,T,/t/,-,t.mp3
+Consonant,v,V,/v/ or /j/,-,v.mp3
+Consonant,x,X,/s/,-,x.mp3
