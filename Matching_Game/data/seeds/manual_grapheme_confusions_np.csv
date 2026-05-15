@@ -1,0 +1,13 @@
+source,target,language,seed_weight,reason
+grapheme:np:भ,grapheme:np:म,np,0.9,visual lookalike
+grapheme:np:म,grapheme:np:भ,np,0.9,visual lookalike
+grapheme:np:प,grapheme:np:ष,np,0.85,visual lookalike
+grapheme:np:ष,grapheme:np:प,np,0.85,visual lookalike
+grapheme:np:व,grapheme:np:ब,np,0.85,visual lookalike
+grapheme:np:ब,grapheme:np:व,np,0.85,visual lookalike
+grapheme:np:घ,grapheme:np:ध,np,0.85,visual lookalike
+grapheme:np:ध,grapheme:np:घ,np,0.85,visual lookalike
+grapheme:np:ट,grapheme:np:ठ,np,0.8,visual lookalike
+grapheme:np:ठ,grapheme:np:ट,np,0.8,visual lookalike
+grapheme:np:ड,grapheme:np:ङ,np,0.8,visual lookalike
+grapheme:np:ङ,grapheme:np:ड,np,0.8,visual lookalike

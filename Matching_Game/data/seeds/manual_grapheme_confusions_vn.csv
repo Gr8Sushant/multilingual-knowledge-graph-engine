@@ -1,0 +1,19 @@
+source,target,language,seed_weight,reason
+grapheme:vn:a,grapheme:vn:á,vn,0.85,tonal lookalike
+grapheme:vn:á,grapheme:vn:a,vn,0.85,tonal lookalike
+grapheme:vn:a,grapheme:vn:à,vn,0.85,tonal lookalike
+grapheme:vn:à,grapheme:vn:a,vn,0.85,tonal lookalike
+grapheme:vn:a,grapheme:vn:ả,vn,0.85,tonal lookalike
+grapheme:vn:ả,grapheme:vn:a,vn,0.85,tonal lookalike
+grapheme:vn:a,grapheme:vn:ă,vn,0.85,vowel lookalike
+grapheme:vn:ă,grapheme:vn:a,vn,0.85,vowel lookalike
+grapheme:vn:a,grapheme:vn:â,vn,0.85,vowel lookalike
+grapheme:vn:â,grapheme:vn:a,vn,0.85,vowel lookalike
+grapheme:vn:d,grapheme:vn:đ,vn,0.9,visual lookalike
+grapheme:vn:đ,grapheme:vn:d,vn,0.9,visual lookalike
+grapheme:vn:c,grapheme:vn:k,vn,0.85,phonetic and visual overlap
+grapheme:vn:k,grapheme:vn:c,vn,0.85,phonetic and visual overlap
+grapheme:vn:ch,grapheme:vn:tr,vn,0.8,phonetic lookalike
+grapheme:vn:tr,grapheme:vn:ch,vn,0.8,phonetic lookalike
+grapheme:vn:s,grapheme:vn:x,vn,0.8,phonetic lookalike
+grapheme:vn:x,grapheme:vn:s,vn,0.8,phonetic lookalike

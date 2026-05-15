@@ -1,0 +1,7 @@
+source,target,language,seed_weight,reason
+grapheme:dr:ا,grapheme:dr:و,dr,0.8,vowel lookalike
+grapheme:dr:و,grapheme:dr:ا,dr,0.8,vowel lookalike
+grapheme:dr:ي,grapheme:dr:و,dr,0.8,vowel lookalike
+grapheme:dr:و,grapheme:dr:ي,dr,0.8,vowel lookalike
+grapheme:dr:ء,grapheme:dr:ا,dr,0.85,hamza/alif confusion
+grapheme:dr:ا,grapheme:dr:ء,dr,0.85,hamza/alif confusion
