@@ -306759,3 +306759,256 @@ grapheme:vn:X,grapheme:vn:x,uppercase_of
 phoneme:vn:/s/,grapheme:vn:x,phoneme_written_as
 phoneme:vn:/s/,latin_roman:vn:-,phoneme_transliterated_as
 audio:vn:x.mp3,phoneme:vn:/s/,audio_represents
+phoneme:ur:/ɑ/,grapheme:ur:ا,phoneme_written_as
+phoneme:ur:/ɑ/,latin_roman:ur:alif,phoneme_transliterated_as
+audio:ur:alif (ا).m4a,phoneme:ur:/ɑ/,audio_represents
+phoneme:ur:/b/,grapheme:ur:ب,phoneme_written_as
+phoneme:ur:/b/,latin_roman:ur:bay,phoneme_transliterated_as
+audio:ur:bay (ب).m4a,phoneme:ur:/b/,audio_represents
+phoneme:ur:/p/,grapheme:ur:پ,phoneme_written_as
+phoneme:ur:/p/,latin_roman:ur:pay,phoneme_transliterated_as
+audio:ur:pay (پ).m4a,phoneme:ur:/p/,audio_represents
+phoneme:ur:/t̪/,grapheme:ur:ت,phoneme_written_as
+phoneme:ur:/t̪/,latin_roman:ur:tay,phoneme_transliterated_as
+phoneme:ur:/t̪/,grapheme:ur:ط,phoneme_written_as
+phoneme:ur:/t̪/,latin_roman:ur:tuay,phoneme_transliterated_as
+audio:ur:tay (ت).m4a,phoneme:ur:/t̪/,audio_represents
+phoneme:ur:/ʈ/,grapheme:ur:ٹ,phoneme_written_as
+phoneme:ur:/ʈ/,latin_roman:ur:ttay,phoneme_transliterated_as
+audio:ur:ttay (ٹ).m4a,phoneme:ur:/ʈ/,audio_represents
+phoneme:ur:/s/,grapheme:ur:ث,phoneme_written_as
+phoneme:ur:/s/,latin_roman:ur:say,phoneme_transliterated_as
+phoneme:ur:/s/,grapheme:ur:س,phoneme_written_as
+phoneme:ur:/s/,latin_roman:ur:seen,phoneme_transliterated_as
+phoneme:ur:/s/,grapheme:ur:ص,phoneme_written_as
+phoneme:ur:/s/,latin_roman:ur:suad,phoneme_transliterated_as
+audio:ur:say (ث).m4a,phoneme:ur:/s/,audio_represents
+phoneme:ur:/ʤ/,grapheme:ur:ج,phoneme_written_as
+phoneme:ur:/ʤ/,latin_roman:ur:jeem,phoneme_transliterated_as
+audio:ur:jeem (ج).m4a,phoneme:ur:/ʤ/,audio_represents
+phoneme:ur:/ʧ/,grapheme:ur:چ,phoneme_written_as
+phoneme:ur:/ʧ/,latin_roman:ur:chay,phoneme_transliterated_as
+audio:ur:chay (چ).m4a,phoneme:ur:/ʧ/,audio_represents
+phoneme:ur:/h/,grapheme:ur:ح,phoneme_written_as
+phoneme:ur:/h/,latin_roman:ur:hay,phoneme_transliterated_as
+phoneme:ur:/h/,grapheme:ur:ہ,phoneme_written_as
+phoneme:ur:/h/,latin_roman:ur:choti hay,phoneme_transliterated_as
+audio:ur:hay (ح).m4a,phoneme:ur:/h/,audio_represents
+phoneme:ur:/x/,grapheme:ur:خ,phoneme_written_as
+phoneme:ur:/x/,latin_roman:ur:khay,phoneme_transliterated_as
+audio:ur:khay (خ).m4a,phoneme:ur:/x/,audio_represents
+phoneme:ur:/d̪/,grapheme:ur:د,phoneme_written_as
+phoneme:ur:/d̪/,latin_roman:ur:daal,phoneme_transliterated_as
+audio:ur:daal (د).m4a,phoneme:ur:/d̪/,audio_represents
+phoneme:ur:/ɖ/,grapheme:ur:ڈ,phoneme_written_as
+phoneme:ur:/ɖ/,latin_roman:ur:ddal,phoneme_transliterated_as
+audio:ur:ddal (ڈ).m4a,phoneme:ur:/ɖ/,audio_represents
+phoneme:ur:/z/,grapheme:ur:ذ,phoneme_written_as
+phoneme:ur:/z/,latin_roman:ur:zaal,phoneme_transliterated_as
+phoneme:ur:/z/,grapheme:ur:ز,phoneme_written_as
+phoneme:ur:/z/,latin_roman:ur:zay,phoneme_transliterated_as
+phoneme:ur:/z/,grapheme:ur:ض,phoneme_written_as
+phoneme:ur:/z/,latin_roman:ur:zuaad,phoneme_transliterated_as
+phoneme:ur:/z/,grapheme:ur:ظ,phoneme_written_as
+phoneme:ur:/z/,latin_roman:ur:zuay,phoneme_transliterated_as
+audio:ur:zaal (ذ).m4a,phoneme:ur:/z/,audio_represents
+phoneme:ur:/r/,grapheme:ur:ر,phoneme_written_as
+phoneme:ur:/r/,latin_roman:ur:ray,phoneme_transliterated_as
+audio:ur:ray (ر).m4a,phoneme:ur:/r/,audio_represents
+phoneme:ur:/ɽ/,grapheme:ur:ڑ,phoneme_written_as
+phoneme:ur:/ɽ/,latin_roman:ur:rray,phoneme_transliterated_as
+audio:ur:rray (ڑ).m4a,phoneme:ur:/ɽ/,audio_represents
+audio:ur:zay (ز).m4a,phoneme:ur:/z/,audio_represents
+phoneme:ur:/ʒ/,grapheme:ur:ژ,phoneme_written_as
+phoneme:ur:/ʒ/,latin_roman:ur:jay,phoneme_transliterated_as
+audio:ur:jay (ژ).m4a,phoneme:ur:/ʒ/,audio_represents
+audio:ur:seen (س).m4a,phoneme:ur:/s/,audio_represents
+phoneme:ur:/ʃ/,grapheme:ur:ش,phoneme_written_as
+phoneme:ur:/ʃ/,latin_roman:ur:sheen,phoneme_transliterated_as
+audio:ur:sheen (ش).m4a,phoneme:ur:/ʃ/,audio_represents
+audio:ur:suad (ص).m4a,phoneme:ur:/s/,audio_represents
+audio:ur:zuaad (ض).m4a,phoneme:ur:/z/,audio_represents
+audio:ur:tuay (ط).m4a,phoneme:ur:/t̪/,audio_represents
+audio:ur:zuay (ظ).m4a,phoneme:ur:/z/,audio_represents
+phoneme:ur:/ʔ/,grapheme:ur:ع,phoneme_written_as
+phoneme:ur:/ʔ/,latin_roman:ur:ain,phoneme_transliterated_as
+phoneme:ur:/ʔ/,grapheme:ur:ء,phoneme_written_as
+phoneme:ur:/ʔ/,latin_roman:ur:hamza,phoneme_transliterated_as
+audio:ur:ain (ع).m4a,phoneme:ur:/ʔ/,audio_represents
+phoneme:ur:/ɣ/,grapheme:ur:غ,phoneme_written_as
+phoneme:ur:/ɣ/,latin_roman:ur:ghain,phoneme_transliterated_as
+audio:ur:ghain (غ).m4a,phoneme:ur:/ɣ/,audio_represents
+phoneme:ur:/f/,grapheme:ur:ف,phoneme_written_as
+phoneme:ur:/f/,latin_roman:ur:fay,phoneme_transliterated_as
+audio:ur:fay (ف).m4a,phoneme:ur:/f/,audio_represents
+phoneme:ur:/q/,grapheme:ur:ق,phoneme_written_as
+phoneme:ur:/q/,latin_roman:ur:qaaf,phoneme_transliterated_as
+audio:ur:qaaf (ق).m4a,phoneme:ur:/q/,audio_represents
+phoneme:ur:/k/,grapheme:ur:ک,phoneme_written_as
+phoneme:ur:/k/,latin_roman:ur:kaaf,phoneme_transliterated_as
+audio:ur:kaaf (ک).m4a,phoneme:ur:/k/,audio_represents
+phoneme:ur:/g/,grapheme:ur:گ,phoneme_written_as
+phoneme:ur:/g/,latin_roman:ur:gaaf,phoneme_transliterated_as
+audio:ur:gaaf (گ).m4a,phoneme:ur:/g/,audio_represents
+phoneme:ur:/l/,grapheme:ur:ل,phoneme_written_as
+phoneme:ur:/l/,latin_roman:ur:laam,phoneme_transliterated_as
+audio:ur:laam (ل).m4a,phoneme:ur:/l/,audio_represents
+phoneme:ur:/m/,grapheme:ur:م,phoneme_written_as
+phoneme:ur:/m/,latin_roman:ur:meem,phoneme_transliterated_as
+audio:ur:meem (م).m4a,phoneme:ur:/m/,audio_represents
+phoneme:ur:/n/,grapheme:ur:ن,phoneme_written_as
+phoneme:ur:/n/,latin_roman:ur:noon,phoneme_transliterated_as
+audio:ur:noon (ن).m4a,phoneme:ur:/n/,audio_represents
+phoneme:ur:/◌̃/,grapheme:ur:ں,phoneme_written_as
+phoneme:ur:/◌̃/,latin_roman:ur:noon ghunna,phoneme_transliterated_as
+audio:ur:noon ghunna (ں).m4a,phoneme:ur:/◌̃/,audio_represents
+phoneme:ur:/v/ or /uː/,grapheme:ur:و,phoneme_written_as
+phoneme:ur:/v/ or /uː/,latin_roman:ur:wao,phoneme_transliterated_as
+audio:ur:wao (و).m4a,phoneme:ur:/v/ or /uː/,audio_represents
+audio:ur:choti hay (ہ).m4a,phoneme:ur:/h/,audio_represents
+phoneme:ur:/ʰ/,grapheme:ur:ھ,phoneme_written_as
+phoneme:ur:/ʰ/,latin_roman:ur:dochashmi hay,phoneme_transliterated_as
+audio:ur:dochashmi hay (ھ).m4a,phoneme:ur:/ʰ/,audio_represents
+audio:ur:hamza (ء).m4a,phoneme:ur:/ʔ/,audio_represents
+phoneme:ur:/j/ or /iː/,grapheme:ur:ی,phoneme_written_as
+phoneme:ur:/j/ or /iː/,latin_roman:ur:chooti ye,phoneme_transliterated_as
+audio:ur:chooti ye (ی).m4a,phoneme:ur:/j/ or /iː/,audio_represents
+phoneme:ur:/eː/,grapheme:ur:ے,phoneme_written_as
+phoneme:ur:/eː/,latin_roman:ur:bari ye,phoneme_transliterated_as
+audio:ur:bari ye (ے).m4a,phoneme:ur:/eː/,audio_represents
+grapheme:dr:ـا,grapheme:dr:ا,variant_of
+phoneme:dr:/aː/,grapheme:dr:ا,phoneme_written_as
+phoneme:dr:/aː/,latin_roman:dr:a,phoneme_transliterated_as
+audio:dr:alif.mp3,phoneme:dr:/aː/,audio_represents
+grapheme:dr:ـو,grapheme:dr:و,variant_of
+phoneme:dr:/uː/,grapheme:dr:و,phoneme_written_as
+phoneme:dr:/uː/,latin_roman:dr:ou,phoneme_transliterated_as
+audio:dr:waw.mp3,phoneme:dr:/uː/,audio_represents
+grapheme:dr:ـي,grapheme:dr:ي,variant_of
+phoneme:dr:/iː/,grapheme:dr:ي,phoneme_written_as
+phoneme:dr:/iː/,latin_roman:dr:i,phoneme_transliterated_as
+audio:dr:ya.mp3,phoneme:dr:/iː/,audio_represents
+grapheme:dr:ـئـ,grapheme:dr:ء,variant_of
+phoneme:dr:/ʔ/,grapheme:dr:ء,phoneme_written_as
+phoneme:dr:/ʔ/,latin_roman:dr:2,phoneme_transliterated_as
+audio:dr:hamza.mp3,phoneme:dr:/ʔ/,audio_represents
+grapheme:dr:ـبـ,grapheme:dr:ب,variant_of
+phoneme:dr:/b/,grapheme:dr:ب,phoneme_written_as
+phoneme:dr:/b/,latin_roman:dr:b,phoneme_transliterated_as
+audio:dr:ba.mp3,phoneme:dr:/b/,audio_represents
+grapheme:dr:ـتـ,grapheme:dr:ت,variant_of
+phoneme:dr:/t/,grapheme:dr:ت,phoneme_written_as
+phoneme:dr:/t/,latin_roman:dr:t,phoneme_transliterated_as
+phoneme:dr:/t/,grapheme:dr:ث,phoneme_written_as
+audio:dr:ta.mp3,phoneme:dr:/t/,audio_represents
+grapheme:dr:ـثـ,grapheme:dr:ث,variant_of
+audio:dr:tha.mp3,phoneme:dr:/t/,audio_represents
+grapheme:dr:ـجـ,grapheme:dr:ج,variant_of
+phoneme:dr:/ʒ/,grapheme:dr:ج,phoneme_written_as
+phoneme:dr:/ʒ/,latin_roman:dr:j,phoneme_transliterated_as
+audio:dr:jim.mp3,phoneme:dr:/ʒ/,audio_represents
+grapheme:dr:ـحـ,grapheme:dr:ح,variant_of
+phoneme:dr:/ħ/,grapheme:dr:ح,phoneme_written_as
+phoneme:dr:/ħ/,latin_roman:dr:7,phoneme_transliterated_as
+audio:dr:7a.mp3,phoneme:dr:/ħ/,audio_represents
+grapheme:dr:ـخـ,grapheme:dr:خ,variant_of
+phoneme:dr:/x/,grapheme:dr:خ,phoneme_written_as
+phoneme:dr:/x/,latin_roman:dr:kh,phoneme_transliterated_as
+audio:dr:kha.mp3,phoneme:dr:/x/,audio_represents
+grapheme:dr:ـد,grapheme:dr:د,variant_of
+phoneme:dr:/d/,grapheme:dr:د,phoneme_written_as
+phoneme:dr:/d/,latin_roman:dr:d,phoneme_transliterated_as
+phoneme:dr:/d/,grapheme:dr:ذ,phoneme_written_as
+audio:dr:dal.mp3,phoneme:dr:/d/,audio_represents
+grapheme:dr:ـذ,grapheme:dr:ذ,variant_of
+audio:dr:dhal.mp3,phoneme:dr:/d/,audio_represents
+grapheme:dr:ـر,grapheme:dr:ر,variant_of
+phoneme:dr:/r/,grapheme:dr:ر,phoneme_written_as
+phoneme:dr:/r/,latin_roman:dr:r,phoneme_transliterated_as
+audio:dr:ra.mp3,phoneme:dr:/r/,audio_represents
+grapheme:dr:ـز,grapheme:dr:ز,variant_of
+phoneme:dr:/z/,grapheme:dr:ز,phoneme_written_as
+phoneme:dr:/z/,latin_roman:dr:z,phoneme_transliterated_as
+audio:dr:zay.mp3,phoneme:dr:/z/,audio_represents
+grapheme:dr:ـسـ,grapheme:dr:س,variant_of
+phoneme:dr:/s/,grapheme:dr:س,phoneme_written_as
+phoneme:dr:/s/,latin_roman:dr:s,phoneme_transliterated_as
+audio:dr:sin.mp3,phoneme:dr:/s/,audio_represents
+grapheme:dr:ـشـ,grapheme:dr:ش,variant_of
+phoneme:dr:/ʃ/,grapheme:dr:ش,phoneme_written_as
+phoneme:dr:/ʃ/,latin_roman:dr:ch,phoneme_transliterated_as
+audio:dr:shin.mp3,phoneme:dr:/ʃ/,audio_represents
+grapheme:dr:ـصـ,grapheme:dr:ص,variant_of
+phoneme:dr:/sˤ/,grapheme:dr:ص,phoneme_written_as
+phoneme:dr:/sˤ/,latin_roman:dr:S,phoneme_transliterated_as
+audio:dr:sad.mp3,phoneme:dr:/sˤ/,audio_represents
+grapheme:dr:ـضـ,grapheme:dr:ض,variant_of
+phoneme:dr:/dˤ/,grapheme:dr:ض,phoneme_written_as
+phoneme:dr:/dˤ/,latin_roman:dr:D,phoneme_transliterated_as
+phoneme:dr:/dˤ/,grapheme:dr:ظ,phoneme_written_as
+audio:dr:dad.mp3,phoneme:dr:/dˤ/,audio_represents
+grapheme:dr:ـطـ,grapheme:dr:ط,variant_of
+phoneme:dr:/tˤ/,grapheme:dr:ط,phoneme_written_as
+phoneme:dr:/tˤ/,latin_roman:dr:T,phoneme_transliterated_as
+audio:dr:ta_emph.mp3,phoneme:dr:/tˤ/,audio_represents
+grapheme:dr:ـظـ,grapheme:dr:ظ,variant_of
+audio:dr:dha_emph.mp3,phoneme:dr:/dˤ/,audio_represents
+grapheme:dr:ـعـ,grapheme:dr:ع,variant_of
+phoneme:dr:/ʕ/,grapheme:dr:ع,phoneme_written_as
+phoneme:dr:/ʕ/,latin_roman:dr:3,phoneme_transliterated_as
+audio:dr:3ayn.mp3,phoneme:dr:/ʕ/,audio_represents
+grapheme:dr:ـغـ,grapheme:dr:غ,variant_of
+phoneme:dr:/ɣ/,grapheme:dr:غ,phoneme_written_as
+phoneme:dr:/ɣ/,latin_roman:dr:gh,phoneme_transliterated_as
+audio:dr:ghayn.mp3,phoneme:dr:/ɣ/,audio_represents
+grapheme:dr:ـفـ,grapheme:dr:ف,variant_of
+phoneme:dr:/f/,grapheme:dr:ف,phoneme_written_as
+phoneme:dr:/f/,latin_roman:dr:f,phoneme_transliterated_as
+audio:dr:fa.mp3,phoneme:dr:/f/,audio_represents
+grapheme:dr:ـقـ,grapheme:dr:ق,variant_of
+phoneme:dr:/q/,grapheme:dr:ق,phoneme_written_as
+phoneme:dr:/q/,latin_roman:dr:q,phoneme_transliterated_as
+audio:dr:qaf.mp3,phoneme:dr:/q/,audio_represents
+grapheme:dr:ـكـ,grapheme:dr:ك,variant_of
+phoneme:dr:/k/,grapheme:dr:ك,phoneme_written_as
+phoneme:dr:/k/,latin_roman:dr:k,phoneme_transliterated_as
+audio:dr:kaf.mp3,phoneme:dr:/k/,audio_represents
+grapheme:dr:ـلـ,grapheme:dr:ل,variant_of
+phoneme:dr:/l/,grapheme:dr:ل,phoneme_written_as
+phoneme:dr:/l/,latin_roman:dr:l,phoneme_transliterated_as
+audio:dr:lam.mp3,phoneme:dr:/l/,audio_represents
+grapheme:dr:ـمـ,grapheme:dr:م,variant_of
+phoneme:dr:/m/,grapheme:dr:م,phoneme_written_as
+phoneme:dr:/m/,latin_roman:dr:m,phoneme_transliterated_as
+audio:dr:mim.mp3,phoneme:dr:/m/,audio_represents
+grapheme:dr:ـنـ,grapheme:dr:ن,variant_of
+phoneme:dr:/n/,grapheme:dr:ن,phoneme_written_as
+phoneme:dr:/n/,latin_roman:dr:n,phoneme_transliterated_as
+audio:dr:nun.mp3,phoneme:dr:/n/,audio_represents
+grapheme:dr:ـهـ,grapheme:dr:ه,variant_of
+phoneme:dr:/h/,grapheme:dr:ه,phoneme_written_as
+phoneme:dr:/h/,latin_roman:dr:h,phoneme_transliterated_as
+audio:dr:ha.mp3,phoneme:dr:/h/,audio_represents
+phoneme:dr:/w/,grapheme:dr:و,phoneme_written_as
+phoneme:dr:/w/,latin_roman:dr:w,phoneme_transliterated_as
+audio:dr:waw_cons.mp3,phoneme:dr:/w/,audio_represents
+grapheme:dr:ـيـ,grapheme:dr:ي,variant_of
+phoneme:dr:/j/,grapheme:dr:ي,phoneme_written_as
+phoneme:dr:/j/,latin_roman:dr:y,phoneme_transliterated_as
+audio:dr:ya_cons.mp3,phoneme:dr:/j/,audio_represents
+grapheme:dr:ـگـ,grapheme:dr:گ,variant_of
+phoneme:dr:/g/,grapheme:dr:گ,phoneme_written_as
+phoneme:dr:/g/,latin_roman:dr:g,phoneme_transliterated_as
+audio:dr:gaf.mp3,phoneme:dr:/g/,audio_represents
+grapheme:dr:ـپـ,grapheme:dr:پ,variant_of
+phoneme:dr:/p/,grapheme:dr:پ,phoneme_written_as
+phoneme:dr:/p/,latin_roman:dr:p,phoneme_transliterated_as
+audio:dr:pa.mp3,phoneme:dr:/p/,audio_represents
+grapheme:dr:ـڤـ,grapheme:dr:ڤ,variant_of
+phoneme:dr:/v/,grapheme:dr:ڤ,phoneme_written_as
+phoneme:dr:/v/,latin_roman:dr:v,phoneme_transliterated_as
+audio:dr:va.mp3,phoneme:dr:/v/,audio_represents
+grapheme:dr:ـچـ,grapheme:dr:چ,variant_of
+phoneme:dr:/t͡ʃ/,grapheme:dr:چ,phoneme_written_as
+phoneme:dr:/t͡ʃ/,latin_roman:dr:tch,phoneme_transliterated_as
+audio:dr:tcha.mp3,phoneme:dr:/t͡ʃ/,audio_represents
