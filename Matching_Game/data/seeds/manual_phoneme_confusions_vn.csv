@@ -1,0 +1,7 @@
+source,target,language,seed_weight,reason
+phoneme:vn:/aː˧/,phoneme:vn:/a˧/,vn,0.9,vowel length contrast
+phoneme:vn:/a˧/,phoneme:vn:/aː˧/,vn,0.9,vowel length contrast
+phoneme:vn:/ə˧/,phoneme:vn:/a˧/,vn,0.85,central vowel proximity
+phoneme:vn:/a˧/,phoneme:vn:/ə˧/,vn,0.85,central vowel proximity
+phoneme:vn:/ɛ˧/,phoneme:vn:/e˧/,vn,0.85,front vowel proximity
+phoneme:vn:/e˧/,phoneme:vn:/ɛ˧/,vn,0.85,front vowel proximity
