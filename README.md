@@ -39,3 +39,9 @@ After multiple iterations, I settled the final weight as:
 
 <img width="400" height="500" alt="Screenshot 2026-05-13 at 14 41 10" src="https://github.com/user-attachments/assets/5b6ba9c6-a0be-43e3-a5dd-ce322812064d" />
 <img width="400" height="500" alt="Screenshot 2026-05-13 at 14 42 10" src="https://github.com/user-attachments/assets/4a9dc79b-a3bf-42b9-893d-987b29d32c81" />
+
+## Some snapshots of implementation of Word and Image Matching game
+<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/072cd8b2-ab72-43a4-ab66-bbe831b6d1e5"/>
+<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/eb52095c-912c-49f5-af9b-dbd066eee318" />
+
+
