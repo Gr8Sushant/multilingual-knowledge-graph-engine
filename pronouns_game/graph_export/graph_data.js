@@ -1,3 +1,4 @@
+const myGraphData =
 {
     "directed": true,
     "multigraph": false,

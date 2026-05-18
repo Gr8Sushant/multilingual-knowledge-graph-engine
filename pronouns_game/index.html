@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronoun Master Game</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .game-container { background: white; max-width: 600px; width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 30px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .tab-btn { padding: 10px 20px; border: none; background: #e0e6ed; border-radius: 8px; cursor: pointer; font-weight: bold; color: #34495e; transition: 0.2s; }
+        .tab-btn:hover { background: #cbd4db; }
+        .tab-btn.active { background: #3498db; color: white; }
+        .queue-counter { text-align: center; font-size: 14px; color: #7f8c8d; margin-bottom: 15px; font-weight: bold;}
+        .scenario-box { background: #f8f9fa; padding: 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 20px; font-size: 18px; color: #2c3e50;}
+        .options { display: flex; flex-direction: column; gap: 10px; }
+        .option-btn { padding: 15px; text-align: left; background: white; border: 2px solid #ecf0f1; border-radius: 8px; font-size: 16px; cursor: pointer; transition: 0.2s; }
+        .option-btn:hover { border-color: #3498db; background: #f0f8ff; }
+        .feedback { margin-top: 20px; padding: 15px; border-radius: 8px; display: none; }
+        .feedback.correct { display: block; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .feedback.incorrect { display: block; background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        #next-btn { display: none; width: 100%; padding: 15px; margin-top: 15px; background: #2ecc71; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold;}
+        #next-btn:hover { background: #27ae60; }
+    </style>
+</head>
+<body>
+
+<div class="game-container">
+    <h1>🌍 Pronoun Master</h1>
+    <div class="tabs" id="language-tabs">
+        </div>
+
+    <div id="game-area" style="display:none;">
+        <div class="queue-counter" id="queue-counter">Questions Remaining: 0</div>
+        <div class="scenario-box" id="scenario-text">Loading scenario...</div>
+        
+        <div class="options" id="options-container">
+            </div>
+
+        <div class="feedback" id="feedback-box"></div>
+        <button id="next-btn" onclick="nextQuestion()">Next Question ➡️</button>
+    </div>
+    
+    <div id="loading-msg" style="text-align:center; color:#7f8c8d;">Loading Graph Data...</div>
+</div>
+
+<script src="graph_export/graph_data.js"></script>
+
+<script>
+    let graphNodes = [];
+    let graphEdges = [];
+    let currentQueue = [];
+    let currentQuestion = null;
+    let availableLanguages = ["Vietnamese", "Urdu", "Nepali", "Darija"]; 
+
+    // 1. Initialize Data
+    window.onload = function() {
+        if (typeof myGraphData !== 'undefined') {
+            graphNodes = myGraphData.nodes || [];
+            
+            // THE FIX: Automatically handle both older and newer versions of NetworkX!
+            graphEdges = myGraphData.links || myGraphData.edges || []; 
+            
+            document.getElementById('loading-msg').style.display = 'none';
+            setupTabs();
+        } else {
+            document.getElementById('loading-msg').innerHTML = "❌ Error: Could not load graph_data.js. Check your folder structure!";
+        }
+    };
+
+    function setupTabs() {
+        const tabsContainer = document.getElementById('language-tabs');
+        availableLanguages.forEach(lang => {
+            let btn = document.createElement('button');
+            btn.className = 'tab-btn';
+            btn.innerText = lang;
+            btn.onclick = () => startGame(lang, btn);
+            tabsContainer.appendChild(btn);
+        });
+    }
+
+    function startGame(language, btnElement) {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btnElement.classList.add('active');
+        document.getElementById('game-area').style.display = 'block';
+        document.getElementById('feedback-box').style.display = 'none';
+        document.getElementById('next-btn').style.display = 'none';
+        
+        // Safety net: Catch any future silent crashes!
+        try {
+            const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === language);
+            
+            if(langInstances.length === 0) {
+                document.getElementById('scenario-text').innerText = "No data found for this language in the graph!";
+                document.getElementById('options-container').innerHTML = "";
+                return;
+            }
+
+            let questionPool = [];
+            graphEdges.forEach(edge => {
+                // Another safety fix: Some JSON formats embed the ID inside an object
+                const instanceId = typeof edge.target === 'object' ? edge.target.id : edge.target; 
+                const schemaPath = typeof edge.source === 'object' ? edge.source.id : edge.source; 
+                
+                const instanceNode = langInstances.find(n => n.id === instanceId);
+                if(instanceNode) {
+                    questionPool.push({
+                        path: schemaPath,
+                        instance: instanceNode
+                    });
+                }
+            });
+
+            questionPool.sort(() => 0.5 - Math.random());
+            currentQueue = questionPool.slice(0, 5);
+            
+            loadNextInQueue();
+            
+        } catch (error) {
+            console.error("Game Engine Error:", error);
+            document.getElementById('scenario-text').innerHTML = "<b>⚠️ Oops! A script error occurred.</b><br>Right-click the page, click 'Inspect', and check the Console tab for details.";
+            document.getElementById('options-container').innerHTML = "";
+        }
+    }
+
+    function generateScenarioText(pathString) {
+        if (!pathString) return "Unknown scenario";
+        const parts = pathString.split(' - ');
+        if(parts.length < 4) return pathString;
+        const age = parts[0], addr = parts[1], social = parts[2], spk = parts[3];
+
+        let spkStr = spk.includes("Male") ? "You (male)" : (spk.includes("Female") ? "You (female)" : "You");
+        let addrStr = addr === "Male" ? "a male" : (addr === "Female" ? "a female" : "someone");
+        
+        // 🌟 FIX 1: Highly descriptive generation text!
+        let ageStr = "";
+        if(age.includes("Younger")) ageStr = "who is younger than you";
+        else if(age.includes("Older (same")) ageStr = "slightly older than you (like a senior student or older sibling)";
+        else if(age.includes("Middle-aged")) ageStr = "who is middle-aged (like an uncle/aunt)";
+        else if(age.includes("Senior")) ageStr = "who is a senior citizen (grandparent's generation)";
+        else ageStr = "who is exactly the same age as you";
+
+        let socialStr = social === "Formal" ? "in a formal/polite setting." : (social === "Informal" ? "in a casual/friendly setting." : "in a neutral setting.");
+
+        return `${spkStr} are talking to ${addrStr} ${ageStr}, ${socialStr}`;
+    }
+
+    function generateSmartHint(correctPath, wrongPath) {
+        if(!correctPath || !wrongPath || correctPath === wrongPath) return "Hint: This is an alternate term, but it might not be the most common fit here.";
+        
+        const correctParts = correctPath.split(' - ');
+        const wrongParts = wrongPath.split(' - ');
+        
+        let hints = [];
+        
+        // 🌟 FIX 2: Compound hints that catch EVERY mistake at once!
+        if(correctParts[0] !== wrongParts[0]) hints.push("wrong <b>AGE group</b>");
+        if(correctParts[1] !== wrongParts[1]) hints.push("wrong <b>ADDRESSEE GENDER</b>");
+        if(correctParts[2] !== wrongParts[2]) hints.push("wrong <b>SOCIAL CONTEXT</b> (formal vs casual)");
+        if(correctParts[3] !== wrongParts[3]) hints.push("wrong <b>SPEAKER GENDER</b>");
+        
+        if(hints.length > 0) {
+            return "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + "!";
+        }
+        
+        return "💡 Hint: Not quite the best fit for this specific context.";
+    }
+
+    function loadNextInQueue() {
+        document.getElementById('feedback-box').style.display = 'none';
+        document.getElementById('next-btn').style.display = 'none';
+        
+        if (currentQueue.length === 0) {
+            document.getElementById('queue-counter').innerText = "🎉 All Done!";
+            document.getElementById('scenario-text').innerHTML = "<b>Congratulations!</b> You've cleared the queue and mastered this language's pronouns.";
+            document.getElementById('options-container').innerHTML = "";
+            return;
+        }
+
+        document.getElementById('queue-counter').innerText = `Questions Remaining in Queue: ${currentQueue.length}`;
+        currentQuestion = currentQueue[0];
+        
+        document.getElementById('scenario-text').innerText = generateScenarioText(currentQuestion.path);
+
+        let options = [{
+            text: `I: ${currentQuestion.instance.term_i} / You: ${currentQuestion.instance.term_you}`,
+            isCorrect: true,
+            path: currentQuestion.path
+        }];
+
+        const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === currentQuestion.instance.language);
+        let shuffledDistractors = langInstances.sort(() => 0.5 - Math.random());
+        
+        for(let inst of shuffledDistractors) {
+            if(options.length >= 4) break;
+            if(inst.term_i !== currentQuestion.instance.term_i || inst.term_you !== currentQuestion.instance.term_you) {
+                // Find what path this wrong instance belongs to for hint generation
+                const wrongEdge = graphEdges.find(e => {
+                    let t = typeof e.target === 'object' ? e.target.id : e.target;
+                    return t === inst.id;
+                });
+                
+                options.push({
+                    text: `I: ${inst.term_i} / You: ${inst.term_you}`,
+                    isCorrect: false,
+                    path: wrongEdge ? (typeof wrongEdge.source === 'object' ? wrongEdge.source.id : wrongEdge.source) : ""
+                });
+            }
+        }
+
+        options.sort(() => 0.5 - Math.random());
+        renderOptions(options);
+    }
+
+    function renderOptions(options) {
+        const container = document.getElementById('options-container');
+        container.innerHTML = "";
+        
+        options.forEach(opt => {
+            let btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.innerText = opt.text;
+            btn.onclick = () => handleAnswer(opt, btn);
+            container.appendChild(btn);
+        });
+    }
+
+    function handleAnswer(selectedOption, btnElement) {
+        document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+        
+        const feedback = document.getElementById('feedback-box');
+        feedback.style.display = 'block';
+
+        if (selectedOption.isCorrect) {
+            btnElement.style.borderColor = "#2ecc71";
+            btnElement.style.backgroundColor = "#e8f8f5";
+            feedback.className = "feedback correct";
+            feedback.innerHTML = "<b>🎉 Correct!</b> Great job.";
+            
+            currentQueue.shift(); 
+            document.getElementById('next-btn').style.display = 'block';
+            
+        } else {
+            btnElement.style.borderColor = "#e74c3c";
+            btnElement.style.backgroundColor = "#fdedec";
+            feedback.className = "feedback incorrect";
+            
+            let hint = generateSmartHint(currentQuestion.path, selectedOption.path);
+            feedback.innerHTML = `<b>😅 Not quite!</b><br><i>${hint}</i><br><br>Moving this question to the back of the queue.`;
+            
+            let failedQ = currentQueue.shift();
+            currentQueue.push(failedQ);
+            
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('next-btn').innerText = "Try Again Later ➡️";
+        }
+    }
+
+    function nextQuestion() {
+        document.getElementById('next-btn').innerText = "Next Question ➡️";
+        loadNextInQueue();
+    }
+</script>
+
+</body>
+</html>

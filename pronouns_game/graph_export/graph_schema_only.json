@@ -111,17 +111,37 @@
         {
             "type": "schema_path",
             "layer": 4,
-            "id": "Older - Female - Neutral - Male spk"
-        },
-        {
-            "type": "schema_path",
-            "layer": 4,
             "id": "Older - Male - Neutral - Female spk"
         },
         {
             "type": "schema_path",
             "layer": 4,
+            "id": "Older - Female - Neutral - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
             "id": "Older - Female - Neutral - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Male - Formal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Male - Formal - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Female - Formal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Female - Formal - Female spk"
         }
     ],
     "edges": []
