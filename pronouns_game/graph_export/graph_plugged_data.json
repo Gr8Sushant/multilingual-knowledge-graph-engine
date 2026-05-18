@@ -1,0 +1,1145 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Male - Neutral - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Male - Neutral - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Female - Neutral - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Female - Neutral - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Male - Informal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Male - Informal - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Female - Informal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Female - Informal - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Male - Formal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Male - Formal - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Female - Formal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Same Age - Female - Formal - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Male - Neutral - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Male - Neutral - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Female - Neutral - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Female - Neutral - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Male - Formal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Male - Formal - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Female - Formal - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Younger - Female - Formal - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Male - Neutral - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Female - Neutral - Male spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Male - Neutral - Female spk"
+        },
+        {
+            "type": "schema_path",
+            "layer": 4,
+            "id": "Older - Female - Neutral - Female spk"
+        },
+        {
+            "type": "instance",
+            "language": "Madarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "你 (nǐ)",
+            "id": "Instance_c875be"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "你 (nei5)",
+            "id": "Instance_c3cff0"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "你 (lí)",
+            "id": "Instance_c23cfe"
+        },
+        {
+            "type": "instance",
+            "language": "Darija",
+            "term_i": "",
+            "term_you": "sahbi",
+            "id": "Instance_688b0c"
+        },
+        {
+            "type": "instance",
+            "language": "Nepali",
+            "term_i": "म (ma) / हामी (Hami)",
+            "term_you": "तिमी (timi)",
+            "id": "Instance_cd287d"
+        },
+        {
+            "type": "instance",
+            "language": "Urdu",
+            "term_i": "میں",
+            "term_you": "تم (tum) / آپ (aap)",
+            "id": "Instance_e9e228"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "mình",
+            "term_you": "bạn",
+            "id": "Instance_4b9429"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "tôi",
+            "term_you": "bạn",
+            "id": "Instance_43a2b5"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "tui",
+            "term_you": "bạn",
+            "id": "Instance_1f748b"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "tao",
+            "term_you": "mày",
+            "id": "Instance_fb7a21"
+        },
+        {
+            "type": "instance",
+            "language": "Mandarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "你 / 小 + name (nǐ / xiǎo)",
+            "id": "Instance_4f0ad1"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "細佬 (sai3 lou2)",
+            "id": "Instance_e98b93"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "細妹 (sai3 mui6)",
+            "id": "Instance_93bf28"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "细弟 (sè-tī)",
+            "id": "Instance_e93fbe"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "细妹 (sè-muē)",
+            "id": "Instance_30065f"
+        },
+        {
+            "type": "instance",
+            "language": "Darija",
+            "term_i": "",
+            "term_you": "-",
+            "id": "Instance_31d649"
+        },
+        {
+            "type": "instance",
+            "language": "Nepali",
+            "term_i": "म (ma) / हामी (Hami)",
+            "term_you": "तँ (ta)",
+            "id": "Instance_aa8fd8"
+        },
+        {
+            "type": "instance",
+            "language": "urdu",
+            "term_i": "میں",
+            "term_you": "تم (tum) or تو (tu)",
+            "id": "Instance_e2aef1"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "anh",
+            "term_you": "em",
+            "id": "Instance_2aa0c6"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "chị",
+            "term_you": "em",
+            "id": "Instance_76f32a"
+        },
+        {
+            "type": "instance",
+            "language": "Mandarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "哥哥 (gēge)",
+            "id": "Instance_67d783"
+        },
+        {
+            "type": "instance",
+            "language": "Mandarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "姐姐 (jiějie)",
+            "id": "Instance_92c1e1"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "哥哥 (go1 go1)",
+            "id": "Instance_bfb7e5"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "姐姐 (ze2 ze2)",
+            "id": "Instance_9048c4"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "阿兄 (a-hiang)",
+            "id": "Instance_116e67"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "阿姐 (a-jié)",
+            "id": "Instance_09bd33"
+        },
+        {
+            "type": "instance",
+            "language": "Darija",
+            "term_i": "",
+            "term_you": "",
+            "id": "Instance_3a40fb"
+        },
+        {
+            "type": "instance",
+            "language": NaN,
+            "term_i": "म (ma) / हामी (Hami)",
+            "term_you": "तपाईं (tapai) and हजुर (Hajur)",
+            "id": "Instance_08d68b"
+        },
+        {
+            "type": "instance",
+            "language": "urdu",
+            "term_i": "میں",
+            "term_you": "بھائی (bhai / bhaiya)  or  باجی (baji / apa)",
+            "id": "Instance_98f8f7"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "em",
+            "term_you": "anh",
+            "id": "Instance_256ecf"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "em",
+            "term_you": "chị",
+            "id": "Instance_64e6db"
+        },
+        {
+            "type": "instance",
+            "language": "Mandarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "叔叔 (shūshu)",
+            "id": "Instance_415e9f"
+        },
+        {
+            "type": "instance",
+            "language": "Mandarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "阿姨 (āyí)",
+            "id": "Instance_34c887"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "叔叔 (suk1 suk1)",
+            "id": "Instance_83f498"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "阿姨 (aa3 ji4)",
+            "id": "Instance_dcd200"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "阿叔 (a-zik)",
+            "id": "Instance_405532"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "阿姨 (a-î)",
+            "id": "Instance_1e1e8d"
+        },
+        {
+            "type": "instance",
+            "language": "Darija",
+            "term_i": "",
+            "term_you": "Khalti (خالتي)",
+            "id": "Instance_b5914f"
+        },
+        {
+            "type": "instance",
+            "language": "Darija",
+            "term_i": "",
+            "term_you": "3mi",
+            "id": "Instance_67b147"
+        },
+        {
+            "type": "instance",
+            "language": "English",
+            "term_i": "",
+            "term_you": "uncle",
+            "id": "Instance_bc6211"
+        },
+        {
+            "type": "instance",
+            "language": "English",
+            "term_i": "",
+            "term_you": "aunty",
+            "id": "Instance_7f7715"
+        },
+        {
+            "type": "instance",
+            "language": "urdu",
+            "term_i": "میں",
+            "term_you": "Uncle / Aunty or چچا (chacha) / خالہ (khala)",
+            "id": "Instance_06da7f"
+        },
+        {
+            "type": "instance",
+            "language": "English",
+            "term_i": "",
+            "term_you": "uncle",
+            "id": "Instance_16510e"
+        },
+        {
+            "type": "instance",
+            "language": "English",
+            "term_i": "",
+            "term_you": "auntie",
+            "id": "Instance_7023b5"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "con/cháu",
+            "term_you": "chú/cậu",
+            "id": "Instance_3dfce2"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "con/cháu",
+            "term_you": "cô/dì",
+            "id": "Instance_092c40"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "con/cháu",
+            "term_you": "bác",
+            "id": "Instance_791500"
+        },
+        {
+            "type": "instance",
+            "language": "Mandarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "爷爷 (yéye)",
+            "id": "Instance_8e970d"
+        },
+        {
+            "type": "instance",
+            "language": "Mandarin",
+            "term_i": "我 (wǒ)",
+            "term_you": "奶奶 (nǎinai)",
+            "id": "Instance_a5f4dd"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "爺爺 (je4 je4)",
+            "id": "Instance_dcf083"
+        },
+        {
+            "type": "instance",
+            "language": "Cantonese",
+            "term_i": "我 (ngo5)",
+            "term_you": "奶奶 (naai5 naai5)",
+            "id": "Instance_f5919f"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "阿公 (a-gong)",
+            "id": "Instance_4f6047"
+        },
+        {
+            "type": "instance",
+            "language": "Teochew",
+            "term_i": "我 (guá)",
+            "term_you": "阿嬷 (a-má)",
+            "id": "Instance_a23421"
+        },
+        {
+            "type": "instance",
+            "language": NaN,
+            "term_i": "",
+            "term_you": "Lhaj(man ) / Lhaja(women)",
+            "id": "Instance_ae186c"
+        },
+        {
+            "type": "instance",
+            "language": NaN,
+            "term_i": "",
+            "term_you": "",
+            "id": "Instance_dd43a6"
+        },
+        {
+            "type": "instance",
+            "language": "urdu",
+            "term_i": "میں",
+            "term_you": "دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji)",
+            "id": "Instance_8b1f4e"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "con/cháu",
+            "term_you": "ông",
+            "id": "Instance_a8b9ca"
+        },
+        {
+            "type": "instance",
+            "language": "Vietnamese",
+            "term_i": "con/cháu",
+            "term_you": "bà",
+            "id": "Instance_19b9e3"
+        }
+    ],
+    "edges": [
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Male spk",
+            "target": "Instance_c875be"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Male spk",
+            "target": "Instance_c3cff0"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Male spk",
+            "target": "Instance_c23cfe"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Male spk",
+            "target": "Instance_688b0c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Male spk",
+            "target": "Instance_cd287d"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Female spk",
+            "target": "Instance_c875be"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Female spk",
+            "target": "Instance_c3cff0"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Female spk",
+            "target": "Instance_c23cfe"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Female spk",
+            "target": "Instance_688b0c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Neutral - Female spk",
+            "target": "Instance_cd287d"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Male spk",
+            "target": "Instance_c875be"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Male spk",
+            "target": "Instance_c3cff0"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Male spk",
+            "target": "Instance_c23cfe"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Male spk",
+            "target": "Instance_688b0c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Male spk",
+            "target": "Instance_cd287d"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Female spk",
+            "target": "Instance_c875be"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Female spk",
+            "target": "Instance_c3cff0"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Female spk",
+            "target": "Instance_c23cfe"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Female spk",
+            "target": "Instance_688b0c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Neutral - Female spk",
+            "target": "Instance_cd287d"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Informal - Male spk",
+            "target": "Instance_e9e228"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Informal - Male spk",
+            "target": "Instance_1f748b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Informal - Female spk",
+            "target": "Instance_e9e228"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Informal - Female spk",
+            "target": "Instance_1f748b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Informal - Male spk",
+            "target": "Instance_e9e228"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Informal - Male spk",
+            "target": "Instance_1f748b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Informal - Female spk",
+            "target": "Instance_e9e228"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Informal - Female spk",
+            "target": "Instance_1f748b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Formal - Male spk",
+            "target": "Instance_4b9429"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Formal - Male spk",
+            "target": "Instance_43a2b5"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Formal - Male spk",
+            "target": "Instance_fb7a21"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Formal - Female spk",
+            "target": "Instance_4b9429"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Formal - Female spk",
+            "target": "Instance_43a2b5"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Male - Formal - Female spk",
+            "target": "Instance_fb7a21"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Formal - Male spk",
+            "target": "Instance_4b9429"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Formal - Male spk",
+            "target": "Instance_43a2b5"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Formal - Male spk",
+            "target": "Instance_fb7a21"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Formal - Female spk",
+            "target": "Instance_4b9429"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Formal - Female spk",
+            "target": "Instance_43a2b5"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Same Age - Female - Formal - Female spk",
+            "target": "Instance_fb7a21"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Male spk",
+            "target": "Instance_4f0ad1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Male spk",
+            "target": "Instance_e98b93"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Male spk",
+            "target": "Instance_e93fbe"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Male spk",
+            "target": "Instance_31d649"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Male spk",
+            "target": "Instance_aa8fd8"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Male spk",
+            "target": "Instance_2aa0c6"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Male spk",
+            "target": "Instance_76f32a"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Female spk",
+            "target": "Instance_4f0ad1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Female spk",
+            "target": "Instance_31d649"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Neutral - Female spk",
+            "target": "Instance_aa8fd8"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Male spk",
+            "target": "Instance_4f0ad1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Male spk",
+            "target": "Instance_93bf28"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Male spk",
+            "target": "Instance_30065f"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Male spk",
+            "target": "Instance_31d649"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Male spk",
+            "target": "Instance_aa8fd8"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Male spk",
+            "target": "Instance_2aa0c6"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Male spk",
+            "target": "Instance_76f32a"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Female spk",
+            "target": "Instance_4f0ad1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Female spk",
+            "target": "Instance_31d649"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Neutral - Female spk",
+            "target": "Instance_aa8fd8"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Formal - Male spk",
+            "target": "Instance_e2aef1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Male - Formal - Female spk",
+            "target": "Instance_e2aef1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Formal - Male spk",
+            "target": "Instance_e2aef1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Younger - Female - Formal - Female spk",
+            "target": "Instance_e2aef1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_67d783"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_bfb7e5"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_116e67"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_3a40fb"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_08d68b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_98f8f7"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_256ecf"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_415e9f"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_34c887"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_83f498"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_dcd200"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_405532"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_1e1e8d"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_b5914f"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_67b147"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_bc6211"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_7f7715"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_06da7f"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_16510e"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_7023b5"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_3dfce2"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_092c40"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_791500"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_8e970d"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_dcf083"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_4f6047"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_ae186c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_dd43a6"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_8b1f4e"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Male spk",
+            "target": "Instance_a8b9ca"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_92c1e1"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_9048c4"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_09bd33"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_3a40fb"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_08d68b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_98f8f7"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_64e6db"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_a5f4dd"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_f5919f"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_a23421"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_ae186c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_dd43a6"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_8b1f4e"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Male spk",
+            "target": "Instance_19b9e3"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_3a40fb"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_08d68b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_98f8f7"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_06da7f"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_791500"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_ae186c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_dd43a6"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Male - Neutral - Female spk",
+            "target": "Instance_8b1f4e"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Female spk",
+            "target": "Instance_3a40fb"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Female spk",
+            "target": "Instance_08d68b"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Female spk",
+            "target": "Instance_98f8f7"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Female spk",
+            "target": "Instance_ae186c"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Female spk",
+            "target": "Instance_dd43a6"
+        },
+        {
+            "type": "HAS_PRONOUN",
+            "source": "Older - Female - Neutral - Female spk",
+            "target": "Instance_8b1f4e"
+        }
+    ]
+}
