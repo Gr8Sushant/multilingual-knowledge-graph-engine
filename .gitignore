@@ -17,3 +17,6 @@ venv/
 __pycache__/
 morphology_game/venv/
 morphology_game/__pycache__/
+
+# Generated artifacts
+Matching_Game/artifacts/

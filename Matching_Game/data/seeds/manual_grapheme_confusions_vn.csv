@@ -13,7 +13,5 @@ grapheme:vn:d,grapheme:vn:đ,vn,0.9,visual lookalike
 grapheme:vn:đ,grapheme:vn:d,vn,0.9,visual lookalike
 grapheme:vn:c,grapheme:vn:k,vn,0.85,phonetic and visual overlap
 grapheme:vn:k,grapheme:vn:c,vn,0.85,phonetic and visual overlap
-grapheme:vn:ch,grapheme:vn:tr,vn,0.8,phonetic lookalike
-grapheme:vn:tr,grapheme:vn:ch,vn,0.8,phonetic lookalike
 grapheme:vn:s,grapheme:vn:x,vn,0.8,phonetic lookalike
 grapheme:vn:x,grapheme:vn:s,vn,0.8,phonetic lookalike
