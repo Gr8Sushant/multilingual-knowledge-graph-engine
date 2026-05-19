@@ -28,15 +28,13 @@
 
 <div class="game-container">
     <h1>🌍 Pronoun Master</h1>
-    <div class="tabs" id="language-tabs">
-        </div>
+    <div class="tabs" id="language-tabs"></div>
 
     <div id="game-area" style="display:none;">
         <div class="queue-counter" id="queue-counter">Questions Remaining: 0</div>
         <div class="scenario-box" id="scenario-text">Loading scenario...</div>
         
-        <div class="options" id="options-container">
-            </div>
+        <div class="options" id="options-container"></div>
 
         <div class="feedback" id="feedback-box"></div>
         <button id="next-btn" onclick="nextQuestion()">Next Question ➡️</button>
@@ -54,18 +52,14 @@
     let currentQuestion = null;
     let availableLanguages = ["Vietnamese", "Urdu", "Nepali", "Darija"]; 
 
-    // 1. Initialize Data
     window.onload = function() {
         if (typeof myGraphData !== 'undefined') {
             graphNodes = myGraphData.nodes || [];
-            
-            // THE FIX: Automatically handle both older and newer versions of NetworkX!
             graphEdges = myGraphData.links || myGraphData.edges || []; 
-            
             document.getElementById('loading-msg').style.display = 'none';
             setupTabs();
         } else {
-            document.getElementById('loading-msg').innerHTML = "❌ Error: Could not load graph_data.js. Check your folder structure!";
+            document.getElementById('loading-msg').innerHTML = "❌ Error: Could not load graph_data.js.";
         }
     };
 
@@ -87,41 +81,20 @@
         document.getElementById('feedback-box').style.display = 'none';
         document.getElementById('next-btn').style.display = 'none';
         
-        // Safety net: Catch any future silent crashes!
-        try {
-            const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === language);
-            
-            if(langInstances.length === 0) {
-                document.getElementById('scenario-text').innerText = "No data found for this language in the graph!";
-                document.getElementById('options-container').innerHTML = "";
-                return;
-            }
+        const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === language);
+        if(langInstances.length === 0) return;
 
-            let questionPool = [];
-            graphEdges.forEach(edge => {
-                // Another safety fix: Some JSON formats embed the ID inside an object
-                const instanceId = typeof edge.target === 'object' ? edge.target.id : edge.target; 
-                const schemaPath = typeof edge.source === 'object' ? edge.source.id : edge.source; 
-                
-                const instanceNode = langInstances.find(n => n.id === instanceId);
-                if(instanceNode) {
-                    questionPool.push({
-                        path: schemaPath,
-                        instance: instanceNode
-                    });
-                }
-            });
+        let questionPool = [];
+        graphEdges.forEach(edge => {
+            const instanceId = typeof edge.target === 'object' ? edge.target.id : edge.target; 
+            const schemaPath = typeof edge.source === 'object' ? edge.source.id : edge.source; 
+            const instanceNode = langInstances.find(n => n.id === instanceId);
+            if(instanceNode) questionPool.push({ path: schemaPath, instance: instanceNode });
+        });
 
-            questionPool.sort(() => 0.5 - Math.random());
-            currentQueue = questionPool.slice(0, 5);
-            
-            loadNextInQueue();
-            
-        } catch (error) {
-            console.error("Game Engine Error:", error);
-            document.getElementById('scenario-text').innerHTML = "<b>⚠️ Oops! A script error occurred.</b><br>Right-click the page, click 'Inspect', and check the Console tab for details.";
-            document.getElementById('options-container').innerHTML = "";
-        }
+        questionPool.sort(() => 0.5 - Math.random());
+        currentQueue = questionPool.slice(0, 5);
+        loadNextInQueue();
     }
 
     function generateScenarioText(pathString) {
@@ -133,7 +106,6 @@
         let spkStr = spk.includes("Male") ? "You (male)" : (spk.includes("Female") ? "You (female)" : "You");
         let addrStr = addr === "Male" ? "a male" : (addr === "Female" ? "a female" : "someone");
         
-        // 🌟 FIX 1: Highly descriptive generation text!
         let ageStr = "";
         if(age.includes("Younger")) ageStr = "who is younger than you";
         else if(age.includes("Older (same")) ageStr = "slightly older than you (like a senior student or older sibling)";
@@ -141,29 +113,23 @@
         else if(age.includes("Senior")) ageStr = "who is a senior citizen (grandparent's generation)";
         else ageStr = "who is exactly the same age as you";
 
-        let socialStr = social === "Formal" ? "in a formal/polite setting." : (social === "Informal" ? "in a casual/friendly setting." : "in a neutral setting.");
-
+        let socialStr = social === "Formal" ? "in a formal/polite setting." : (social === "Informal" ? "in a casual/friendly setting." : "in a standard, everyday setting.");
         return `${spkStr} are talking to ${addrStr} ${ageStr}, ${socialStr}`;
     }
 
     function generateSmartHint(correctPath, wrongPath) {
-        if(!correctPath || !wrongPath || correctPath === wrongPath) return "Hint: This is an alternate term, but it might not be the most common fit here.";
+        if(!correctPath || !wrongPath || correctPath === wrongPath) return "Hint: Not quite the best fit for this specific context.";
         
         const correctParts = correctPath.split(' - ');
         const wrongParts = wrongPath.split(' - ');
-        
         let hints = [];
         
-        // 🌟 FIX 2: Compound hints that catch EVERY mistake at once!
         if(correctParts[0] !== wrongParts[0]) hints.push("wrong <b>AGE group</b>");
         if(correctParts[1] !== wrongParts[1]) hints.push("wrong <b>ADDRESSEE GENDER</b>");
-        if(correctParts[2] !== wrongParts[2]) hints.push("wrong <b>SOCIAL CONTEXT</b> (formal vs casual)");
+        if(correctParts[2] !== wrongParts[2]) hints.push(`wrong <b>SOCIAL CONTEXT</b> (You chose <i>${wrongParts[2]}</i>, but it should be <i>${correctParts[2]}</i>)`);
         if(correctParts[3] !== wrongParts[3]) hints.push("wrong <b>SPEAKER GENDER</b>");
         
-        if(hints.length > 0) {
-            return "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + "!";
-        }
-        
+        if(hints.length > 0) return "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + "!";
         return "💡 Hint: Not quite the best fit for this specific context.";
     }
 
@@ -180,7 +146,6 @@
 
         document.getElementById('queue-counter').innerText = `Questions Remaining in Queue: ${currentQueue.length}`;
         currentQuestion = currentQueue[0];
-        
         document.getElementById('scenario-text').innerText = generateScenarioText(currentQuestion.path);
 
         let options = [{
@@ -194,19 +159,50 @@
         
         for(let inst of shuffledDistractors) {
             if(options.length >= 4) break;
-            if(inst.term_i !== currentQuestion.instance.term_i || inst.term_you !== currentQuestion.instance.term_you) {
-                // Find what path this wrong instance belongs to for hint generation
-                const wrongEdge = graphEdges.find(e => {
-                    let t = typeof e.target === 'object' ? e.target.id : e.target;
-                    return t === inst.id;
-                });
-                
-                options.push({
-                    text: `I: ${inst.term_i} / You: ${inst.term_you}`,
-                    isCorrect: false,
-                    path: wrongEdge ? (typeof wrongEdge.source === 'object' ? wrongEdge.source.id : wrongEdge.source) : ""
-                });
-            }
+            
+            // Avoid adding identical text
+            if(inst.term_i === currentQuestion.instance.term_i && inst.term_you === currentQuestion.instance.term_you) continue;
+
+            // 🌟 FIX 1: Prevent "False Negatives"
+            // If this distractor is ALSO a valid answer for the current scenario, SKIP IT completely!
+            const isAlsoCorrect = graphEdges.some(e => {
+                let s = typeof e.source === 'object' ? e.source.id : e.source;
+                let t = typeof e.target === 'object' ? e.target.id : e.target;
+                return t === inst.id && s === currentQuestion.path;
+            });
+            if (isAlsoCorrect) continue;
+
+            // 🌟 FIX 2: Find the edge that is MOST SIMILAR to our current question to give the best hint!
+            const possibleEdges = graphEdges.filter(e => {
+                let t = typeof e.target === 'object' ? e.target.id : e.target;
+                return t === inst.id;
+            });
+            
+            if(possibleEdges.length === 0) continue;
+
+            let bestEdge = possibleEdges[0];
+            let maxMatches = -1;
+            const correctParts = currentQuestion.path.split(' - ');
+            
+            possibleEdges.forEach(e => {
+                let s = typeof e.source === 'object' ? e.source.id : e.source;
+                let wrongParts = s.split(' - ');
+                let matches = 0;
+                if(wrongParts[0] === correctParts[0]) matches++; 
+                if(wrongParts[1] === correctParts[1]) matches++; 
+                if(wrongParts[2] === correctParts[2]) matches++; 
+                if(wrongParts[3] === correctParts[3]) matches++; 
+                if(matches > maxMatches) {
+                    maxMatches = matches;
+                    bestEdge = e;
+                }
+            });
+            
+            options.push({
+                text: `I: ${inst.term_i} / You: ${inst.term_you}`,
+                isCorrect: false,
+                path: typeof bestEdge.source === 'object' ? bestEdge.source.id : bestEdge.source
+            });
         }
 
         options.sort(() => 0.5 - Math.random());
@@ -228,7 +224,6 @@
 
     function handleAnswer(selectedOption, btnElement) {
         document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
-        
         const feedback = document.getElementById('feedback-box');
         feedback.style.display = 'block';
 
@@ -237,21 +232,16 @@
             btnElement.style.backgroundColor = "#e8f8f5";
             feedback.className = "feedback correct";
             feedback.innerHTML = "<b>🎉 Correct!</b> Great job.";
-            
             currentQueue.shift(); 
             document.getElementById('next-btn').style.display = 'block';
-            
         } else {
             btnElement.style.borderColor = "#e74c3c";
             btnElement.style.backgroundColor = "#fdedec";
             feedback.className = "feedback incorrect";
-            
             let hint = generateSmartHint(currentQuestion.path, selectedOption.path);
             feedback.innerHTML = `<b>😅 Not quite!</b><br><i>${hint}</i><br><br>Moving this question to the back of the queue.`;
-            
             let failedQ = currentQueue.shift();
             currentQueue.push(failedQ);
-            
             document.getElementById('next-btn').style.display = 'block';
             document.getElementById('next-btn').innerText = "Try Again Later ➡️";
         }
@@ -262,6 +252,5 @@
         loadNextInQueue();
     }
 </script>
-
 </body>
 </html>
