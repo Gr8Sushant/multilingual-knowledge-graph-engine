@@ -1,0 +1,99 @@
+﻿Language,Pronoun Pair A (I/You),Pronoun Pair B (I/You),What causes confusion?,Context A,Context B
+Cantonese,我 (ngo5) / 細佬 (sai3 lou2),我 (ngo5) / 細妹 (sai3 mui6),Changes Addressee Gender ONLY,Younger - Male - Neutral - Male spk,Younger - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 哥哥 (go1 go1),我 (ngo5) / 姐姐 (ze2 ze2),Changes Addressee Gender ONLY,Older (same gen) - Male - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 叔叔 (suk1 suk1),我 (ngo5) / 奶奶 (naai5 naai5),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 阿姨 (aa3 ji4),我 (ngo5) / 奶奶 (naai5 naai5),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 爺爺 (je4 je4),我 (ngo5) / 奶奶 (naai5 naai5),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 細佬 (sai3 lou2),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Younger - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 細妹 (sai3 mui6),Changes Age Group ONLY,Same Age - Female - Neutral - Male spk,Younger - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 哥哥 (go1 go1),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Older (same gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 姐姐 (ze2 ze2),Changes Age Group ONLY,Same Age - Female - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 叔叔 (suk1 suk1),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 阿姨 (aa3 ji4),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 爺爺 (je4 je4),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 你 (nei5),我 (ngo5) / 奶奶 (naai5 naai5),Changes Age Group ONLY,Same Age - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 細佬 (sai3 lou2),我 (ngo5) / 哥哥 (go1 go1),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Older (same gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 細佬 (sai3 lou2),我 (ngo5) / 叔叔 (suk1 suk1),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 細佬 (sai3 lou2),我 (ngo5) / 阿姨 (aa3 ji4),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 細佬 (sai3 lou2),我 (ngo5) / 爺爺 (je4 je4),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 細妹 (sai3 mui6),我 (ngo5) / 姐姐 (ze2 ze2),Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 細妹 (sai3 mui6),我 (ngo5) / 奶奶 (naai5 naai5),Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Cantonese,我 (ngo5) / 哥哥 (go1 go1),我 (ngo5) / 叔叔 (suk1 suk1),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 哥哥 (go1 go1),我 (ngo5) / 阿姨 (aa3 ji4),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 哥哥 (go1 go1),我 (ngo5) / 爺爺 (je4 je4),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Cantonese,我 (ngo5) / 姐姐 (ze2 ze2),我 (ngo5) / 奶奶 (naai5 naai5),Changes Age Group ONLY,Older (same gen) - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Darija, / sahbi, / -,Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Younger - Male - Neutral - Male spk
+Darija, / sahbi, / Khalti (خالتي),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Darija, / sahbi, / 3mi,Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Darija, / -, / Khalti (خالتي),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Darija, / -, / 3mi,Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 哥哥 (gēge),我 (wǒ) / 姐姐 (jiějie),Changes Addressee Gender ONLY,Older (same gen) - Male - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Mandarin,我 (wǒ) / 叔叔 (shūshu),我 (wǒ) / 奶奶 (nǎinai),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Mandarin,我 (wǒ) / 阿姨 (āyí),我 (wǒ) / 奶奶 (nǎinai),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Mandarin,我 (wǒ) / 爷爷 (yéye),我 (wǒ) / 奶奶 (nǎinai),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Mandarin,我 (wǒ) / 你 / 小 + name (nǐ / xiǎo),我 (wǒ) / 哥哥 (gēge),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Older (same gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 你 / 小 + name (nǐ / xiǎo),我 (wǒ) / 姐姐 (jiějie),Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Mandarin,我 (wǒ) / 你 / 小 + name (nǐ / xiǎo),我 (wǒ) / 叔叔 (shūshu),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 你 / 小 + name (nǐ / xiǎo),我 (wǒ) / 阿姨 (āyí),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 你 / 小 + name (nǐ / xiǎo),我 (wǒ) / 爷爷 (yéye),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 你 / 小 + name (nǐ / xiǎo),我 (wǒ) / 奶奶 (nǎinai),Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Mandarin,我 (wǒ) / 哥哥 (gēge),我 (wǒ) / 叔叔 (shūshu),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 哥哥 (gēge),我 (wǒ) / 阿姨 (āyí),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 哥哥 (gēge),我 (wǒ) / 爷爷 (yéye),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Mandarin,我 (wǒ) / 姐姐 (jiějie),我 (wǒ) / 奶奶 (nǎinai),Changes Age Group ONLY,Older (same gen) - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Nepali,म (ma) / हामी (Hami) / तिमी (timi),म (ma) / हामी (Hami) / तँ (ta),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Younger - Male - Neutral - Male spk
+Teochew,我 (guá) / 细弟 (sè-tī),我 (guá) / 细妹 (sè-muē),Changes Addressee Gender ONLY,Younger - Male - Neutral - Male spk,Younger - Female - Neutral - Male spk
+Teochew,我 (guá) / 阿兄 (a-hiang),我 (guá) / 阿姐 (a-jié),Changes Addressee Gender ONLY,Older (same gen) - Male - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 阿叔 (a-zik),我 (guá) / 阿嬷 (a-má),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 阿姨 (a-î),我 (guá) / 阿嬷 (a-má),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 阿公 (a-gong),我 (guá) / 阿嬷 (a-má),Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 细弟 (sè-tī),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Younger - Male - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 细妹 (sè-muē),Changes Age Group ONLY,Same Age - Female - Neutral - Male spk,Younger - Female - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 阿兄 (a-hiang),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Older (same gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 阿姐 (a-jié),Changes Age Group ONLY,Same Age - Female - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 阿叔 (a-zik),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 阿姨 (a-î),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 阿公 (a-gong),Changes Age Group ONLY,Same Age - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 你 (lí),我 (guá) / 阿嬷 (a-má),Changes Age Group ONLY,Same Age - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 细弟 (sè-tī),我 (guá) / 阿兄 (a-hiang),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Older (same gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 细弟 (sè-tī),我 (guá) / 阿叔 (a-zik),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 细弟 (sè-tī),我 (guá) / 阿姨 (a-î),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 细弟 (sè-tī),我 (guá) / 阿公 (a-gong),Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 细妹 (sè-muē),我 (guá) / 阿姐 (a-jié),Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 细妹 (sè-muē),我 (guá) / 阿嬷 (a-má),Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Teochew,我 (guá) / 阿兄 (a-hiang),我 (guá) / 阿叔 (a-zik),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 阿兄 (a-hiang),我 (guá) / 阿姨 (a-î),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 阿兄 (a-hiang),我 (guá) / 阿公 (a-gong),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Teochew,我 (guá) / 阿姐 (a-jié),我 (guá) / 阿嬷 (a-má),Changes Age Group ONLY,Older (same gen) - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Vietnamese,em / anh,em / chị,Changes Addressee Gender ONLY,Older (same gen) - Male - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Vietnamese,con/cháu / chú/cậu,con/cháu / bà,Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Vietnamese,con/cháu / cô/dì,con/cháu / bà,Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Vietnamese,con/cháu / bác,con/cháu / bà,Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Vietnamese,con/cháu / ông,con/cháu / bà,Changes Addressee Gender ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Vietnamese,anh / em,em / anh,Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Older (same gen) - Male - Neutral - Male spk
+Vietnamese,anh / em,em / chị,Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Older (same gen) - Female - Neutral - Male spk
+Vietnamese,anh / em,con/cháu / chú/cậu,Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,anh / em,con/cháu / cô/dì,Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,anh / em,con/cháu / bác,Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,anh / em,con/cháu / ông,Changes Age Group ONLY,Younger - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,anh / em,con/cháu / bà,Changes Age Group ONLY,Younger - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Vietnamese,chị / em,em / anh,Changes Age Group ONLY,Younger - Male - Neutral - Female spk,Older (same gen) - Male - Neutral - Female spk
+Vietnamese,chị / em,em / chị,Changes Age Group ONLY,Younger - Female - Neutral - Female spk,Older (same gen) - Female - Neutral - Female spk
+Vietnamese,chị / em,con/cháu / chú/cậu,Changes Age Group ONLY,Younger - Male - Neutral - Female spk,Middle-aged (parents' gen) - Male - Neutral - Female spk
+Vietnamese,chị / em,con/cháu / cô/dì,Changes Age Group ONLY,Younger - Male - Neutral - Female spk,Middle-aged (parents' gen) - Male - Neutral - Female spk
+Vietnamese,chị / em,con/cháu / bác,Changes Age Group ONLY,Younger - Male - Neutral - Female spk,Middle-aged (parents' gen) - Male - Neutral - Female spk
+Vietnamese,chị / em,con/cháu / ông,Changes Age Group ONLY,Younger - Male - Neutral - Female spk,Middle-aged (parents' gen) - Male - Neutral - Female spk
+Vietnamese,chị / em,con/cháu / bà,Changes Age Group ONLY,Younger - Female - Neutral - Female spk,Middle-aged (parents' gen) - Female - Neutral - Female spk
+Vietnamese,em / anh,con/cháu / chú/cậu,Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,em / anh,con/cháu / cô/dì,Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,em / anh,con/cháu / bác,Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,em / anh,con/cháu / ông,Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
+Vietnamese,em / chị,con/cháu / bà,Changes Age Group ONLY,Older (same gen) - Female - Neutral - Male spk,Middle-aged (parents' gen) - Female - Neutral - Male spk
+Vietnamese,mình / bạn,tui / bạn,Changes Social Context ONLY,Same Age - Male - Formal - Male spk,Same Age - Male - Informal - Male spk
+Vietnamese,mình / bạn,tao / mày,Changes Social Context ONLY,Same Age - Male - Formal - Male spk,Same Age - Male - Informal - Male spk
+Vietnamese,tôi / bạn,tui / bạn,Changes Social Context ONLY,Same Age - Male - Formal - Male spk,Same Age - Male - Informal - Male spk
+Vietnamese,tôi / bạn,tao / mày,Changes Social Context ONLY,Same Age - Male - Formal - Male spk,Same Age - Male - Informal - Male spk
+Vietnamese,anh / em,chị / em,Changes Speaker Gender ONLY,Younger - Male - Neutral - Male spk,Younger - Male - Neutral - Female spk
+urdu,میں / بھائی (bhai / bhaiya)  or  باجی (baji / apa),میں / دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji),Changes Age Group ONLY,Older (same gen) - Male - Formal - Male spk,Middle-aged (parents' gen) - Male - Formal - Male spk
+urdu,میں / Uncle / Aunty or چچا (chacha) / خالہ (khala),میں / دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji),Changes Social Context ONLY,Middle-aged (parents' gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Formal - Male spk
+,म (ma) / हामी (Hami) / तपाईं (tapai) and हजुर (Hajur), / Lhaj(man ) / Lhaja(women),Changes Age Group ONLY,Older (same gen) - Male - Neutral - Male spk,Middle-aged (parents' gen) - Male - Neutral - Male spk
