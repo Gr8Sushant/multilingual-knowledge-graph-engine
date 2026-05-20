@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pronoun Master Game</title>
+    <title>Pronoun Master: Cultural Fluency</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; display: flex; justify-content: center; }
         .game-container { background: white; max-width: 600px; width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 30px; }
-        h1 { text-align: center; color: #2c3e50; }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 5px;}
+        .subtitle { text-align: center; color: #7f8c8d; font-size: 14px; margin-bottom: 20px; }
         .tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
         .tab-btn { padding: 10px 20px; border: none; background: #e0e6ed; border-radius: 8px; cursor: pointer; font-weight: bold; color: #34495e; transition: 0.2s; }
         .tab-btn:hover { background: #cbd4db; }
         .tab-btn.active { background: #3498db; color: white; }
-        .queue-counter { text-align: center; font-size: 14px; color: #7f8c8d; margin-bottom: 15px; font-weight: bold;}
-        .scenario-box { background: #f8f9fa; padding: 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 20px; font-size: 18px; color: #2c3e50;}
+        .status-bar { display: flex; justify-content: space-between; font-size: 14px; color: #7f8c8d; margin-bottom: 15px; font-weight: bold; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px;}
+        .score-display { color: #3498db; font-size: 16px; transition: color 0.3s; }
+        .bounty-display { color: #f39c12; font-size: 14px; margin-bottom: 10px; text-align: right; font-weight: bold;}
+        .scenario-box { background: #f8f9fa; padding: 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 15px; font-size: 18px; color: #2c3e50;}
         .options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; text-align: left; background: white; border: 2px solid #ecf0f1; border-radius: 8px; font-size: 16px; cursor: pointer; transition: 0.2s; }
         .option-btn:hover { border-color: #3498db; background: #f0f8ff; }
-        .feedback { margin-top: 20px; padding: 15px; border-radius: 8px; display: none; }
+        .feedback { margin-top: 20px; padding: 15px; border-radius: 8px; display: none; line-height: 1.5; }
         .feedback.correct { display: block; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-        .feedback.incorrect { display: block; background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-        #next-btn { display: none; width: 100%; padding: 15px; margin-top: 15px; background: #2ecc71; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold;}
-        #next-btn:hover { background: #27ae60; }
+        .feedback.incorrect { display: block; background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+        .severity-badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 14px; margin-bottom: 8px; background: white; border: 1px solid #f39c12; color: #d35400;}
+        #next-btn { display: none; width: 100%; padding: 15px; margin-top: 15px; background: #3498db; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold;}
+        #next-btn:hover { background: #2980b9; }
     </style>
 </head>
 <body>
 
 <div class="game-container">
     <h1>🌍 Pronoun Master</h1>
+    <div class="subtitle">Test your Cultural Fluency!</div>
     <div class="tabs" id="language-tabs"></div>
 
     <div id="game-area" style="display:none;">
-        <div class="queue-counter" id="queue-counter">Questions Remaining: 0</div>
+        <div class="status-bar">
+            <span id="queue-counter">Questions Remaining: 0</span>
+            <span class="score-display" id="score-display">🌟 Score: 0</span>
+        </div>
+        
+        <div class="bounty-display" id="bounty-display">🎯 Question Value: 20 pts</div>
         <div class="scenario-box" id="scenario-text">Loading scenario...</div>
         
         <div class="options" id="options-container"></div>
@@ -43,22 +53,26 @@
     <div id="loading-msg" style="text-align:center; color:#7f8c8d;">Loading Graph Data...</div>
 </div>
 
-<script src="graph_export/graph_data.js?v=2"></script>
+<script src="graph_export/graph_data.js?v=4"></script>
 
 <script>
     let graphNodes = [];
     let graphEdges = [];
     let currentQueue = [];
     let currentQuestion = null;
-    
-    // 🌟 THE ULTIMATE TABS FIX: 
-    // Explicitly define your exact live dataset. Darija is completely removed.
     let availableLanguages = ["Vietnamese", "Urdu", "Nepali"]; 
+    
+    // Default scoring rules
+    let scoringRules = { "Age": 5, "Addressee": 3, "Context": 2, "Speaker": 1 };
+    let playerScore = 0;
 
     window.onload = function() {
         if (typeof myGraphData !== 'undefined') {
             graphNodes = myGraphData.nodes || [];
             graphEdges = myGraphData.links || myGraphData.edges || []; 
+            if (myGraphData.graph && myGraphData.graph.scoring_rules) {
+                scoringRules = myGraphData.graph.scoring_rules;
+            }
             document.getElementById('loading-msg').style.display = 'none';
             setupTabs();
         } else {
@@ -68,7 +82,7 @@
 
     function setupTabs() {
         const tabsContainer = document.getElementById('language-tabs');
-        tabsContainer.innerHTML = ""; // Hard clean old rendered objects
+        tabsContainer.innerHTML = "";
         
         availableLanguages.forEach(lang => {
             let btn = document.createElement('button');
@@ -83,17 +97,19 @@
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         btnElement.classList.add('active');
         
+        playerScore = 0; // ✨ Start at 0!
+        updateScoreDisplay();
+        
         const feedbackBox = document.getElementById('feedback-box');
         feedbackBox.style.display = 'none';
         document.getElementById('next-btn').style.display = 'none';
         
         const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === language);
         
-        // Safety Fallback: If data parsing fails or language has 0 records, do not show empty loops!
         if(langInstances.length === 0) {
             document.getElementById('game-area').style.display = 'block';
             document.getElementById('queue-counter').innerText = "Questions Remaining: 0";
-            document.getElementById('scenario-text').innerHTML = `⚠️ No active pronoun pairs found in the graph for <b>${language}</b>. Ensure your Excel records are plugged and exported!`;
+            document.getElementById('scenario-text').innerHTML = `⚠️ No active pronoun pairs found.`;
             document.getElementById('options-container').innerHTML = "";
             return;
         }
@@ -105,13 +121,22 @@
             const instanceId = typeof edge.target === 'object' ? edge.target.id : edge.target; 
             const schemaPath = typeof edge.source === 'object' ? edge.source.id : edge.source; 
             const instanceNode = langInstances.find(n => n.id === instanceId);
-            if(instanceNode) questionPool.push({ path: schemaPath, instance: instanceNode });
+            // ✨ Every question is born with 20 Potential Points
+            if(instanceNode) questionPool.push({ path: schemaPath, instance: instanceNode, potentialPoints: 20 });
         });
 
-        // Pick up to 5 distinct scenarios
         questionPool.sort(() => 0.5 - Math.random());
-        currentQueue = questionPool.slice(0, 5);
+        currentQueue = questionPool.slice(0, 5); 
         loadNextInQueue();
+    }
+
+    function updateScoreDisplay() {
+        const display = document.getElementById('score-display');
+        display.innerText = `🌟 Score: ${playerScore}`;
+        if (playerScore > 0) {
+            display.style.color = '#2ecc71';
+            display.style.fontWeight = 'bold';
+        }
     }
 
     function generateScenarioText(pathString) {
@@ -123,24 +148,53 @@
         let spkStr = spk.includes("Male") ? "You (male)" : (spk.includes("Female") ? "You (female)" : "You");
         let addrStr = addr === "Male" ? "a male" : (addr === "Female" ? "a female" : "someone");
         
-        // ✨ THE VOCABULARY UX UPGRADE
-        // Using universal generational framing instead of subjective age labels
         let ageStr = "";
-        if (age.includes("Younger")) {
-            ageStr = "who is younger than you (but in your generation)";
-        } else if (age.includes("Older (same")) {
-            ageStr = "who is older than you (but in your generation)";
-        } else if (age.includes("Middle-aged")) {
-            ageStr = "who belongs to your parents' generation";
-        } else if (age.includes("Senior")) {
-            ageStr = "who belongs to your grandparents' generation";
-        } else {
-            ageStr = "who is exactly your age";
-        }
+        if (age.includes("Younger")) ageStr = "who is younger than you (but in your generation)";
+        else if (age.includes("Older (same")) ageStr = "who is older than you (but in your generation)";
+        else if (age.includes("Middle-aged")) ageStr = "who belongs to your parents' generation";
+        else if (age.includes("Senior")) ageStr = "who belongs to your grandparents' generation";
+        else ageStr = "who is exactly your age";
 
         let socialStr = social === "Formal" ? "in a formal/polite setting." : (social === "Informal" ? "in a casual/friendly setting." : "in a standard, everyday setting.");
         
         return `${spkStr} are talking to ${addrStr} ${ageStr}, ${socialStr}`;
+    }
+
+    function evaluateMistake(correctPath, wrongPath) {
+        if(!correctPath || !wrongPath || correctPath === wrongPath) return { hint: "Hint: Not the best fit.", penalty: 0, severity: "Minor" };
+        
+        const correctParts = correctPath.split(' - ');
+        const wrongParts = wrongPath.split(' - ');
+        let hints = [];
+        let penalty = 0;
+        
+        if(correctParts[0] !== wrongParts[0]) {
+            hints.push("wrong <b>AGE/GENERATION</b>");
+            penalty += scoringRules["Age"] || 5;
+        }
+        if(correctParts[1] !== wrongParts[1]) {
+            hints.push("wrong <b>ADDRESSEE GENDER</b>");
+            penalty += scoringRules["Addressee"] || 3;
+        }
+        if(correctParts[2] !== wrongParts[2]) {
+            hints.push(`wrong <b>SOCIAL CONTEXT</b> (You chose <i>${wrongParts[2]}</i> instead of <i>${correctParts[2]}</i>)`);
+            penalty += scoringRules["Context"] || 2;
+        }
+        if(correctParts[3] !== wrongParts[3]) {
+            hints.push("wrong <b>SPEAKER GENDER</b>");
+            penalty += scoringRules["Speaker"] || 1;
+        }
+        
+        let severity = "Minor Awkwardness 🟡";
+        if (penalty >= 5) severity = "Critical Cultural Error 🚨";
+        else if (penalty >= 3) severity = "Major Error 🔴";
+        else if (penalty >= 2) severity = "Moderate Error 🟠";
+
+        return {
+            hint: "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + ".",
+            penalty: penalty,
+            severity: severity
+        };
     }
 
     function loadNextInQueue() {
@@ -148,31 +202,41 @@
         document.getElementById('next-btn').style.display = 'none';
         
         if (currentQueue.length === 0) {
+            let scoreMessage = "";
+            if (playerScore >= 90) scoreMessage = "Outstanding! You have near-native cultural fluency! 🏆";
+            else if (playerScore >= 70) scoreMessage = "Great job! You have a solid grasp on social nuances. 👍";
+            else if (playerScore >= 40) scoreMessage = "Good effort! Keep practicing those generational rules. 📚";
+            else scoreMessage = "Keep practicing! Cultural fluency takes time. 🌱";
+
             document.getElementById('queue-counter').innerText = "🎉 All Done!";
-            document.getElementById('scenario-text').innerHTML = "<b>Congratulations!</b> You've cleared the queue and mastered this language's pronouns.";
+            document.getElementById('bounty-display').style.display = 'none';
+            document.getElementById('scenario-text').innerHTML = `
+                <div style="text-align: center; margin: 10px 0;">
+                    <div style="font-size: 16px; color: #7f8c8d;">Final Score</div>
+                    <div style="font-size: 48px; font-weight: bold; color: ${playerScore >= 70 ? '#2ecc71' : (playerScore >= 40 ? '#f39c12' : '#e74c3c')};">
+                        ${playerScore} / 100
+                    </div>
+                    <div style="font-size: 18px; margin-top: 15px; font-weight: bold; color: #2c3e50;">${scoreMessage}</div>
+                </div>`;
             document.getElementById('options-container').innerHTML = "";
             return;
         }
 
-        document.getElementById('queue-counter').innerText = `Questions Remaining in Queue: ${currentQueue.length}`;
+        document.getElementById('queue-counter').innerText = `Questions Remaining: ${currentQueue.length}`;
         currentQuestion = currentQueue[0];
+        
+        // Show current bounty value
+        document.getElementById('bounty-display').style.display = 'block';
+        document.getElementById('bounty-display').innerText = `🎯 Question Value: ${currentQuestion.potentialPoints} pts`;
+        
         document.getElementById('scenario-text').innerText = generateScenarioText(currentQuestion.path);
 
         const cleanText = (str) => str ? str.replace(/\s+/g, ' ').trim() : "";
         let correctText = cleanText(`I: ${currentQuestion.instance.term_i} / You: ${currentQuestion.instance.term_you}`);
         
-        let options = [{
-            text: correctText,
-            isCorrect: true,
-            path: currentQuestion.path
-        }];
+        let options = [{ text: correctText, isCorrect: true, path: currentQuestion.path }];
 
-        // 🌟 THE ABSOLUTE DEDUPLICATOR
-        // This removes ALL spaces and makes it lowercase. 
-        // "तपाईं (tapai) and हजुर" becomes "तपाईं(tapai)andहजुर"
-        // This guarantees that invisible spaces or Excel formatting cannot trick the game!
         const normalize = (str) => str.replace(/\s+/g, '').toLowerCase();
-        
         let seenKeys = new Set();
         seenKeys.add(normalize(correctText));
 
@@ -185,10 +249,15 @@
             let newText = cleanText(`I: ${inst.term_i} / You: ${inst.term_you}`);
             let newKey = normalize(newText);
             
-            // 🌟 STRICT CHECK: If we have seen these exact characters before, skip it!
             if (seenKeys.has(newKey)) continue;
-            
-            seenKeys.add(newKey); // Add to our tracking list
+            seenKeys.add(newKey); 
+
+            const isAlsoCorrect = graphEdges.some(e => {
+                let s = typeof e.source === 'object' ? e.source.id : e.source;
+                let t = typeof e.target === 'object' ? e.target.id : e.target;
+                return t === inst.id && s === currentQuestion.path;
+            });
+            if (isAlsoCorrect) continue;
 
             const possibleEdges = graphEdges.filter(e => {
                 let t = typeof e.target === 'object' ? e.target.id : e.target;
@@ -215,11 +284,7 @@
                 }
             });
             
-            options.push({
-                text: newText,
-                isCorrect: false,
-                path: typeof bestEdge.source === 'object' ? bestEdge.source.id : bestEdge.source
-            });
+            options.push({ text: newText, isCorrect: false, path: typeof bestEdge.source === 'object' ? bestEdge.source.id : bestEdge.source });
         }
 
         options.sort(() => 0.5 - Math.random());
@@ -248,19 +313,42 @@
             btnElement.style.borderColor = "#2ecc71";
             btnElement.style.backgroundColor = "#e8f8f5";
             feedback.className = "feedback correct";
-            feedback.innerHTML = "<b>🎉 Correct!</b> Great job.";
+            
+            // ✨ Reward the player!
+            playerScore += currentQuestion.potentialPoints;
+            updateScoreDisplay();
+            
+            feedback.innerHTML = `<b>🎉 Correct!</b> You earned <b>+${currentQuestion.potentialPoints} points</b>!`;
+            
             currentQueue.shift(); 
             document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('next-btn').innerText = "Next Question ➡️";
+            document.getElementById('next-btn').style.background = "#2ecc71";
+            
         } else {
-            btnElement.style.borderColor = "#e74c3c";
-            btnElement.style.backgroundColor = "#fdedec";
+            btnElement.style.borderColor = "#f39c12";
+            btnElement.style.backgroundColor = "#fdf2e9";
             feedback.className = "feedback incorrect";
-            let hint = generateSmartHint(currentQuestion.path, selectedOption.path);
-            feedback.innerHTML = `<b>😅 Not quite!</b><br><i>${hint}</i><br><br>Moving this question to the back of the queue.`;
+            
+            let evaluation = evaluateMistake(currentQuestion.path, selectedOption.path);
+            
+            // ✨ Reduce the bounty for next time (Penalty * 2) 
+            // e.g. A 5-point critical error removes 10 points from the bounty. Minimum 5 points.
+            let pointsLost = evaluation.penalty * 2;
+            currentQuestion.potentialPoints -= pointsLost;
+            if (currentQuestion.potentialPoints < 5) currentQuestion.potentialPoints = 5;
+
+            feedback.innerHTML = `
+                <div class="severity-badge">${evaluation.severity}</div><br>
+                <i>${evaluation.hint}</i><br><br>
+                You can still earn up to <b>${currentQuestion.potentialPoints} points</b> when this comes back around!`;
+                
             let failedQ = currentQueue.shift();
             currentQueue.push(failedQ);
+            
             document.getElementById('next-btn').style.display = 'block';
-            document.getElementById('next-btn').innerText = "Try Again Later ➡️";
+            document.getElementById('next-btn').innerText = "Try Again Later 🔄";
+            document.getElementById('next-btn').style.background = "#f39c12";
         }
     }
 
