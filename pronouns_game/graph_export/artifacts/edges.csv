@@ -1,165 +1,143 @@
 ﻿Source (Path),Target (Instance),Relationship
-Same Age - Male - Neutral - Male spk,Instance_fb0dd8,HAS_PRONOUN
-Same Age - Male - Neutral - Male spk,Instance_c28efb,HAS_PRONOUN
-Same Age - Male - Neutral - Male spk,Instance_610af4,HAS_PRONOUN
-Same Age - Male - Neutral - Male spk,Instance_0a416f,HAS_PRONOUN
-Same Age - Male - Neutral - Male spk,Instance_b18761,HAS_PRONOUN
-Same Age - Male - Neutral - Female spk,Instance_fb0dd8,HAS_PRONOUN
-Same Age - Male - Neutral - Female spk,Instance_c28efb,HAS_PRONOUN
-Same Age - Male - Neutral - Female spk,Instance_610af4,HAS_PRONOUN
-Same Age - Male - Neutral - Female spk,Instance_0a416f,HAS_PRONOUN
-Same Age - Male - Neutral - Female spk,Instance_b18761,HAS_PRONOUN
-Same Age - Female - Neutral - Male spk,Instance_fb0dd8,HAS_PRONOUN
-Same Age - Female - Neutral - Male spk,Instance_c28efb,HAS_PRONOUN
-Same Age - Female - Neutral - Male spk,Instance_610af4,HAS_PRONOUN
-Same Age - Female - Neutral - Male spk,Instance_0a416f,HAS_PRONOUN
-Same Age - Female - Neutral - Male spk,Instance_b18761,HAS_PRONOUN
-Same Age - Female - Neutral - Female spk,Instance_fb0dd8,HAS_PRONOUN
-Same Age - Female - Neutral - Female spk,Instance_c28efb,HAS_PRONOUN
-Same Age - Female - Neutral - Female spk,Instance_610af4,HAS_PRONOUN
-Same Age - Female - Neutral - Female spk,Instance_0a416f,HAS_PRONOUN
-Same Age - Female - Neutral - Female spk,Instance_b18761,HAS_PRONOUN
-Same Age - Male - Informal - Male spk,Instance_0d3ffa,HAS_PRONOUN
-Same Age - Male - Informal - Male spk,Instance_45a483,HAS_PRONOUN
-Same Age - Male - Informal - Male spk,Instance_62781b,HAS_PRONOUN
-Same Age - Male - Informal - Female spk,Instance_0d3ffa,HAS_PRONOUN
-Same Age - Male - Informal - Female spk,Instance_45a483,HAS_PRONOUN
-Same Age - Male - Informal - Female spk,Instance_62781b,HAS_PRONOUN
-Same Age - Female - Informal - Male spk,Instance_0d3ffa,HAS_PRONOUN
-Same Age - Female - Informal - Male spk,Instance_45a483,HAS_PRONOUN
-Same Age - Female - Informal - Male spk,Instance_62781b,HAS_PRONOUN
-Same Age - Female - Informal - Female spk,Instance_0d3ffa,HAS_PRONOUN
-Same Age - Female - Informal - Female spk,Instance_45a483,HAS_PRONOUN
-Same Age - Female - Informal - Female spk,Instance_62781b,HAS_PRONOUN
-Same Age - Male - Formal - Male spk,Instance_6e5a41,HAS_PRONOUN
-Same Age - Male - Formal - Male spk,Instance_854d3f,HAS_PRONOUN
-Same Age - Male - Formal - Male spk,Instance_dbfbc0,HAS_PRONOUN
-Same Age - Male - Formal - Female spk,Instance_6e5a41,HAS_PRONOUN
-Same Age - Male - Formal - Female spk,Instance_854d3f,HAS_PRONOUN
-Same Age - Male - Formal - Female spk,Instance_dbfbc0,HAS_PRONOUN
-Same Age - Female - Formal - Male spk,Instance_6e5a41,HAS_PRONOUN
-Same Age - Female - Formal - Male spk,Instance_854d3f,HAS_PRONOUN
-Same Age - Female - Formal - Male spk,Instance_dbfbc0,HAS_PRONOUN
-Same Age - Female - Formal - Female spk,Instance_6e5a41,HAS_PRONOUN
-Same Age - Female - Formal - Female spk,Instance_854d3f,HAS_PRONOUN
-Same Age - Female - Formal - Female spk,Instance_dbfbc0,HAS_PRONOUN
-Younger - Male - Neutral - Male spk,Instance_d02a30,HAS_PRONOUN
-Younger - Male - Neutral - Male spk,Instance_d3affc,HAS_PRONOUN
-Younger - Male - Neutral - Male spk,Instance_ea4fd5,HAS_PRONOUN
-Younger - Male - Neutral - Male spk,Instance_48bbb0,HAS_PRONOUN
-Younger - Male - Neutral - Male spk,Instance_20ce0f,HAS_PRONOUN
-Younger - Male - Neutral - Male spk,Instance_19e322,HAS_PRONOUN
-Younger - Male - Neutral - Female spk,Instance_d02a30,HAS_PRONOUN
-Younger - Male - Neutral - Female spk,Instance_d3affc,HAS_PRONOUN
-Younger - Male - Neutral - Female spk,Instance_ea4fd5,HAS_PRONOUN
-Younger - Male - Neutral - Female spk,Instance_48bbb0,HAS_PRONOUN
-Younger - Male - Neutral - Female spk,Instance_20ce0f,HAS_PRONOUN
-Younger - Male - Neutral - Female spk,Instance_fa07c2,HAS_PRONOUN
-Younger - Female - Neutral - Male spk,Instance_d02a30,HAS_PRONOUN
-Younger - Female - Neutral - Male spk,Instance_742608,HAS_PRONOUN
-Younger - Female - Neutral - Male spk,Instance_eaa1bf,HAS_PRONOUN
-Younger - Female - Neutral - Male spk,Instance_48bbb0,HAS_PRONOUN
-Younger - Female - Neutral - Male spk,Instance_20ce0f,HAS_PRONOUN
-Younger - Female - Neutral - Male spk,Instance_19e322,HAS_PRONOUN
-Younger - Female - Neutral - Female spk,Instance_d02a30,HAS_PRONOUN
-Younger - Female - Neutral - Female spk,Instance_742608,HAS_PRONOUN
-Younger - Female - Neutral - Female spk,Instance_eaa1bf,HAS_PRONOUN
-Younger - Female - Neutral - Female spk,Instance_48bbb0,HAS_PRONOUN
-Younger - Female - Neutral - Female spk,Instance_20ce0f,HAS_PRONOUN
-Younger - Female - Neutral - Female spk,Instance_fa07c2,HAS_PRONOUN
-Younger - Male - Informal - Male spk,Instance_527acc,HAS_PRONOUN
-Younger - Male - Informal - Female spk,Instance_527acc,HAS_PRONOUN
-Younger - Female - Informal - Male spk,Instance_527acc,HAS_PRONOUN
-Younger - Female - Informal - Female spk,Instance_527acc,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Male spk,Instance_d372f3,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Male spk,Instance_d7e757,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Male spk,Instance_5343cc,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Male spk,Instance_93a5ca,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Male spk,Instance_8f9802,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Male spk,Instance_9b7023,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Female spk,Instance_d372f3,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Female spk,Instance_d7e757,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Female spk,Instance_5343cc,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Female spk,Instance_93a5ca,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Female spk,Instance_8f9802,HAS_PRONOUN
-Older (same gen) - Male - Neutral - Female spk,Instance_9b7023,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Male spk,Instance_c62afe,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Male spk,Instance_255efb,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Male spk,Instance_e9858c,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Male spk,Instance_93a5ca,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Male spk,Instance_8f9802,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Male spk,Instance_b00adc,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Female spk,Instance_c62afe,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Female spk,Instance_255efb,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Female spk,Instance_e9858c,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Female spk,Instance_93a5ca,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Female spk,Instance_8f9802,HAS_PRONOUN
-Older (same gen) - Female - Neutral - Female spk,Instance_b00adc,HAS_PRONOUN
-Older (same gen) - Male - Formal - Male spk,Instance_31feaf,HAS_PRONOUN
-Older (same gen) - Male - Formal - Male spk,Instance_ca46ea,HAS_PRONOUN
-Older (same gen) - Male - Formal - Female spk,Instance_31feaf,HAS_PRONOUN
-Older (same gen) - Male - Formal - Female spk,Instance_ca46ea,HAS_PRONOUN
-Older (same gen) - Female - Formal - Male spk,Instance_31feaf,HAS_PRONOUN
-Older (same gen) - Female - Formal - Male spk,Instance_ca46ea,HAS_PRONOUN
-Older (same gen) - Female - Formal - Female spk,Instance_31feaf,HAS_PRONOUN
-Older (same gen) - Female - Formal - Female spk,Instance_ca46ea,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_b83083,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_f2e5e3,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_c67598,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_82d3ba,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_4b8f8c,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_222bff,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_0b7fab,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_d97b70,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_2f3a34,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_893313,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_b295b9,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_688ba0,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_517abf,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_cd959b,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_b83083,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_f2e5e3,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_c67598,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_82d3ba,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_4b8f8c,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_222bff,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_0b7fab,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_d97b70,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_2f3a34,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_893313,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_b295b9,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_688ba0,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_517abf,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_cd959b,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_f1b2f9,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_192847,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_a19a13,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_c49460,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_dc878a,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_8b7a61,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_4eb7c8,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_d97b70,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_35df1a,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_b6a6f7,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_29bd41,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_688ba0,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_517abf,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_0ff8fc,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_f1b2f9,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_192847,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_a19a13,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_c49460,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_dc878a,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_8b7a61,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_4eb7c8,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_d97b70,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_35df1a,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_b6a6f7,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_29bd41,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_688ba0,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_517abf,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_0ff8fc,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Formal - Male spk,Instance_ac369c,HAS_PRONOUN
-Middle-aged (parents' gen) - Male - Formal - Female spk,Instance_ac369c,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Formal - Male spk,Instance_ac369c,HAS_PRONOUN
-Middle-aged (parents' gen) - Female - Formal - Female spk,Instance_ac369c,HAS_PRONOUN
+Same Age - Male - Neutral - Male spk,Instance_5759a5,HAS_PRONOUN
+Same Age - Male - Neutral - Male spk,Instance_05e020,HAS_PRONOUN
+Same Age - Male - Neutral - Male spk,Instance_067a7c,HAS_PRONOUN
+Same Age - Male - Neutral - Male spk,Instance_3d370c,HAS_PRONOUN
+Same Age - Male - Neutral - Male spk,Instance_b90991,HAS_PRONOUN
+Same Age - Male - Neutral - Male spk,Instance_84ab1e,HAS_PRONOUN
+Same Age - Male - Neutral - Female spk,Instance_5759a5,HAS_PRONOUN
+Same Age - Male - Neutral - Female spk,Instance_05e020,HAS_PRONOUN
+Same Age - Male - Neutral - Female spk,Instance_067a7c,HAS_PRONOUN
+Same Age - Male - Neutral - Female spk,Instance_3d370c,HAS_PRONOUN
+Same Age - Male - Neutral - Female spk,Instance_b90991,HAS_PRONOUN
+Same Age - Male - Neutral - Female spk,Instance_84ab1e,HAS_PRONOUN
+Same Age - Female - Neutral - Male spk,Instance_5759a5,HAS_PRONOUN
+Same Age - Female - Neutral - Male spk,Instance_05e020,HAS_PRONOUN
+Same Age - Female - Neutral - Male spk,Instance_067a7c,HAS_PRONOUN
+Same Age - Female - Neutral - Male spk,Instance_3d370c,HAS_PRONOUN
+Same Age - Female - Neutral - Male spk,Instance_b90991,HAS_PRONOUN
+Same Age - Female - Neutral - Male spk,Instance_55ccd5,HAS_PRONOUN
+Same Age - Female - Neutral - Female spk,Instance_5759a5,HAS_PRONOUN
+Same Age - Female - Neutral - Female spk,Instance_05e020,HAS_PRONOUN
+Same Age - Female - Neutral - Female spk,Instance_067a7c,HAS_PRONOUN
+Same Age - Female - Neutral - Female spk,Instance_3d370c,HAS_PRONOUN
+Same Age - Female - Neutral - Female spk,Instance_b90991,HAS_PRONOUN
+Same Age - Female - Neutral - Female spk,Instance_55ccd5,HAS_PRONOUN
+Same Age - Male - Informal - Male spk,Instance_d67089,HAS_PRONOUN
+Same Age - Male - Informal - Male spk,Instance_8621ee,HAS_PRONOUN
+Same Age - Male - Informal - Female spk,Instance_d67089,HAS_PRONOUN
+Same Age - Male - Informal - Female spk,Instance_8621ee,HAS_PRONOUN
+Same Age - Female - Informal - Male spk,Instance_d67089,HAS_PRONOUN
+Same Age - Female - Informal - Male spk,Instance_8621ee,HAS_PRONOUN
+Same Age - Female - Informal - Female spk,Instance_d67089,HAS_PRONOUN
+Same Age - Female - Informal - Female spk,Instance_8621ee,HAS_PRONOUN
+Same Age - Male - Formal - Male spk,Instance_30cc96,HAS_PRONOUN
+Same Age - Male - Formal - Male spk,Instance_c90d8c,HAS_PRONOUN
+Same Age - Male - Formal - Female spk,Instance_30cc96,HAS_PRONOUN
+Same Age - Male - Formal - Female spk,Instance_c90d8c,HAS_PRONOUN
+Same Age - Female - Formal - Male spk,Instance_30cc96,HAS_PRONOUN
+Same Age - Female - Formal - Male spk,Instance_c90d8c,HAS_PRONOUN
+Same Age - Female - Formal - Female spk,Instance_30cc96,HAS_PRONOUN
+Same Age - Female - Formal - Female spk,Instance_c90d8c,HAS_PRONOUN
+Younger - Male - Neutral - Male spk,Instance_768d8e,HAS_PRONOUN
+Younger - Male - Neutral - Male spk,Instance_7714c3,HAS_PRONOUN
+Younger - Male - Neutral - Male spk,Instance_7c5648,HAS_PRONOUN
+Younger - Male - Neutral - Male spk,Instance_0fad4c,HAS_PRONOUN
+Younger - Male - Neutral - Male spk,Instance_6cd453,HAS_PRONOUN
+Younger - Male - Neutral - Female spk,Instance_768d8e,HAS_PRONOUN
+Younger - Male - Neutral - Female spk,Instance_7714c3,HAS_PRONOUN
+Younger - Male - Neutral - Female spk,Instance_7c5648,HAS_PRONOUN
+Younger - Male - Neutral - Female spk,Instance_0fad4c,HAS_PRONOUN
+Younger - Female - Neutral - Male spk,Instance_768d8e,HAS_PRONOUN
+Younger - Female - Neutral - Male spk,Instance_037d4a,HAS_PRONOUN
+Younger - Female - Neutral - Male spk,Instance_06d991,HAS_PRONOUN
+Younger - Female - Neutral - Male spk,Instance_0fad4c,HAS_PRONOUN
+Younger - Female - Neutral - Female spk,Instance_768d8e,HAS_PRONOUN
+Younger - Female - Neutral - Female spk,Instance_037d4a,HAS_PRONOUN
+Younger - Female - Neutral - Female spk,Instance_06d991,HAS_PRONOUN
+Younger - Female - Neutral - Female spk,Instance_0fad4c,HAS_PRONOUN
+Younger - Female - Neutral - Female spk,Instance_4de0df,HAS_PRONOUN
+Younger - Male - Informal - Male spk,Instance_d56265,HAS_PRONOUN
+Younger - Male - Informal - Female spk,Instance_d56265,HAS_PRONOUN
+Younger - Female - Informal - Male spk,Instance_d56265,HAS_PRONOUN
+Younger - Female - Informal - Female spk,Instance_d56265,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Male spk,Instance_002cc4,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Male spk,Instance_964ca0,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Male spk,Instance_477f4a,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Male spk,Instance_a63c11,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Male spk,Instance_cd6c20,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Male spk,Instance_f5630a,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Male spk,Instance_ddd083,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Female spk,Instance_002cc4,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Female spk,Instance_964ca0,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Female spk,Instance_477f4a,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Female spk,Instance_a63c11,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Female spk,Instance_cd6c20,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Female spk,Instance_f5630a,HAS_PRONOUN
+Older (same gen) - Male - Neutral - Female spk,Instance_ddd083,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Male spk,Instance_67ea07,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Male spk,Instance_228796,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Male spk,Instance_a44434,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Male spk,Instance_a63c11,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Male spk,Instance_cd6c20,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Male spk,Instance_f5630a,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Male spk,Instance_c27ecf,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Female spk,Instance_67ea07,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Female spk,Instance_228796,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Female spk,Instance_a44434,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Female spk,Instance_a63c11,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Female spk,Instance_cd6c20,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Female spk,Instance_f5630a,HAS_PRONOUN
+Older (same gen) - Female - Neutral - Female spk,Instance_c27ecf,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_93aa36,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_e8d770,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_223cad,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_1fea17,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_e3d6ec,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_65e39f,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_d5e856,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Male spk,Instance_b6d436,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_93aa36,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_e8d770,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_223cad,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_1fea17,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_e3d6ec,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_65e39f,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_d5e856,HAS_PRONOUN
+Middle-aged (parents' gen) - Male - Neutral - Female spk,Instance_b6d436,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_7915e7,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_feca08,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_39a789,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_19772c,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_e3d6ec,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_5f7bd3,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_48a892,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Male spk,Instance_b6d436,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_7915e7,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_feca08,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_39a789,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_19772c,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_e3d6ec,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_5f7bd3,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_48a892,HAS_PRONOUN
+Middle-aged (parents' gen) - Female - Neutral - Female spk,Instance_b6d436,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Male spk,Instance_25d25b,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Male spk,Instance_6c881d,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Male spk,Instance_5bc21d,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Male spk,Instance_3b71af,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Male spk,Instance_3b2389,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Female spk,Instance_25d25b,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Female spk,Instance_6c881d,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Female spk,Instance_5bc21d,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Female spk,Instance_3b71af,HAS_PRONOUN
+Senior (grandparents' gen) - Male - Neutral - Female spk,Instance_3b2389,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Male spk,Instance_48cb8f,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Male spk,Instance_240661,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Male spk,Instance_132d08,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Male spk,Instance_3b71af,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Male spk,Instance_edf791,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Female spk,Instance_48cb8f,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Female spk,Instance_240661,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Female spk,Instance_132d08,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Female spk,Instance_3b71af,HAS_PRONOUN
+Senior (grandparents' gen) - Female - Neutral - Female spk,Instance_edf791,HAS_PRONOUN

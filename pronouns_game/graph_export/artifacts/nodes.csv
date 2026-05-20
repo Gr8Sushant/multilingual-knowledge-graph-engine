@@ -23,74 +23,65 @@ Older (same gen) - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
 Older (same gen) - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
 Older (same gen) - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
 Older (same gen) - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older (same gen) - Male - Formal - Male spk,schema_path,N/A,N/A,N/A
-Older (same gen) - Male - Formal - Female spk,schema_path,N/A,N/A,N/A
-Older (same gen) - Female - Formal - Male spk,schema_path,N/A,N/A,N/A
-Older (same gen) - Female - Formal - Female spk,schema_path,N/A,N/A,N/A
 Middle-aged (parents' gen) - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
 Middle-aged (parents' gen) - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
 Middle-aged (parents' gen) - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
 Middle-aged (parents' gen) - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Middle-aged (parents' gen) - Male - Formal - Male spk,schema_path,N/A,N/A,N/A
-Middle-aged (parents' gen) - Male - Formal - Female spk,schema_path,N/A,N/A,N/A
-Middle-aged (parents' gen) - Female - Formal - Male spk,schema_path,N/A,N/A,N/A
-Middle-aged (parents' gen) - Female - Formal - Female spk,schema_path,N/A,N/A,N/A
-Instance_fb0dd8,instance,Madarin,我 (wǒ),你 (nǐ)
-Instance_c28efb,instance,Cantonese,我 (ngo5),你 (nei5)
-Instance_610af4,instance,Teochew,我 (guá),你 (lí)
-Instance_0a416f,instance,Darija,-,sahbi
-Instance_b18761,instance,Nepali,म (ma) / हामी (Hami),तिमी (timi)
-Instance_0d3ffa,instance,Urdu,میں,تم (tum)
-Instance_6e5a41,instance,Urdu,میں,آپ (aap)
-Instance_854d3f,instance,Vietnamese,mình,bạn
-Instance_dbfbc0,instance,Vietnamese,tôi,bạn
-Instance_45a483,instance,Vietnamese,tui,bạn
-Instance_62781b,instance,Vietnamese,tao,mày
-Instance_d02a30,instance,Mandarin,我 (wǒ),你 / 小 + name (nǐ / xiǎo)
-Instance_d3affc,instance,Cantonese,我 (ngo5),細佬 (sai3 lou2)
-Instance_742608,instance,Cantonese,我 (ngo5),細妹 (sai3 mui6)
-Instance_ea4fd5,instance,Teochew,我 (guá),细弟 (sè-tī)
-Instance_eaa1bf,instance,Teochew,我 (guá),细妹 (sè-muē)
-Instance_48bbb0,instance,Darija,-,-
-Instance_20ce0f,instance,Nepali,म (ma) / हामी (Hami),तँ (ta)
-Instance_527acc,instance,Urdu,میں,تم (tum) or تو (tu)
-Instance_19e322,instance,Vietnamese,anh,em
-Instance_fa07c2,instance,Vietnamese,chị,em
-Instance_d372f3,instance,Mandarin,我 (wǒ),哥哥 (gēge)
-Instance_c62afe,instance,Mandarin,我 (wǒ),姐姐 (jiějie)
-Instance_d7e757,instance,Cantonese,我 (ngo5),哥哥 (go1 go1)
-Instance_255efb,instance,Cantonese,我 (ngo5),姐姐 (ze2 ze2)
-Instance_5343cc,instance,Teochew,我 (guá),阿兄 (a-hiang)
-Instance_e9858c,instance,Teochew,我 (guá),阿姐 (a-jié)
-Instance_93a5ca,instance,Darija,-,-
-Instance_8f9802,instance,Nepali,म (ma) / हामी (Hami),तपाईं (tapai) and हजुर (Hajur)
-Instance_31feaf,instance,Urdu,میں,بھائی (bhai / bhaiya)
-Instance_ca46ea,instance,Urdu,میں,باجی (baji / apa)
-Instance_9b7023,instance,Vietnamese,em,anh
-Instance_b00adc,instance,Vietnamese,em,chị
-Instance_b83083,instance,Mandarin,我 (wǒ),叔叔 (shūshu)
-Instance_f1b2f9,instance,Mandarin,我 (wǒ),阿姨 (āyí)
-Instance_f2e5e3,instance,Cantonese,我 (ngo5),叔叔 (suk1 suk1)
-Instance_192847,instance,Cantonese,我 (ngo5),阿姨 (aa3 ji4)
-Instance_c67598,instance,Teochew,我 (guá),阿叔 (a-zik)
-Instance_a19a13,instance,Teochew,我 (guá),阿姨 (a-î)
-Instance_82d3ba,instance,Darija,-,Khalti (خالتي)
-Instance_c49460,instance,Darija,-,3mi
-Instance_4b8f8c,instance,English,-,uncle
-Instance_dc878a,instance,English,-,aunty
-Instance_222bff,instance,Urdu,میں,Uncle / چچا (chacha)
-Instance_8b7a61,instance,Urdu,میں,Aunty /خالہ (khala)
-Instance_0b7fab,instance,Vietnamese,con/cháu,chú/cậu
-Instance_4eb7c8,instance,Vietnamese,con/cháu,cô/dì
-Instance_d97b70,instance,Vietnamese,con/cháu,bác
-Instance_2f3a34,instance,Mandarin,我 (wǒ),爷爷 (yéye)
-Instance_35df1a,instance,Mandarin,我 (wǒ),奶奶 (nǎinai)
-Instance_893313,instance,Cantonese,我 (ngo5),爺爺 (je4 je4)
-Instance_b6a6f7,instance,Cantonese,我 (ngo5),奶奶 (naai5 naai5)
-Instance_b295b9,instance,Teochew,我 (guá),阿公 (a-gong)
-Instance_29bd41,instance,Teochew,我 (guá),阿嬷 (a-má)
-Instance_688ba0,instance,Darija,-,Lhaj(man ) / Lhaja(women)
-Instance_517abf,instance,Nepali,-,-
-Instance_ac369c,instance,Urdu,میں,دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji)
-Instance_cd959b,instance,Vietnamese,con/cháu,ông
-Instance_0ff8fc,instance,Vietnamese,con/cháu,bà
+Senior (grandparents' gen) - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
+Senior (grandparents' gen) - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
+Senior (grandparents' gen) - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
+Senior (grandparents' gen) - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
+Instance_5759a5,instance,Madarin,我 (wǒ),你 (nǐ)
+Instance_05e020,instance,Cantonese,我 (ngo5),你 (nei5)
+Instance_067a7c,instance,Teochew,我 (guá),你 (lí)
+Instance_3d370c,instance,Nepali,म (ma),तँ (ta) / तिमी (timi)
+Instance_d67089,instance,Urdu,میں,تم (tum)
+Instance_30cc96,instance,Urdu,میں,آپ (aap)
+Instance_c90d8c,instance,Vietnamese,tôi/mình,bạn
+Instance_b90991,instance,Vietnamese,tui,bạn
+Instance_8621ee,instance,Vietnamese,tao,mày
+Instance_768d8e,instance,Mandarin,我 (wǒ),你 / 小 + name (nǐ / xiǎo)
+Instance_7714c3,instance,Cantonese,我 (ngo5),細佬 (sai3 lou2)
+Instance_037d4a,instance,Cantonese,我 (ngo5),細妹 (sai3 mui6)
+Instance_7c5648,instance,Teochew,我 (guá),细弟 (sè-tī)
+Instance_06d991,instance,Teochew,我 (guá),细妹 (sè-muē)
+Instance_0fad4c,instance,Nepali,म (ma),तँ (ta) / तिमी (timi)
+Instance_d56265,instance,Urdu,میں,تم (tum) or تو (tu)
+Instance_6cd453,instance,Vietnamese,anh,em
+Instance_4de0df,instance,Vietnamese,chị,em
+Instance_002cc4,instance,Mandarin,我 (wǒ),哥哥 (gēge)
+Instance_67ea07,instance,Mandarin,我 (wǒ),姐姐 (jiějie)
+Instance_964ca0,instance,Cantonese,我 (ngo5),哥哥 (go1 go1)
+Instance_228796,instance,Cantonese,我 (ngo5),姐姐 (ze2 ze2)
+Instance_477f4a,instance,Teochew,我 (guá),阿兄 (a-hiang)
+Instance_a44434,instance,Teochew,我 (guá),阿姐 (a-jié)
+Instance_a63c11,instance,Nepali,म (ma),तपाईं (tapai) and हजुर (Hajur)
+Instance_cd6c20,instance,Urdu,میں,بھائی (bhai / bhaiya)
+Instance_f5630a,instance,Urdu,میں,باجی (baji / apa)
+Instance_ddd083,instance,Vietnamese,em,anh
+Instance_c27ecf,instance,Vietnamese,em,chị
+Instance_93aa36,instance,Mandarin,我 (wǒ),叔叔 (shūshu)
+Instance_7915e7,instance,Mandarin,我 (wǒ),阿姨 (āyí)
+Instance_e8d770,instance,Cantonese,我 (ngo5),叔叔 (suk1 suk1)
+Instance_feca08,instance,Cantonese,我 (ngo5),阿姨 (aa3 ji4)
+Instance_223cad,instance,Teochew,我 (guá),阿叔 (a-zik)
+Instance_39a789,instance,Teochew,我 (guá),阿姨 (a-î)
+Instance_1fea17,instance,English,-,uncle
+Instance_19772c,instance,English,-,aunty
+Instance_e3d6ec,instance,Nepali,म (ma),तपाईं (tapai) and हजुर (Hajur)
+Instance_65e39f,instance,Urdu,میں,Uncle / چچا (chacha)
+Instance_5f7bd3,instance,Urdu,میں,Aunty /خالہ (khala)
+Instance_d5e856,instance,Vietnamese,con/cháu,chú/cậu
+Instance_48a892,instance,Vietnamese,con/cháu,cô/dì
+Instance_b6d436,instance,Vietnamese,con/cháu,bác
+Instance_25d25b,instance,Mandarin,我 (wǒ),爷爷 (yéye)
+Instance_48cb8f,instance,Mandarin,我 (wǒ),奶奶 (nǎinai)
+Instance_6c881d,instance,Cantonese,我 (ngo5),爺爺 (je4 je4)
+Instance_240661,instance,Cantonese,我 (ngo5),奶奶 (naai5 naai5)
+Instance_5bc21d,instance,Teochew,我 (guá),阿公 (a-gong)
+Instance_132d08,instance,Teochew,我 (guá),阿嬷 (a-má)
+Instance_3b71af,instance,Urdu,میں,دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji)
+Instance_3b2389,instance,Vietnamese,con/cháu,ông
+Instance_edf791,instance,Vietnamese,con/cháu,bà
+Instance_84ab1e,instance,Darija,ana,nta
+Instance_55ccd5,instance,Darija,ana,nti

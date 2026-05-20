@@ -43,14 +43,17 @@
     <div id="loading-msg" style="text-align:center; color:#7f8c8d;">Loading Graph Data...</div>
 </div>
 
-<script src="graph_export/graph_data.js"></script>
+<script src="graph_export/graph_data.js?v=2"></script>
 
 <script>
     let graphNodes = [];
     let graphEdges = [];
     let currentQueue = [];
     let currentQuestion = null;
-    let availableLanguages = ["Vietnamese", "Urdu", "Nepali", "Darija"]; 
+    
+    // 🌟 THE ULTIMATE TABS FIX: 
+    // Explicitly define your exact live dataset. Darija is completely removed.
+    let availableLanguages = ["Vietnamese", "Urdu", "Nepali"]; 
 
     window.onload = function() {
         if (typeof myGraphData !== 'undefined') {
@@ -65,6 +68,8 @@
 
     function setupTabs() {
         const tabsContainer = document.getElementById('language-tabs');
+        tabsContainer.innerHTML = ""; // Hard clean old rendered objects
+        
         availableLanguages.forEach(lang => {
             let btn = document.createElement('button');
             btn.className = 'tab-btn';
@@ -77,12 +82,23 @@
     function startGame(language, btnElement) {
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         btnElement.classList.add('active');
-        document.getElementById('game-area').style.display = 'block';
-        document.getElementById('feedback-box').style.display = 'none';
+        
+        const feedbackBox = document.getElementById('feedback-box');
+        feedbackBox.style.display = 'none';
         document.getElementById('next-btn').style.display = 'none';
         
         const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === language);
-        if(langInstances.length === 0) return;
+        
+        // Safety Fallback: If data parsing fails or language has 0 records, do not show empty loops!
+        if(langInstances.length === 0) {
+            document.getElementById('game-area').style.display = 'block';
+            document.getElementById('queue-counter').innerText = "Questions Remaining: 0";
+            document.getElementById('scenario-text').innerHTML = `⚠️ No active pronoun pairs found in the graph for <b>${language}</b>. Ensure your Excel records are plugged and exported!`;
+            document.getElementById('options-container').innerHTML = "";
+            return;
+        }
+
+        document.getElementById('game-area').style.display = 'block';
 
         let questionPool = [];
         graphEdges.forEach(edge => {
@@ -92,6 +108,7 @@
             if(instanceNode) questionPool.push({ path: schemaPath, instance: instanceNode });
         });
 
+        // Pick up to 5 distinct scenarios
         questionPool.sort(() => 0.5 - Math.random());
         currentQueue = questionPool.slice(0, 5);
         loadNextInQueue();
@@ -106,31 +123,24 @@
         let spkStr = spk.includes("Male") ? "You (male)" : (spk.includes("Female") ? "You (female)" : "You");
         let addrStr = addr === "Male" ? "a male" : (addr === "Female" ? "a female" : "someone");
         
+        // ✨ THE VOCABULARY UX UPGRADE
+        // Using universal generational framing instead of subjective age labels
         let ageStr = "";
-        if(age.includes("Younger")) ageStr = "who is younger than you";
-        else if(age.includes("Older (same")) ageStr = "slightly older than you (like a senior student or older sibling)";
-        else if(age.includes("Middle-aged")) ageStr = "who is middle-aged (like an uncle/aunt)";
-        else if(age.includes("Senior")) ageStr = "who is a senior citizen (grandparent's generation)";
-        else ageStr = "who is exactly the same age as you";
+        if (age.includes("Younger")) {
+            ageStr = "who is younger than you (but in your generation)";
+        } else if (age.includes("Older (same")) {
+            ageStr = "who is older than you (but in your generation)";
+        } else if (age.includes("Middle-aged")) {
+            ageStr = "who belongs to your parents' generation";
+        } else if (age.includes("Senior")) {
+            ageStr = "who belongs to your grandparents' generation";
+        } else {
+            ageStr = "who is exactly your age";
+        }
 
         let socialStr = social === "Formal" ? "in a formal/polite setting." : (social === "Informal" ? "in a casual/friendly setting." : "in a standard, everyday setting.");
+        
         return `${spkStr} are talking to ${addrStr} ${ageStr}, ${socialStr}`;
-    }
-
-    function generateSmartHint(correctPath, wrongPath) {
-        if(!correctPath || !wrongPath || correctPath === wrongPath) return "Hint: Not quite the best fit for this specific context.";
-        
-        const correctParts = correctPath.split(' - ');
-        const wrongParts = wrongPath.split(' - ');
-        let hints = [];
-        
-        if(correctParts[0] !== wrongParts[0]) hints.push("wrong <b>AGE group</b>");
-        if(correctParts[1] !== wrongParts[1]) hints.push("wrong <b>ADDRESSEE GENDER</b>");
-        if(correctParts[2] !== wrongParts[2]) hints.push(`wrong <b>SOCIAL CONTEXT</b> (You chose <i>${wrongParts[2]}</i>, but it should be <i>${correctParts[2]}</i>)`);
-        if(correctParts[3] !== wrongParts[3]) hints.push("wrong <b>SPEAKER GENDER</b>");
-        
-        if(hints.length > 0) return "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + "!";
-        return "💡 Hint: Not quite the best fit for this specific context.";
     }
 
     function loadNextInQueue() {
@@ -148,11 +158,23 @@
         currentQuestion = currentQueue[0];
         document.getElementById('scenario-text').innerText = generateScenarioText(currentQuestion.path);
 
+        const cleanText = (str) => str ? str.replace(/\s+/g, ' ').trim() : "";
+        let correctText = cleanText(`I: ${currentQuestion.instance.term_i} / You: ${currentQuestion.instance.term_you}`);
+        
         let options = [{
-            text: `I: ${currentQuestion.instance.term_i} / You: ${currentQuestion.instance.term_you}`,
+            text: correctText,
             isCorrect: true,
             path: currentQuestion.path
         }];
+
+        // 🌟 THE ABSOLUTE DEDUPLICATOR
+        // This removes ALL spaces and makes it lowercase. 
+        // "तपाईं (tapai) and हजुर" becomes "तपाईं(tapai)andहजुर"
+        // This guarantees that invisible spaces or Excel formatting cannot trick the game!
+        const normalize = (str) => str.replace(/\s+/g, '').toLowerCase();
+        
+        let seenKeys = new Set();
+        seenKeys.add(normalize(correctText));
 
         const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === currentQuestion.instance.language);
         let shuffledDistractors = langInstances.sort(() => 0.5 - Math.random());
@@ -160,19 +182,14 @@
         for(let inst of shuffledDistractors) {
             if(options.length >= 4) break;
             
-            // Avoid adding identical text
-            if(inst.term_i === currentQuestion.instance.term_i && inst.term_you === currentQuestion.instance.term_you) continue;
+            let newText = cleanText(`I: ${inst.term_i} / You: ${inst.term_you}`);
+            let newKey = normalize(newText);
+            
+            // 🌟 STRICT CHECK: If we have seen these exact characters before, skip it!
+            if (seenKeys.has(newKey)) continue;
+            
+            seenKeys.add(newKey); // Add to our tracking list
 
-            // 🌟 FIX 1: Prevent "False Negatives"
-            // If this distractor is ALSO a valid answer for the current scenario, SKIP IT completely!
-            const isAlsoCorrect = graphEdges.some(e => {
-                let s = typeof e.source === 'object' ? e.source.id : e.source;
-                let t = typeof e.target === 'object' ? e.target.id : e.target;
-                return t === inst.id && s === currentQuestion.path;
-            });
-            if (isAlsoCorrect) continue;
-
-            // 🌟 FIX 2: Find the edge that is MOST SIMILAR to our current question to give the best hint!
             const possibleEdges = graphEdges.filter(e => {
                 let t = typeof e.target === 'object' ? e.target.id : e.target;
                 return t === inst.id;
@@ -199,7 +216,7 @@
             });
             
             options.push({
-                text: `I: ${inst.term_i} / You: ${inst.term_you}`,
+                text: newText,
                 isCorrect: false,
                 path: typeof bestEdge.source === 'object' ? bestEdge.source.id : bestEdge.source
             });
