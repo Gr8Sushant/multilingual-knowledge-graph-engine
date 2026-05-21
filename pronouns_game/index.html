@@ -16,6 +16,86 @@
         .status-bar { display: flex; justify-content: space-between; font-size: 14px; color: #7f8c8d; margin-bottom: 15px; font-weight: bold; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px;}
         .score-display { color: #3498db; font-size: 16px; transition: color 0.3s; }
         .bounty-display { color: #f39c12; font-size: 14px; margin-bottom: 10px; text-align: right; font-weight: bold;}
+        .level-display { color: #8e44ad; font-size: 14px; margin-bottom: 10px; font-weight: bold; text-align: left; float: left;}
+        
+        /* 🌟 PREMIUM DUAL-CIRCLE MATCH UI */
+        .avatar-display-box { 
+            display: flex; 
+            align-items: center; 
+            gap: 24px; 
+            margin: 20px 0; 
+            clear: both; 
+            background: #ffffff; 
+            border: 1px solid #e5e8e8; 
+            border-left: 6px solid #8e44ad; 
+            border-radius: 12px; 
+            padding: 20px 24px; 
+            box-shadow: 0 4px 12px rgba(44, 62, 80, 0.04); 
+            box-sizing: border-box;
+        }
+
+        /* Groups the two circles symmetrically */
+        .avatar-pair-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .avatar-circle { 
+            font-size: 28px; 
+            background: #f4ecf7; 
+            border-radius: 50%; 
+            width: 70px; /* Perfectly sized neat circles */
+            height: 70px; 
+            min-width: 70px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border: 2px solid #ffffff;
+            box-shadow: 0 4px 8px rgba(142, 68, 173, 0.1); 
+        }
+
+        /* Gives the context circle a different secondary background tone */
+        .context-circle {
+            background: #ebf5fb;
+            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.1);
+        }
+        
+        .avatar-meta { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 8px; 
+            flex-grow: 1; 
+        }
+        
+        .meta-badge { 
+            display: inline-block; 
+            padding: 6px 14px; 
+            border-radius: 20px; 
+            font-weight: 700; 
+            font-size: 11px; 
+            letter-spacing: 0.8px; 
+            text-transform: uppercase; 
+            width: max-content; 
+            max-width: 100%; 
+            white-space: normal; 
+            word-wrap: break-word;
+            box-sizing: border-box;
+        }
+        
+        .badge-gen { 
+            background: #f4ecf7; 
+            color: #7d3c98; 
+            border: 1px solid #ebd6f3;
+        }
+        
+        .badge-gender { 
+            background: #ebf5fb; 
+            color: #2471a3; 
+            border: 1px solid #d4e6f1;
+            line-height: 1.5; 
+        }
+        
         .scenario-box { background: #f8f9fa; padding: 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 15px; font-size: 18px; color: #2c3e50;}
         .options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; text-align: left; background: white; border: 2px solid #ecf0f1; border-radius: 8px; font-size: 16px; cursor: pointer; transition: 0.2s; }
@@ -41,7 +121,22 @@
             <span class="score-display" id="score-display">🌟 Score: 0</span>
         </div>
         
-        <div class="bounty-display" id="bounty-display">🎯 Question Value: 20 pts</div>
+        <div>
+            <div class="level-display" id="level-display">📊 Level: Warm-up</div>
+            <div class="bounty-display" id="bounty-display">🎯 Question Value: 20 pts</div>
+        </div>
+
+        <div class="avatar-display-box" id="avatar-container">
+            <div class="avatar-pair-wrapper">
+                <div class="avatar-circle" id="avatar-emoji" title="Target Person">👤</div>
+                <div class="avatar-circle context-circle" id="scenario-emoji" title="Social Setting">🌤️</div>
+            </div>
+            <div class="avatar-meta">
+                <div class="meta-badge badge-gen" id="meta-gen">Generation</div>
+                <div class="meta-badge badge-gender" id="meta-gender">Gender • Context</div>
+            </div>
+        </div>
+
         <div class="scenario-box" id="scenario-text">Loading scenario...</div>
         
         <div class="options" id="options-container"></div>
@@ -53,7 +148,7 @@
     <div id="loading-msg" style="text-align:center; color:#7f8c8d;">Loading Graph Data...</div>
 </div>
 
-<script src="graph_export/graph_data.js?v=4"></script>
+<script src="graph_export/graph_data.js?v=7"></script>
 
 <script>
     let graphNodes = [];
@@ -62,9 +157,9 @@
     let currentQuestion = null;
     let availableLanguages = ["Vietnamese", "Urdu", "Nepali"]; 
     
-    // Default scoring rules
-    let scoringRules = { "Age": 5, "Addressee": 3, "Context": 2, "Speaker": 1 };
+    let scoringRules = { "Broad Age": 5, "Specific Gen": 4, "Addressee": 3, "Context": 2, "Speaker": 1 };
     let playerScore = 0;
+    let totalQuestionsInRound = 5;
 
     window.onload = function() {
         if (typeof myGraphData !== 'undefined') {
@@ -83,7 +178,6 @@
     function setupTabs() {
         const tabsContainer = document.getElementById('language-tabs');
         tabsContainer.innerHTML = "";
-        
         availableLanguages.forEach(lang => {
             let btn = document.createElement('button');
             btn.className = 'tab-btn';
@@ -97,22 +191,14 @@
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         btnElement.classList.add('active');
         
-        playerScore = 0; // ✨ Start at 0!
+        playerScore = 0; 
         updateScoreDisplay();
         
-        const feedbackBox = document.getElementById('feedback-box');
-        feedbackBox.style.display = 'none';
+        document.getElementById('feedback-box').style.display = 'none';
         document.getElementById('next-btn').style.display = 'none';
         
         const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === language);
-        
-        if(langInstances.length === 0) {
-            document.getElementById('game-area').style.display = 'block';
-            document.getElementById('queue-counter').innerText = "Questions Remaining: 0";
-            document.getElementById('scenario-text').innerHTML = `⚠️ No active pronoun pairs found.`;
-            document.getElementById('options-container').innerHTML = "";
-            return;
-        }
+        if(langInstances.length === 0) return;
 
         document.getElementById('game-area').style.display = 'block';
 
@@ -121,42 +207,154 @@
             const instanceId = typeof edge.target === 'object' ? edge.target.id : edge.target; 
             const schemaPath = typeof edge.source === 'object' ? edge.source.id : edge.source; 
             const instanceNode = langInstances.find(n => n.id === instanceId);
-            // ✨ Every question is born with 20 Potential Points
-            if(instanceNode) questionPool.push({ path: schemaPath, instance: instanceNode, potentialPoints: 20 });
+            if(instanceNode) {
+                questionPool.push({ path: schemaPath, instance: instanceNode, potentialPoints: 20 });
+            }
         });
 
+        let curatedQueue = [];
+        
+        let easyPool = questionPool.filter(q => !q.path.startsWith("Same Age"));
+        easyPool.sort(() => 0.5 - Math.random());
+        if (easyPool.length > 0) curatedQueue.push(easyPool.pop());
+        if (easyPool.length > 0) curatedQueue.push(easyPool.pop());
+
+        let mediumPool = questionPool.filter(q => q.path.startsWith("Older"));
+        mediumPool.sort(() => 0.5 - Math.random());
+        while(mediumPool.length > 0) {
+            let candidate = mediumPool.pop();
+            if(!curatedQueue.some(q => q.path === candidate.path)) {
+                curatedQueue.push(candidate);
+                break;
+            }
+        }
+
+        let hardPool = questionPool.filter(q => q.path.startsWith("Same Age"));
+        hardPool.sort(() => 0.5 - Math.random());
+        while(curatedQueue.length < 5 && hardPool.length > 0) {
+            let candidate = hardPool.pop();
+            curatedQueue.push(candidate);
+        }
+
         questionPool.sort(() => 0.5 - Math.random());
-        currentQueue = questionPool.slice(0, 5); 
+        while(curatedQueue.length < 5 && questionPool.length > 0) {
+            let candidate = questionPool.pop();
+            if(!curatedQueue.some(q => q.path === candidate.path && q.instance.id === candidate.instance.id)) {
+                curatedQueue.push(candidate);
+            }
+        }
+
+        currentQueue = curatedQueue;
+        totalQuestionsInRound = currentQueue.length;
         loadNextInQueue();
     }
 
     function updateScoreDisplay() {
         const display = document.getElementById('score-display');
         display.innerText = `🌟 Score: ${playerScore}`;
-        if (playerScore > 0) {
-            display.style.color = '#2ecc71';
-            display.style.fontWeight = 'bold';
+        if (playerScore > 0) display.style.color = '#2ecc71';
+    }
+
+    // 🌟 SEPARATED AVATAR + SCENARIO SELECTION LOGIC
+    function updateQuestionAvatar(pathString) {
+        if (!pathString) return;
+        const parts = pathString.split(' - ');
+        if(parts.length < 5) return;
+        
+        const specificAge = parts[1];
+        const addrGender = parts[2];
+        const socialContext = parts[3]; 
+
+        // 1. Resolve Target Person Avatar
+        let personEmoji = "👤";
+        let generationLabel = "Same Generation";
+
+        if (specificAge.includes("Grandparents")) {
+            generationLabel = "Grandparents' Gen";
+            personEmoji = (addrGender === "Male") ? "👴🏽" : "👵🏽";
+        } else if (specificAge.includes("Parents")) {
+            generationLabel = "Parents' Gen";
+            personEmoji = (addrGender === "Male") ? "👨🏽‍💼" : "👩🏽‍💼";
+        } else if (specificAge.includes("Older")) {
+            generationLabel = "Older Peers";
+            personEmoji = (addrGender === "Male") ? "👦🏽" : "👧🏽";
+        } else if (specificAge.includes("Younger")) {
+            generationLabel = "Younger Peers";
+            personEmoji = (addrGender === "Male") ? "👦🏻" : "👧🏻";
+        } else {
+            generationLabel = "Exact Same Age";
+            personEmoji = (addrGender === "Male") ? "🧑‍🦱" : "👩‍🦱";
         }
+
+        // 2. Resolve Scenario Environment Emoji
+        let scenarioEmoji = "🌤️";
+        if (socialContext === "Formal") {
+            scenarioEmoji = "🏢"; 
+        } else if (socialContext === "Informal") {
+            scenarioEmoji = "☕"; 
+        } else {
+            scenarioEmoji = "🏠"; 
+        }
+
+        // 3. Inject them into separate DOM elements
+        document.getElementById('avatar-emoji').innerText = personEmoji;
+        document.getElementById('scenario-emoji').innerText = scenarioEmoji;
+        
+        document.getElementById('meta-gen').innerText = generationLabel;
+        document.getElementById('meta-gender').innerText = `${addrGender} Target • ${socialContext}`;
     }
 
     function generateScenarioText(pathString) {
         if (!pathString) return "Unknown scenario";
         const parts = pathString.split(' - ');
-        if(parts.length < 4) return pathString;
-        const age = parts[0], addr = parts[1], social = parts[2], spk = parts[3];
-
-        let spkStr = spk.includes("Male") ? "You (male)" : (spk.includes("Female") ? "You (female)" : "You");
-        let addrStr = addr === "Male" ? "a male" : (addr === "Female" ? "a female" : "someone");
+        if(parts.length < 5) return pathString;
         
+        // 🌟 Exact match to our 5-Layer Python Architecture
+        const broadAge = parts[0];
+        const specificAge = parts[1];
+        const addrGender = parts[2];
+        const socialContext = parts[3];
+        const spkGender = parts[4];
+
+        // 1. Map who the Player is in this scenario
+        let spkStr = "You";
+        if (spkGender.includes("Male")) {
+            spkStr = "You (male)";
+        } else if (spkGender.includes("Female")) {
+            spkStr = "You (female)";
+        }
+
+        // 2. Map who the target Listener is
+        let addrStr = "someone";
+        if (addrGender === "Male") {
+            addrStr = "a male";
+        } else if (addrGender === "Female") {
+            addrStr = "a female";
+        }
+        
+        // 3. Map the Generation Context beautifully
         let ageStr = "";
-        if (age.includes("Younger")) ageStr = "who is younger than you (but in your generation)";
-        else if (age.includes("Older (same")) ageStr = "who is older than you (but in your generation)";
-        else if (age.includes("Middle-aged")) ageStr = "who belongs to your parents' generation";
-        else if (age.includes("Senior")) ageStr = "who belongs to your grandparents' generation";
-        else ageStr = "who is exactly your age";
+        if (specificAge.includes("Grandparents")) {
+            ageStr = "who belongs to your grandparents' generation";
+        } else if (specificAge.includes("Parents")) {
+            ageStr = "who belongs to your parents' generation";
+        } else if (specificAge.includes("Older")) {
+            ageStr = "who is older than you (but in your same generation)";
+        } else if (specificAge.includes("Younger")) {
+            ageStr = "who is younger than you (but in your same generation)";
+        } else {
+            ageStr = "who is exactly your age";
+        }
 
-        let socialStr = social === "Formal" ? "in a formal/polite setting." : (social === "Informal" ? "in a casual/friendly setting." : "in a standard, everyday setting.");
+        // 4. Map the Social Setting
+        let socialStr = "in a standard, everyday setting.";
+        if (socialContext === "Formal") {
+            socialStr = "in a formal/polite setting.";
+        } else if (socialContext === "Informal") {
+            socialStr = "in a casual/friendly setting.";
+        }
         
+        // Combine them into a flawless sentence
         return `${spkStr} are talking to ${addrStr} ${ageStr}, ${socialStr}`;
     }
 
@@ -169,32 +367,32 @@
         let penalty = 0;
         
         if(correctParts[0] !== wrongParts[0]) {
-            hints.push("wrong <b>AGE/GENERATION</b>");
-            penalty += scoringRules["Age"] || 5;
+            hints.push("wrong <b>BROAD AGE group</b>");
+            penalty += scoringRules["Broad Age"] || 5;
         }
         if(correctParts[1] !== wrongParts[1]) {
+            hints.push("wrong <b>SPECIFIC GENERATION</b>");
+            penalty += scoringRules["Specific Gen"] || 4;
+        }
+        if(correctParts[2] !== wrongParts[2]) {
             hints.push("wrong <b>ADDRESSEE GENDER</b>");
             penalty += scoringRules["Addressee"] || 3;
         }
-        if(correctParts[2] !== wrongParts[2]) {
-            hints.push(`wrong <b>SOCIAL CONTEXT</b> (You chose <i>${wrongParts[2]}</i> instead of <i>${correctParts[2]}</i>)`);
+        if(correctParts[3] !== wrongParts[3]) {
+            hints.push(`wrong <b>SOCIAL CONTEXT</b> (Chose <i>${wrongParts[3]}</i> instead of <i>${correctParts[3]}</i>)`);
             penalty += scoringRules["Context"] || 2;
         }
-        if(correctParts[3] !== wrongParts[3]) {
+        if(correctParts[4] !== wrongParts[4]) {
             hints.push("wrong <b>SPEAKER GENDER</b>");
             penalty += scoringRules["Speaker"] || 1;
         }
         
         let severity = "Minor Awkwardness 🟡";
         if (penalty >= 5) severity = "Critical Cultural Error 🚨";
-        else if (penalty >= 3) severity = "Major Error 🔴";
-        else if (penalty >= 2) severity = "Moderate Error 🟠";
+        else if (penalty >= 4) severity = "Major Generational Mistake 🔴";
+        else if (penalty >= 2) severity = "Moderate Context Misalignment 🟠";
 
-        return {
-            hint: "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + ".",
-            penalty: penalty,
-            severity: severity
-        };
+        return { hint: "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + ".", penalty: penalty, severity: severity };
     }
 
     function loadNextInQueue() {
@@ -210,6 +408,8 @@
 
             document.getElementById('queue-counter').innerText = "🎉 All Done!";
             document.getElementById('bounty-display').style.display = 'none';
+            document.getElementById('level-display').style.display = 'none';
+            document.getElementById('avatar-container').style.display = 'none'; // Hide on end card
             document.getElementById('scenario-text').innerHTML = `
                 <div style="text-align: center; margin: 10px 0;">
                     <div style="font-size: 16px; color: #7f8c8d;">Final Score</div>
@@ -225,9 +425,28 @@
         document.getElementById('queue-counter').innerText = `Questions Remaining: ${currentQueue.length}`;
         currentQuestion = currentQueue[0];
         
-        // Show current bounty value
         document.getElementById('bounty-display').style.display = 'block';
+        document.getElementById('level-display').style.display = 'block';
+        document.getElementById('avatar-container').style.display = 'flex'; // Ensure avatar box is visible
         document.getElementById('bounty-display').innerText = `🎯 Question Value: ${currentQuestion.potentialPoints} pts`;
+        
+        let questionIndexNumber = (totalQuestionsInRound - currentQueue.length) + 1; 
+        let levelText = "📊 Level: Warm-up (Easy)";
+        if (questionIndexNumber === 3) levelText = "📊 Level: Intermediate (Medium)";
+        if (questionIndexNumber >= 4) levelText = "📊 Level: Advanced (Hard)";
+        if (currentQuestion.potentialPoints < 20) levelText = "📊 Level: Review Mode";
+        
+        document.getElementById('level-display').innerText = levelText;
+
+        // Dynamic Accent Border color based on level
+        let cardElement = document.getElementById('avatar-container');
+        if (questionIndexNumber <= 2) cardElement.style.borderLeftColor = "#2ecc71"; // Green
+        else if (questionIndexNumber === 3) cardElement.style.borderLeftColor = "#e67e22"; // Orange
+        else cardElement.style.borderLeftColor = "#8e44ad"; // Purple
+        if (currentQuestion.potentialPoints < 20) cardElement.style.borderLeftColor = "#34495e"; // Review Gray
+        
+        // 🌟 DYNAMICALLY TRIGGER THE AVATAR GENERATION
+        updateQuestionAvatar(currentQuestion.path);
         
         document.getElementById('scenario-text').innerText = generateScenarioText(currentQuestion.path);
 
@@ -235,22 +454,18 @@
         let correctText = cleanText(`I: ${currentQuestion.instance.term_i} / You: ${currentQuestion.instance.term_you}`);
         
         let options = [{ text: correctText, isCorrect: true, path: currentQuestion.path }];
-
         const normalize = (str) => str.replace(/\s+/g, '').toLowerCase();
         let seenKeys = new Set();
         seenKeys.add(normalize(correctText));
 
+        let allValidDistractors = [];
         const langInstances = graphNodes.filter(n => n.type === 'instance' && n.language === currentQuestion.instance.language);
-        let shuffledDistractors = langInstances.sort(() => 0.5 - Math.random());
         
-        for(let inst of shuffledDistractors) {
-            if(options.length >= 4) break;
-            
+        for(let inst of langInstances) {
             let newText = cleanText(`I: ${inst.term_i} / You: ${inst.term_you}`);
             let newKey = normalize(newText);
             
             if (seenKeys.has(newKey)) continue;
-            seenKeys.add(newKey); 
 
             const isAlsoCorrect = graphEdges.some(e => {
                 let s = typeof e.source === 'object' ? e.source.id : e.source;
@@ -263,7 +478,6 @@
                 let t = typeof e.target === 'object' ? e.target.id : e.target;
                 return t === inst.id;
             });
-            
             if(possibleEdges.length === 0) continue;
 
             let bestEdge = possibleEdges[0];
@@ -278,15 +492,30 @@
                 if(wrongParts[1] === correctParts[1]) matches++; 
                 if(wrongParts[2] === correctParts[2]) matches++; 
                 if(wrongParts[3] === correctParts[3]) matches++; 
+                if(wrongParts[4] === correctParts[4]) matches++; 
                 if(matches > maxMatches) {
                     maxMatches = matches;
                     bestEdge = e;
                 }
             });
             
-            options.push({ text: newText, isCorrect: false, path: typeof bestEdge.source === 'object' ? bestEdge.source.id : bestEdge.source });
+            let bestPathId = typeof bestEdge.source === 'object' ? bestEdge.source.id : bestEdge.source;
+            let evaluation = evaluateMistake(currentQuestion.path, bestPathId);
+            
+            allValidDistractors.push({ text: newText, isCorrect: false, path: bestPathId, penalty: evaluation.penalty });
+            seenKeys.add(newKey);
         }
 
+        if (questionIndexNumber <= 2) {
+            allValidDistractors.sort((a, b) => b.penalty - a.penalty);
+        } else if (questionIndexNumber === 3) {
+            allValidDistractors.sort(() => 0.5 - Math.random());
+        } else {
+            allValidDistractors.sort((a, b) => a.penalty - b.penalty);
+        }
+
+        let selectedDistractors = allValidDistractors.slice(0, 3);
+        options.push(...selectedDistractors);
         options.sort(() => 0.5 - Math.random());
         renderOptions(options);
     }
@@ -294,7 +523,6 @@
     function renderOptions(options) {
         const container = document.getElementById('options-container');
         container.innerHTML = "";
-        
         options.forEach(opt => {
             let btn = document.createElement('button');
             btn.className = 'option-btn';
@@ -314,26 +542,20 @@
             btnElement.style.backgroundColor = "#e8f8f5";
             feedback.className = "feedback correct";
             
-            // ✨ Reward the player!
             playerScore += currentQuestion.potentialPoints;
             updateScoreDisplay();
-            
             feedback.innerHTML = `<b>🎉 Correct!</b> You earned <b>+${currentQuestion.potentialPoints} points</b>!`;
             
             currentQueue.shift(); 
             document.getElementById('next-btn').style.display = 'block';
             document.getElementById('next-btn').innerText = "Next Question ➡️";
             document.getElementById('next-btn').style.background = "#2ecc71";
-            
         } else {
             btnElement.style.borderColor = "#f39c12";
             btnElement.style.backgroundColor = "#fdf2e9";
             feedback.className = "feedback incorrect";
             
             let evaluation = evaluateMistake(currentQuestion.path, selectedOption.path);
-            
-            // ✨ Reduce the bounty for next time (Penalty * 2) 
-            // e.g. A 5-point critical error removes 10 points from the bounty. Minimum 5 points.
             let pointsLost = evaluation.penalty * 2;
             currentQuestion.potentialPoints -= pointsLost;
             if (currentQuestion.potentialPoints < 5) currentQuestion.potentialPoints = 5;
