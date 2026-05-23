@@ -20,3 +20,5 @@ morphology_game/__pycache__/
 
 # Generated artifacts
 Matching_Game/artifacts/
+dump/
+Matching_Game/scripts/game_generation_scripts/ui/assets/

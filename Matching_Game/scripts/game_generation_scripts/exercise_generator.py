@@ -80,7 +80,7 @@ class ExerciseGenerator:
             score = 0
             if g in confusable_set:
                 score += 50  # High boost for visual/phonetic confusable sets
-            if category and self.script_index.grapheme_to_category.get(g) == category:
+            if category and self.script_index.grapheme_to_category.get(g) == category:   # <----------------- Difficulty is directly related to this score
                 score += 20  # Base rule: same type (consonant vs consonant)
             if lesson and self.script_index.grapheme_to_lesson.get(g) == lesson:
                 score += 10
@@ -150,14 +150,14 @@ class ExerciseGenerator:
         # 1. Semantic Similarity
         similarities = self.semantic_index.concept_similarities.get(correct_concept, {})
         for cid, weight in similarities.items():
-            scored_concepts.append((weight * 100, cid))
+            scored_concepts.append((weight * 100, cid)) # < ---- Heavy scoring here
             
         # 2. Domain neighbors (if few similarities)
         domains = self.semantic_index.concept_to_domain.get(correct_concept, [])
         for d in domains:
             for cid in self.semantic_index.domain_to_concepts.get(d, []):
                 if cid != correct_concept and cid not in similarities:
-                    scored_concepts.append((10, cid)) # lower score than direct similarity
+                    scored_concepts.append((10, cid)) # lower score than direct similarity     #<------------------  +10 If a concept is in the same domain but has no explicit similarity entry, it gets a base score of 10. This ensures that semantically related words are still more likely to appear as distractors than completely random words.
                     
         # Sort and map to target lemmas
         scored_concepts.sort(key=lambda x: (x[0], self.random.random()), reverse=True)

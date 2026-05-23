@@ -268,16 +268,46 @@ function showScreen(screenElement) {
 
 function playAudio() {
     if (isAudioPlaying) return;
-    isAudioPlaying = true;
     
+    const item = currentItems[currentIndex];
+    let audioPath = null;
+    
+    // Check if the item explicitly has an audio path
+    if (item.audio_path) {
+        audioPath = item.audio_path;
+    } else if (item.language === 'ur' && item.mode === 1) {
+        // Fallback to dynamic path logic for Urdu
+        // item.correct_grapheme looks like "grapheme:ur:ا"
+        const grapheme = cleanLabel(item.correct_grapheme);
+        audioPath = `assets/audio/ur/${grapheme}.m4a`;
+    }
+
+    if (!audioPath) {
+        return;
+    }
+
+    isAudioPlaying = true;
     const originalText = audioBtn.innerHTML;
     audioBtn.innerHTML = `🔊 Playing...`;
     
-    // Simulate audio playing delay
-    setTimeout(() => {
+    const audio = new Audio(audioPath);
+    
+    audio.onended = () => {
         audioBtn.innerHTML = originalText;
         isAudioPlaying = false;
-    }, 1500);
+    };
+    
+    audio.onerror = (e) => {
+        console.error("Audio playback failed for", audioPath, e);
+        audioBtn.innerHTML = originalText;
+        isAudioPlaying = false;
+    };
+    
+    audio.play().catch(e => {
+        console.error("Audio play error", e);
+        audioBtn.innerHTML = originalText;
+        isAudioPlaying = false;
+    });
 }
 
 // Start
