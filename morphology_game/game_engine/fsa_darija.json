@@ -1,16 +1,16 @@
 {
-    "tense_markers": {
-      "present": "ka",
-      "future": "ghadi "
-    },
-    "pronouns": {
-      "ana": {"prefix": "n", "suffix": ""},
-      "nta": {"prefix": "t", "suffix": ""},
-      "nti": {"prefix": "t", "suffix": "i"},
-      "huwa": {"prefix": "y", "suffix": ""},
-      "hiya": {"prefix": "t", "suffix": ""},
-      "7na": {"prefix": "n", "suffix": "u"},
-      "ntuma": {"prefix": "t", "suffix": "u"},
-      "huma": {"prefix": "y", "suffix": "u"}
-    }
+  "tense_markers": {
+    "present": "ka",
+    "future": "ghadi "
+  },
+  "pronouns": {
+    "ana": {"prefix": "n", "suffix": "", "english": "I"},
+    "nta": {"prefix": "t", "suffix": "", "english": "you (m)"},
+    "nti": {"prefix": "t", "suffix": "i", "english": "you (f)"},
+    "huwa": {"prefix": "y", "suffix": "", "english": "he"},
+    "hiya": {"prefix": "t", "suffix": "", "english": "she"},
+    "7na": {"prefix": "n", "suffix": "u", "english": "we"},
+    "ntuma": {"prefix": "t", "suffix": "u", "english": "you all"},
+    "huma": {"prefix": "y", "suffix": "u", "english": "they"}
   }
+}

@@ -1,9 +1,14 @@
 let currentCorrectAnswer = "";
 let currentTargetRoot = "";
+let currentTargetPronoun = "";
 
 // Helper function to see which language is selected
 function getSelectedLanguage() {
     return document.querySelector('input[name="language"]:checked').value;
+}
+
+function getSelectedDifficulty() {
+    return document.querySelector('input[name="difficulty"]:checked').value;
 }
 
 async function loadQuestion() {
@@ -11,18 +16,20 @@ async function loadQuestion() {
     document.getElementById('feedback-box').classList.add('hidden');
     document.getElementById('prompt-text').innerText = "Loading...";
 
-    const lang = getSelectedLanguage(); // GET LANGUAGE
+    const lang = getSelectedLanguage(); 
+    const diff = getSelectedDifficulty();
 
     try {
-        // SEND LANGUAGE TO SERVER
-        const response = await fetch(`/api/get_question?lang=${lang}`);
+        const response = await fetch(`/api/get_question?lang=${lang}&difficulty=${diff}`);
         const data = await response.json();
         
         currentCorrectAnswer = data.correct_answer;
         currentTargetRoot = data.root;
+        currentTargetPronoun = data.pronoun;
         
-        document.getElementById('prompt-text').innerText = `${data.pronoun} + ${data.root}`;
-
+        document.getElementById('prompt-text').innerHTML = 
+        `${data.english_pronoun} + ${data.english_translation} <br> <span style="font-size: 0.7em; color: #666;">(${data.pronoun} + ${data.root})</span>`;        
+        
         const container = document.getElementById('options-container');
         data.options.forEach(optionText => {
             const btn = document.createElement('button');
@@ -33,8 +40,10 @@ async function loadQuestion() {
         });
     } catch (error) {
         console.error("Error loading question:", error);
+        document.getElementById('prompt-text').innerText = "Failed to load question.";
     }
 }
+
 // Handle the user's click and talk to the SRS
 async function checkAnswer(clickedButton, selectedText) {
     const allButtons = document.querySelectorAll('.option-btn');
@@ -43,7 +52,6 @@ async function checkAnswer(clickedButton, selectedText) {
 
     allButtons.forEach(btn => btn.disabled = true);
 
-    // 1. Check if they were right
     const isCorrect = (selectedText === currentCorrectAnswer);
 
     if (isCorrect) {
@@ -60,21 +68,30 @@ async function checkAnswer(clickedButton, selectedText) {
         });
     }
 
-    // 2. Tell the Python Server to update the student's Spaced Repetition profile
-    await fetch('/api/update_srs', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            lang: getSelectedLanguage(),  // ADD THIS LINE
-            root: currentTargetRoot,
-            correct: (selectedText === currentCorrectAnswer)
-        })
-    });
-    document.getElementById('feedback-box').classList.remove('hidden');
-}
+    // Inform the backend server using the targeted grammatical pronoun token
+    try {
+        await fetch('/api/update_srs', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                lang: getSelectedLanguage(),  
+                pronoun: currentTargetPronoun, 
+                correct: isCorrect
+            })
+        });
+    } catch (error) {
+        console.error("Error updating SRS:", error);
+    }
 
-// Listen for the slider changing, and load a new question immediately!
+    document.getElementById('feedback-box').classList.remove('hidden');
+} // <--- THIS WAS THE MISSING CLOSING BRACKET THAT CRASHED YOUR CODE!
+
+// Listen for the UI switches and load fresh questions immediately
 document.querySelectorAll('input[name="language"]').forEach(radio => {
+    radio.addEventListener('change', loadQuestion);
+});
+
+document.querySelectorAll('input[name="difficulty"]').forEach(radio => {
     radio.addEventListener('change', loadQuestion);
 });
 

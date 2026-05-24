@@ -4,14 +4,14 @@ import random
 
 app = Flask(__name__)
 
-# Load all three languages!
+# Load all three languages
 engines = {
     "darija": LanguageEngine("../data/darija_expanded_arabizi_ukc.csv", "fsa_darija.json", root_col="arabizi"),
     "urdu": LanguageEngine("../data/urdu_english_ukc_lexicon.csv", "fsa_urdu.json", root_col="lemmas"),
     "nepali": LanguageEngine("../data/nepali_english_ukc_lexicon.csv", "fsa_nepali.json", root_col="lemmas")
 }
 
-# The SRS Database now tracks languages separately: srs_db["urdu"]["root_word"]
+# Track mastery by PRONOUN concepts across languages
 srs_db = {"darija": {}, "urdu": {}, "nepali": {}}
 
 @app.route('/')
@@ -21,36 +21,48 @@ def home():
 @app.route('/api/get_question', methods=['GET'])
 def get_question():
     language = request.args.get('lang', 'darija')
+    requested_diff = request.args.get('difficulty', 'auto') 
     engine = engines[language]
     
-    target_root = random.choice(engine.all_roots)
-    target_pronoun = random.choice(engine.pronouns)
-    
-    if target_root not in srs_db[language]:
-        srs_db[language][target_root] = {"level": "easy", "times_correct": 0}
+    # 1. Grammar-First Selection Logic: Focus on mastering pronouns
+    seen_pronouns = list(srs_db[language].keys())
+    if len(seen_pronouns) > 0 and random.random() < 0.3:
+        target_pronoun = random.choice(seen_pronouns)
+    else:
+        target_pronoun = random.choice(engine.pronouns)
         
-    current_difficulty = srs_db[language][target_root]["level"]
-    question_data = engine.generate_question(target_root, target_pronoun, current_difficulty)
+    # Verbs are selected at random from the UKC lexicon to test the pattern dynamically
+    target_root = random.choice(engine.all_roots)
     
+    # Initialize pronoun tracking if it's the user's first time seeing it
+    if target_pronoun not in srs_db[language]:
+        srs_db[language][target_pronoun] = {"level": "easy", "times_correct": 0}
+        
+    # Determine difficulty level
+    if requested_diff == 'auto':
+        current_difficulty = srs_db[language][target_pronoun]["level"]
+    else:
+        current_difficulty = requested_diff
+        
+    question_data = engine.generate_question(target_root, target_pronoun, current_difficulty)
     return jsonify(question_data)
 
 @app.route('/api/update_srs', methods=['POST'])
 def update_srs():
     data = request.json
     language = data.get('lang')
-    root = data.get('root')
+    pronoun = data.get('pronoun')  # Grading tracks the grammar token!
     was_correct = data.get('correct')
     
-    if language in srs_db and root in srs_db[language]:
+    if language in srs_db and pronoun in srs_db[language]:
         if was_correct:
-            srs_db[language][root]["times_correct"] += 1
-            srs_db[language][root]["level"] = "hard"
+            srs_db[language][pronoun]["times_correct"] += 1
+            srs_db[language][pronoun]["level"] = "hard"
         else:
-            srs_db[language][root]["times_correct"] = 0
-            srs_db[language][root]["level"] = "easy"
+            srs_db[language][pronoun]["times_correct"] = 0
+            srs_db[language][pronoun]["level"] = "easy"
             
-    print(f"SRS Update [{language}] -> Verb: {root} | New Level: {srs_db[language][root]['level']}")
-    return jsonify({"status": "success"})
+    return jsonify({"status": "success", "srs_data": srs_db[language]})
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)

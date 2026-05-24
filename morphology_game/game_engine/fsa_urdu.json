@@ -1,9 +1,9 @@
 {
-    "tense_markers": { "present": "" },
-    "pronouns": {
-      "main (I)": {"prefix": "", "suffix": "تا ہوں"},
-      "tu (You, inf)": {"prefix": "", "suffix": "تے ہو"},
-      "woh (He/She)": {"prefix": "", "suffix": "تا ہے"},
-      "hum (We)": {"prefix": "", "suffix": "تے ہیں"}
-    }
+  "tense_markers": { "present": "" },
+  "pronouns": {
+    "main": {"prefix": "", "suffix": "تا ہوں", "english": "I"},
+    "tu": {"prefix": "", "suffix": "تے ہو", "english": "You (inf)"},
+    "woh": {"prefix": "", "suffix": "تا ہے", "english": "He/She"},
+    "hum": {"prefix": "", "suffix": "تے ہیں", "english": "We"}
   }
+}
