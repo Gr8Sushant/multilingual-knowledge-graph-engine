@@ -1,0 +1,129 @@
+concept_id,wn30_id,english,urdu,darija,nepali,vietnamese,domain
+7183,01460457-n,egg,انڈا | بیضہ,بيض | بيضة,अण्डा | डिम्ब | डिम्बा | डिम्मा,trứng,noun.animal
+8906,01792158-n,cock | rooster,خروس | مرغا,فروج,कुखुरो | भाले,gà trống,noun.animal
+8910,01792640-n,biddy | hen,ماکیاں | مرغی | مرگی,دْجاجة,कुखुरो,gà mái,noun.animal
+9746,01944390-n,snail,گھونگا,بَبُّوش | حلزون‎ | غلالة,सिपी,ốc,noun.animal
+11425,02233338-n,cockroach | roach,تل چٹا | تل چٹّا | کاکروچ,سراق الزيت,साँग्लो,gián,noun.animal
+12408,02403454-n,cow | moo-cow,بقر | گای | گو | گئو,بقرة,गाई,bò cái,noun.animal
+12466,02412440-n,lamb,میمنا,حولي | خروف | خروفة | نعجة,पाठो | बच्चो,cừu con | cừu non,noun.animal
+14498,02774630-n,baggage | luggage,بوریابستر | سامان,بكاج,कुटुरो | टोप्ला-टाप्ली | पुन्तुरो | पोको,hành lý | 行李,noun.artifact
+14764,02818832-n,bed,بستر | پلنگ,ناموسية,ओछ्यान | खाट,giường,noun.artifact
+15004,02858304-n,boat,بحرا | بیڑی | ڈونگا | سفینہ | کشتی | ناو | ناؤ,فلوكة,डुङ्गा | नाउ | नौका,thuyền,noun.artifact
+16118,03046257-n,clock,گھڑی,مݣانة,घडी,đồng hồ,noun.artifact
+16280,03075097-n,comb,کمگھی | کنگھی,مشطة,काइँयो,lược,noun.artifact
+16712,03151077-n,curtain | drape | drapery | mantle | pall,پردہ | چلمن | نقاب,خامية,पट | पर्दा,màn | màn cửa,noun.artifact
+17121,03221720-n,door,دروازہ | دوار,باب,ढोका | द्वार,cửa,noun.artifact
+17855,03354903-n,flag,جھنڈا | علم,راية,झण्डा,cờ,noun.artifact
+18054,03386011-n,fort | fortress,حصار | قلعہ | گڑھ,قلعة,किल्ला | गढ | गढी | दुर्ग,pháo đài,noun.artifact
+18226,03416489-n,garage,گراج | گیراج | گیریج,ڭراج,ग्याराज,ga ra | nhà xe,noun.artifact
+18969,03540595-n,hospital | infirmary,اسپتال,سبيطار,अस्पताल | चिकित्सालय,bệnh viện | nhà thương | y viện,noun.artifact
+18979,03542333-n,hotel,ہوٹل,أوطيل | فندق,होटल,khách sạn | lữ quán | ô ten | 客棧 | 旅館,noun.artifact
+19382,03613294-n,key,تالی | چابی,ساروت | مفتاح,साचो,chìa khoá | khoá,noun.artifact
+19444,03623556-n,knife,چاقو | چھری,موس,चक्कु,dao,noun.artifact
+20293,03773035-n,mirror,آبگین | آرسی | آئینہ | درپن | شیشہ,مراية,अइना | ऐना | दर्पण,gương | kiếng | kính,noun.artifact
+20384,03788195-n,mosque,مسجد,جامع | مسجد,मस्जिद,masjid | thánh đường,noun.artifact
+20809,03862676-n,oven,تندور,فرّان,चुल्हो,lò | lò nướng,noun.artifact
+21259,03938244-n,pillow,بالش | بالیں | تکیا | تکیہ | سرہانا | سرہانہ | گیندوا,خدية | مخدة,तकिया | सिरानी | सिह्रानी,gối,noun.artifact
+21652,04005630-n,prison | prison house,بندیگھر | جیل | جیل خانہ | حوالات | زنداں | قید خانہ | قیدخانہ | کاراگار,حبْس,कारागार | कारावास | कैदखाना | जेल | झ्यालखाना | थाना,nhà tù | tù,noun.artifact
+22169,04096066-n,road | route,پگڈنڈی | ڈگر | راستہ | راہ | رہگزر | سڑک,طْريق,बाटो | मार्ग | सडक,đường,noun.artifact
+22223,04105068-n,roof,چھت,سقف,छत् | छाना | छानो,mái | mái nhà,noun.artifact
+22754,04197391-n,shirt,شرٹ | قمیص | قمیض,قميجة,कमीज | शर्ट | सर्ट,sơ mi,noun.artifact
+22764,04199027-n,shoe,جوتا | جوتی,سباط,जुत्ता | जूता,giày,noun.artifact
+22782,04202417-n,shop | store,دکان | دوکان,حانوت,दोकान | पसल,cửa hàng | hiệu | tiệm,noun.artifact
+23107,04254777-n,sock,جوراب | موزا | موزہ,تقاشر | تقشيرة,जुराफ | मोजा,bít tất | tất | vớ,noun.artifact
+23219,04272054-n,eyeglasses | glasses | specs | spectacles,آنکھ کاچشمہ | چشمہ | عینک,نضاضر | نظاظر,उपनेत्र | चश्मा | चस्मा,kính | kính mắt | mắt kính,noun.artifact
+23297,04284002-n,spoon,چمچ | چمچہ | چمچی,عشقة | معلقة,चमच | चमचा | चम्चा,muỗng | thìa,noun.artifact
+23807,04371225-n,natatorium | swimming bath | swimming pool,پیراکی تالاب | تیراکی تالاب | سویمنگ پول | سوئمنگ پول | شناوری تالاب,مسبح,तरणताल | स्वीमींग पुल,bể bơi | hồ bơi,noun.artifact
+28220,05216365-n,body | organic structure | physical structure,بدن | پنڈا | تن | جسم | دیہ | ڈیل | شریر,جسم,जिउ | देह | शरीर,cơ thể | mình | người | thân | thân thể | 身體,noun.body
+28449,05262185-n,moustache | mustache,بروت | مونچھ,شلغوم,जुँगा | जुंगा | जुङा,râu mép | ria | ria mép,noun.body
+28657,05302499-n,mouth | oral cavity | oral fissure | rima oris,دہن | مکھ | منہ | منھ,فا,थुतुनो | मुख,miệng | mồm,noun.body
+29114,05387544-n,lung,پھےپھڑا | پھیپھڑا,رية,फुसफुस | फोक्सो,phổi,noun.body
+29881,05546540-n,cervix | neck,کںٹھ | گردن | گلا | گلو,عنق,गर्दन् | गला | घाँटी | घिछ्रो,cổ,noun.body
+29943,05558717-n,back | dorsum,پشت | پیٹھ,ضهر,डड्याल्नो | ढाड | पिठ्युँ | पीठ,lưng,noun.body
+29947,05559727-n,buttock | cheek,چوتر | چوتڑ | گانڈ,ترمة,चाक | नितम्ब | पुट्ठा,mông,noun.body
+29958,05562249-n,thigh,جانگھ | ران | زانو,فخد,जाँघ | तिघ्रा | तिघ्रिा,đùi,noun.body
+29967,05564590-n,hand | manus | mitt | paw,دست | ہاتھ,إيد | يد,हात,tay,noun.body
+30015,05573602-n,articulatio genus | genu | human knee | knee | knee joint,پنڈلی | زانو | گھٹنا | گوڈا,ركبة,घुँडा | घुँडो,đầu gối | gối,noun.body
+30052,05579944-n,articulatio cubiti | cubital joint | cubitus | elbow | elbow joint | human elbow,کہنی,كوع | مرفق,कुहिनो | कुहुनो,khuỷu tay,noun.body
+30157,05600637-n,face | human face,چہرہ | رخ | شکل | مکھ | مکھڑا | منھ,وجه,अनुहार | चेहरा | मुख | मोहडा | रूप,mặt,noun.body
+30164,05602548-n,brow | forehead,پیشانی | جبیں | سرنامہ | للاٹ | ماتھ | ماتھا,جبهة,खप्पर | चाँदो | निदार | निधार | पुर्पुरो | ललाट,trán,noun.body
+40043,07569106-n,flour,آٹا,دجيج | طحين,आटो | पिठो,bột | phấn,noun.food
+40814,07679356-n,bread | breadstuff | staff of life,روٹی | نان,خبز | قرص,रोटी,bánh mì | bánh mỳ | bánh tây,noun.food
+41394,07767847-n,pear,امرت پھل | ناشپاتی,إجاص | بوعويد,नासपाती | नास्पाती,lê | quả lê | trái lê,noun.food
+41430,07773238-n,coconut | coconut meat,کھوپرا | گولا | گیری,كوك,खुपी | गुदी | धन | भित्रीसम्पत्ति,dừa | quả | trái,noun.food
+41991,07858978-n,honey,انگبین | شہد | عسل | مدھو,عْسل‎‎,मधु | मह,mật ong,noun.food
+48407,09874618-n,bride,دلہن | نذوڈھا,عروسة,दुलही | बेहुली | वधू,cô dâu,noun.person
+49100,09992837-n,daughter | girl,بیٹی | پتری | دختر | کڑی | لڑکی,بنت,छोरी,con gái,noun.person
+49262,10020890-n,doc | doctor | dr. | md | medico | physician,حکیم | ڈاکٹر | طبیب | ماہرعلاج | معالج,طبيب,उपचार विज्ञानी | उपचारक | उपचारविज्ञानी | चिकित्सक | चिकित्सा विज्ञानी | चिकित्सा शास्त्री | चिकित्साविज्ञानी | चिकित्साशास्त्री | डाक्टर | वैद्य,bác sĩ | đốc-tờ | thầy thuốc | tiến sĩ | y sinh,noun.person
+49586,10078806-n,farmer | granger | husbandman | sodbuster,دہقان | کسان,فلاح,किसान | कृषक | खेतीवाल,nông dân,noun.person
+49901,10129825-n,fille | girl | miss | missy | young lady | young woman,حسینہ | دوشیزہ | لڑکی,بنت | درية,केटी | तरुनी | नव-युवती | नवयुवती | नवयौवना,cô gái | con gái | gái,noun.person
+50157,10168584-n,heir | heritor | inheritor,قایم مقام | نائب | وارث,ورتة,उत्तराधिकारी | हकदार,thừa kế,noun.person
+50854,10287213-n,adult male | man,آدمی | پرش | مرد,راجل,मानव | मान्छे,đàn ông,noun.person
+51889,10470779-n,priest,پادری | فادر,قسيس,पादरी | फादर,linh mục,noun.person
+52774,10622053-n,soldier,سپاہی | فوجی,عسكري,सैनिक,binh lính | binh sĩ | bộ đội | chiến sĩ | lính | lính tráng | người lính | quân lính | quân nhân | sĩ tốt,noun.person
+53192,10694258-n,instructor | teacher,ادھیاپاک | استاد | استاذ | ٹیچر | گرو | ماسٹر | معلم,أستاد | معلم,अध्यापक | आचार्य | गुरु | मास्टर | शिक्षक,giáo viên | 教員,noun.person
+53796,10787470-n,adult female | woman,باکرہ | خاتون | دوشیزہ | ستری | عورت | کنواری | مہیلا | ناری,مرا,आइमाई | स्त्री,đàn bà | phụ nữ | 婦女,noun.person
+40568,07644967-n,chicken | poulet | volaille,چکن,,कुखुराकोमासु | चिकन,,noun.food
+40698,07663592-n,beef | boeuf,لحمِ گاؤ,,गाई | गो मांस | गोमांस,,noun.food
+41016,07710616-n,irish potato | murphy | potato | spud | tater | white potato,آلو,,आलु,,noun.food
+41033,07713074-n,aubergine | eggplant | mad apple,بھنٹا | بیگن,,बैगन | बैगुन | भन्टा | भ्यान्टा,,noun.food
+41037,07713895-n,cabbage | chou,بندگوبھی | پتہ گوبھی | کرم کلّلا,,पातकोपी | बन्दकोपी,,noun.food
+41046,07715103-n,cauliflower,ایک ترکاری | پھول گوبھی | گوبھی,,काउली | कोपी | फुलकोपी | फुलगोभी,,noun.food
+41066,07718472-n,cucumber | cuke,کھیرا,,काँक्रो,,noun.food
+41088,07721456-n,chile | chili | chili pepper | chilli | chilly,مرچ | مرچا | مرچی,,खुर्सानी | खोर्सानी,,noun.food
+41093,07722217-n,onion,پیاز,,पियाज | प्याज,,noun.food
+41177,07734017-n,tomato,ٹماٹر,,गोलभेँडा | टमाटर | रामभेँडा,,noun.food
+41188,07735510-n,pumpkin,سیتا پھل | کدو | کوہڑا | میٹھا کدو,,काशीफल | कुभिन्डो | कुष्मण्ड,,noun.food
+41201,07737745-n,earthnut | goober | goober pea | groundnut | monkey nut | peanut,چینیا بادام | مونگ پھلی,,बदम | बदाम,,noun.food
+41210,07739125-n,apple,سیب,,स्याउ,,noun.food
+41264,07747607-n,orange,سنترہ | سنگترہ | کملا | نارنگی | ناگ رنگ | ناگ روک | ناگر,,कमला | सुन्तला,,noun.food
+41277,07749582-n,lemon,ترنج | لیمن | لیموں | نیبو,,निबुआ | निबुवा,,noun.food
+41304,07753275-n,ananas | pineapple,انّاناس | انناس,,अनानास | अनारस | भुँइकटहर,,noun.food
+41325,07756951-n,watermelon,تربوز | تربوزہ | کالنگ,,खरबुजो,,noun.food
+41337,07758680-n,grape,انگور | تاک | عنب,,अङ्गुर | दाख,,noun.food
+41360,07762244-n,papaya,ارنڈ | پپیتا,,मेवा,,noun.food
+41375,07764847-n,aguacate | alligator pear | avocado | avocado pear,مگر ناشپاتی,أفوكا,,bơ,noun.food
+41378,07765361-n,guava,امرود,,अम्बक | अम्बा | बेलौती,,noun.food
+41418,07771212-n,walnut,اخروٹ,,ओखर,,noun.food
+41676,07813107-n,common salt | salt | table salt,نمک,,,muối ăn,noun.food
+41712,07818277-n,ail | garlic,ثوم | فوم | لہسن,,लसुन | लहसुन,,noun.food
+41885,07844042-n,milk,دودھ | شیر,,क्षीर | दुग्ध | दुध | दूध | पय,,noun.food
+41915,07848338-n,butter,گھی | مسکہ | مکھن,,नौनी | मक्खन,bơ,noun.food
+41921,07849336-n,yoghourt | yoghurt | yogurt,دہی,دانون,,da ua | sữa chua,noun.food
+41993,07859284-n,refined sugar | sugar,چینی | شکر | مصری,,चिनी | सखर,đường,noun.food
+42499,07933274-n,tea,چائے,,चिया,,noun.food
+40130,07583197-n,soup,سوپ | شوربا,,झोल | सुप,,noun.food
+40454,07628870-n,cake,کیک,,केक,,noun.food
+23667,04347754-n,pigboat | sub | submarine | u-boat,آبدوز | پن ڈبی | پَن ڈوبی,,पनडुबी | पनडुब्बी,tàu ngầm,noun.artifact
+41610,07802026-n,hay,چارہ | راتب | گھاس بھوسا,,पराल,cỏ khô,noun.food
+10878,02137549-n,mongoose,نیولا,,न्याउरी | न्याउरीमुसो,mangut,noun.animal
+24355,04465501-n,tractor,ٹریکٹر,,टेक्टर,máy kéo,noun.artifact
+12073,02346627-n,hedgehog | porcupine,خارپشت | ساہی | سیہہ,,दम्सी | दुम्सी,nhím,noun.animal
+22302,04118776-n,rule | ruler,اسکیل | انچ پٹری | انچ پٹی | فٹ پٹی,,नाप | स्केल,thước | thước kẻ,noun.artifact
+19555,03642806-n,laptop | laptop computer,لیپ ٹاپ,,लेपटप | लेपटप कम्प्युटर,láp-tóp,noun.artifact
+22988,04235860-n,sleeping bag,سلیپنگ بیگ,,स्लिपिङ्ग ब्याग,túi ngủ | 𫄆𥄬,noun.artifact
+22395,04133789-n,sandal,چپل | سینڈل,,सेन्डल | सेन्डिल,dép,noun.artifact
+18651,03485794-n,handkerchief | hankey | hankie | hanky,دستی | رومال,,रुमाल,khăn tay | mu-xoa | mùi soa,noun.artifact
+23658,04346328-n,stupa | tope,استوپ | بودھ استوپ,,बौद्ध-स्तुप | बौद्धस्तुप | स्तुप | स्तूप,chứa | hài cốt | sư | tháp | vị,noun.artifact
+45970,09229709-n,bubble,بلا | بلبلا | حباب,,फोको | बबल | बुद्बुद,bong bóng,noun.object
+46006,09246464-n,cliff | drop | drop-off,کھڑی چٹان,,चट्टान | ठाडोभीर | भीर,vách đá,noun.object
+18067,03388183-n,fountain pen,پھاون ٹین پین,,फाउन्टेन पेन,bút máy,noun.artifact
+10826,02128757-n,ounce | panthera uncia | snow leopard,برفانی چیتا,,हिम तेंदुए,báo tuyết,noun.animal
+21565,03991062-n,flowerpot | pot,گملا,,गमला,chậu | hoa,noun.artifact
+14739,02814860-n,beacon | beacon light | lighthouse | pharos,خاص طور سے | روشنی گھر | منارہ | وہ اونچی عمارت,,द्वीप घर | प्रकाश गृह | प्रकाशस्तम्भ,hải đăng,noun.artifact
+22343,04125021-n,safe,تجوری | سیف | لوہےکی الماری جس میںزرواموال اورقیمتی چیزی حفاظت کےلئے رکھی جائیں,,बाकस | सन्दुक,két sắt | tủ sắt,noun.artifact
+14860,02834778-n,bicycle | bike | cycle | wheel,سائیکل,,बाइस्कल | साइकल | साइकिल,,noun.artifact
+15393,02924116-n,autobus | bus | charabanc | coach | double-decker | jitney | motorbus | motorcoach | omnibus | passenger vehicle,بس,,बस,,noun.artifact
+15601,02958343-n,auto | automobile | car | machine | motorcar,کار | گاڑی,,,,noun.artifact
+24499,04490091-n,motortruck | truck,ٹرک,,ट्रक | लोहोरी,,noun.artifact
+12495,02416519-n,caprine animal | goat,بکری,,,,noun.animal
+12236,02374451-n,equus caballus | horse,اسپ | گھوڑا,,अश्‍व | घोडा,,noun.animal
+12461,02411705-n,sheep,بھیڑ,,भेडो,,noun.animal
+9241,01846331-n,duck,بتخ,,हाँस,,noun.animal
+9064,01816887-n,parrot,طوطا | طوطی,,,,noun.animal
+9033,01811909-n,pigeon,کبوتر,,कवुतर | परेवा,,noun.animal
+40912,07693972-n,biscuit,بسکٹ,,बिस्कुट,,noun.food
+18371,03441112-n,glove,دستانا,,पञ्जा | हातमोजा,,noun.artifact
+60197,12761284-n,mangifera indica | mango | mango tree,ام,,,,noun.plant
+28700,05311054-n,eye | oculus | optic,آنکھ | چشم | نین,,आँखा | नयन | नेत्र,,noun.body
+14496,02774152-n,bag | handbag | pocketbook | purse,پرس,,थैली | पर्स,bóp | ví | ví tiền,noun.artifact

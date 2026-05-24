@@ -1,0 +1,14 @@
+{
+  "tenses": {
+    "present_continuous": "दै",
+    "past": "ए",
+    "future": "ने",
+    "simple_present": "" 
+  },
+  "pronouns": {
+    "ma (I)": {"prefix": "", "suffix": "छु"},
+    "timi (You)": {"prefix": "", "suffix": "छौ"},
+    "u (He/She)": {"prefix": "", "suffix": "छ"},
+    "hami (We)": {"prefix": "", "suffix": "छौं"}
+  }
+}

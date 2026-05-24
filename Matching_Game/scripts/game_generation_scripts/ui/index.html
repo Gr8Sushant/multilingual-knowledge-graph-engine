@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Matching Game</h1>
+            <h3 style="margin-bottom: 20px;">Based on Multilingual Knowledge Graph Engine</h3>
+            <p>Practice scripts and vocabulary across languages</p>
+            <div style="font-size: 0.85em; color: var(--text-color); background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 10px 16px; margin: 15px auto; display: inline-block; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <span style="color: #10B981; font-weight: 600;">Earn 10 XP</span> for correct answers! Difficulty scales: 
+                <span style="color: #10B981; margin-left: 5px;">Easy (0-99)</span> &rarr; 
+                <span style="color: #F59E0B;">Medium (100-499)</span> &rarr; 
+                <span style="color: #EF4444;">Hard (500+)</span>
+            </div>
+            <div class="user-xp-container">
+                <button id="xp-btn" class="xp-btn" title="Click to Reset XP">User XP: <span id="xp-display">0</span></button>
+            </div>
+        </header>
+
+        <!-- Main Menu -->
+        <div id="menu-screen" class="screen active">
+            <div class="card selector-card">
+                <h2>Game Settings</h2>
+                <div class="form-group">
+                    <label for="language-select">Target Language</label>
+                    <select id="language-select"></select>
+                </div>
+                <div class="form-group">
+                    <label for="mode-select">Game Mode</label>
+                    <select id="mode-select">
+                        <option value="1">Mode 1: Transliteration to Script</option>
+                        <option value="2">Mode 2: English to Vocabulary</option>
+                    </select>
+                </div>
+                <button id="start-btn" class="primary-btn pulse">Start Session</button>
+            </div>
+            <div id="error-message" class="error-msg"></div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="game-header-top">
+                    <button id="back-btn" class="icon-btn">&larr; Back to Menu</button>
+                </div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <div class="stats">
+                    <span id="score-display">Score: 0 / 0</span>
+                    <span id="question-count">Q: 1 / 10</span>
+                </div>
+            </div>
+
+            <div class="card game-card">
+                <div id="prompt-container">
+                    <h2 id="prompt-display">-</h2>
+                </div>
+                
+                <button id="audio-btn" class="audio-btn hidden">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                    Play Audio
+                </button>
+
+                <div id="options-grid" class="options-grid">
+                    <!-- Options will be injected here -->
+                </div>
+
+                <div id="feedback-container" class="feedback">
+                    <h3 id="feedback-message"></h3>
+                </div>
+
+                <button id="next-btn" class="secondary-btn hidden">Next Question</button>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <div class="card result-card">
+                <h2>Session Complete!</h2>
+                <div class="final-score">
+                    <span id="final-score-text">0 / 0</span>
+                    <p>Great job!</p>
+                </div>
+                <button id="home-btn" class="primary-btn">Back to Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load game data (sets the global 'gameData' variable) -->
+    <script src="game_data.js"></script>
+    <!-- Load app logic -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+source,target,language,seed_weight,reason
+phoneme:dr:/aː/,phoneme:dr:/uː/,dr,0.8,vowel length contrast
+phoneme:dr:/uː/,phoneme:dr:/aː/,dr,0.8,vowel length contrast
+phoneme:dr:/iː/,phoneme:dr:/aː/,dr,0.8,vowel length contrast
+phoneme:dr:/aː/,phoneme:dr:/iː/,dr,0.8,vowel length contrast

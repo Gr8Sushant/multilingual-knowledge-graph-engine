@@ -1,0 +1,11 @@
+source,target,language,seed_weight,reason
+phoneme:ur:/d̪/,phoneme:ur:/ɖ/,ur,0.85,dental vs retroflex confusion
+phoneme:ur:/ɖ/,phoneme:ur:/d̪/,ur,0.85,dental vs retroflex confusion
+phoneme:ur:/t̪/,phoneme:ur:/ʈ/,ur,0.85,dental vs retroflex confusion
+phoneme:ur:/ʈ/,phoneme:ur:/t̪/,ur,0.85,dental vs retroflex confusion
+phoneme:ur:/s/,phoneme:ur:/ʃ/,ur,0.8,sibilant proximity
+phoneme:ur:/ʃ/,phoneme:ur:/s/,ur,0.8,sibilant proximity
+phoneme:ur:/z/,phoneme:ur:/ʒ/,ur,0.8,fricative proximity
+phoneme:ur:/ʒ/,phoneme:ur:/z/,ur,0.8,fricative proximity
+phoneme:ur:/r/,phoneme:ur:/ɽ/,ur,0.85,alveolar vs retroflex flap
+phoneme:ur:/ɽ/,phoneme:ur:/r/,ur,0.85,alveolar vs retroflex flap

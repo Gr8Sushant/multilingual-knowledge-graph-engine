@@ -1,0 +1,9 @@
+source,target,language,seed_weight,reason
+phoneme:np:/kʌ/,phoneme:np:/kʰʌ/,np,0.9,aspiration contrast
+phoneme:np:/kʰʌ/,phoneme:np:/kʌ/,np,0.9,aspiration contrast
+phoneme:np:/d̪ʌ/,phoneme:np:/d̪ʱʌ/,np,0.9,aspiration contrast
+phoneme:np:/d̪ʱʌ/,phoneme:np:/d̪ʌ/,np,0.9,aspiration contrast
+phoneme:np:/t̪ʌ/,phoneme:np:/ʈʌ/,np,0.85,dental vs retroflex confusion
+phoneme:np:/ʈʌ/,phoneme:np:/t̪ʌ/,np,0.85,dental vs retroflex confusion
+phoneme:np:/d̪ʌ/,phoneme:np:/ɖʌ/,np,0.85,dental vs retroflex confusion
+phoneme:np:/ɖʌ/,phoneme:np:/d̪ʌ/,np,0.85,dental vs retroflex confusion
