@@ -62,7 +62,7 @@ The engine represents social relationships across **five semantic layers**:
    (Child, Peer, Parent, Grandparent)
 
 2. **Specific Generation**
-   (Older sibling, younger aunt, uncle, etc.)
+   (Older sibling, aunt, uncle, grandparents, etc.)
 
 3. **Target Gender**
 
@@ -109,7 +109,7 @@ Focuses on **broad age distinctions**
 
 Introduces **generational nuance and gender**
 
-> older cousin ↔ younger aunt
+> older sibling ↔ younger aunt
 
 #### Hard
 
@@ -284,3 +284,6 @@ Track historical learner errors and model them as **negative graph edges** to ge
 ### Cloud Knowledge Graph
 
 Migrate from static JSON exports to a graph database (e.g., Neo4j) to enable collaborative linguistic contributions and live updates.
+
+---
+*Note:* The database sheet also includes Darija from Morroco (but not included in the graph) and Chinese-related languages (Mandarin, Cantonese and Teochew) which are included in the graph but not implemented in the game.
