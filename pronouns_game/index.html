@@ -18,88 +18,21 @@
         .bounty-display { color: #f39c12; font-size: 14px; margin-bottom: 10px; text-align: right; font-weight: bold;}
         .level-display { color: #8e44ad; font-size: 14px; margin-bottom: 10px; font-weight: bold; text-align: left; float: left;}
         
-        /* 🌟 PREMIUM DUAL-CIRCLE MATCH UI */
-        .avatar-display-box { 
-            display: flex; 
-            align-items: center; 
-            gap: 24px; 
-            margin: 20px 0; 
-            clear: both; 
-            background: #ffffff; 
-            border: 1px solid #e5e8e8; 
-            border-left: 6px solid #8e44ad; 
-            border-radius: 12px; 
-            padding: 20px 24px; 
-            box-shadow: 0 4px 12px rgba(44, 62, 80, 0.04); 
-            box-sizing: border-box;
-        }
-
-        /* Groups the two circles symmetrically */
-        .avatar-pair-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .avatar-circle { 
-            font-size: 28px; 
-            background: #f4ecf7; 
-            border-radius: 50%; 
-            width: 70px; /* Perfectly sized neat circles */
-            height: 70px; 
-            min-width: 70px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            border: 2px solid #ffffff;
-            box-shadow: 0 4px 8px rgba(142, 68, 173, 0.1); 
-        }
-
-        /* Gives the context circle a different secondary background tone */
-        .context-circle {
-            background: #ebf5fb;
-            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.1);
-        }
-        
-        .avatar-meta { 
-            display: flex; 
-            flex-direction: column; 
-            gap: 8px; 
-            flex-grow: 1; 
-        }
-        
-        .meta-badge { 
-            display: inline-block; 
-            padding: 6px 14px; 
-            border-radius: 20px; 
-            font-weight: 700; 
-            font-size: 11px; 
-            letter-spacing: 0.8px; 
-            text-transform: uppercase; 
-            width: max-content; 
-            max-width: 100%; 
-            white-space: normal; 
-            word-wrap: break-word;
-            box-sizing: border-box;
-        }
-        
-        .badge-gen { 
-            background: #f4ecf7; 
-            color: #7d3c98; 
-            border: 1px solid #ebd6f3;
-        }
-        
-        .badge-gender { 
-            background: #ebf5fb; 
-            color: #2471a3; 
-            border: 1px solid #d4e6f1;
-            line-height: 1.5; 
-        }
+        /* 🌟 DUAL-CIRCLE UI */
+        .avatar-display-box { display: flex; align-items: center; gap: 24px; margin: 20px 0; clear: both; background: #ffffff; border: 1px solid #e5e8e8; border-left: 6px solid #8e44ad; border-radius: 12px; padding: 20px 24px; box-shadow: 0 4px 12px rgba(44, 62, 80, 0.04); box-sizing: border-box; transition: all 0.3s ease;}
+        .avatar-pair-wrapper { display: flex; align-items: center; gap: 12px; }
+        .avatar-circle { font-size: 28px; background: #f4ecf7; border-radius: 50%; width: 70px; height: 70px; min-width: 70px; display: flex; align-items: center; justify-content: center; border: 2px solid #ffffff; box-shadow: 0 4px 8px rgba(142, 68, 173, 0.1); }
+        .context-circle { background: #ebf5fb; box-shadow: 0 4px 8px rgba(52, 152, 219, 0.1); }
+        .avatar-meta { display: flex; flex-direction: column; gap: 8px; flex-grow: 1; }
+        .meta-badge { display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 11px; letter-spacing: 0.8px; text-transform: uppercase; width: max-content; max-width: 100%; white-space: normal; word-wrap: break-word; box-sizing: border-box; }
+        .badge-gen { background: #f4ecf7; color: #7d3c98; border: 1px solid #ebd6f3; }
+        .badge-gender { background: #ebf5fb; color: #2471a3; border: 1px solid #d4e6f1; line-height: 1.5; }
         
         .scenario-box { background: #f8f9fa; padding: 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 15px; font-size: 18px; color: #2c3e50;}
         .options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; text-align: left; background: white; border: 2px solid #ecf0f1; border-radius: 8px; font-size: 16px; cursor: pointer; transition: 0.2s; }
         .option-btn:hover { border-color: #3498db; background: #f0f8ff; }
+        .option-btn:disabled { cursor: not-allowed; opacity: 0.6; } /* 💅 Polished disabled state */
         .feedback { margin-top: 20px; padding: 15px; border-radius: 8px; display: none; line-height: 1.5; }
         .feedback.correct { display: block; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
         .feedback.incorrect { display: block; background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
@@ -112,7 +45,7 @@
 
 <div class="game-container">
     <h1>🌍 Pronoun Master</h1>
-    <div class="subtitle">Test your Cultural Fluency!</div>
+    <div class="subtitle">Test my Cultural Fluency!</div>
     <div class="tabs" id="language-tabs"></div>
 
     <div id="game-area" style="display:none;">
@@ -129,7 +62,7 @@
         <div class="avatar-display-box" id="avatar-container">
             <div class="avatar-pair-wrapper">
                 <div class="avatar-circle" id="avatar-emoji" title="Target Person">👤</div>
-                <div class="avatar-circle context-circle" id="scenario-emoji" title="Social Setting">🌤️</div>
+                <div class="avatar-circle context-circle" id="scenario-emoji" title="Social Setting">🏠</div>
             </div>
             <div class="avatar-meta">
                 <div class="meta-badge badge-gen" id="meta-gen">Generation</div>
@@ -138,9 +71,7 @@
         </div>
 
         <div class="scenario-box" id="scenario-text">Loading scenario...</div>
-        
         <div class="options" id="options-container"></div>
-
         <div class="feedback" id="feedback-box"></div>
         <button id="next-btn" onclick="nextQuestion()">Next Question ➡️</button>
     </div>
@@ -148,7 +79,7 @@
     <div id="loading-msg" style="text-align:center; color:#7f8c8d;">Loading Graph Data...</div>
 </div>
 
-<script src="graph_export/graph_data.js?v=7"></script>
+<script src="graph_export/graph_data.js"></script>
 
 <script>
     let graphNodes = [];
@@ -157,6 +88,7 @@
     let currentQuestion = null;
     let availableLanguages = ["Vietnamese", "Urdu", "Nepali"]; 
     
+    // Default fallback rules (will be overwritten by Graph Data)
     let scoringRules = { "Broad Age": 5, "Specific Gen": 4, "Addressee": 3, "Context": 2, "Speaker": 1 };
     let playerScore = 0;
     let totalQuestionsInRound = 5;
@@ -165,13 +97,16 @@
         if (typeof myGraphData !== 'undefined') {
             graphNodes = myGraphData.nodes || [];
             graphEdges = myGraphData.links || myGraphData.edges || []; 
+            
+            // 🌟 REQUIREMENT 1 & 3: READING DYNAMIC PENALTY RULES
             if (myGraphData.graph && myGraphData.graph.scoring_rules) {
                 scoringRules = myGraphData.graph.scoring_rules;
             }
+            
             document.getElementById('loading-msg').style.display = 'none';
             setupTabs();
         } else {
-            document.getElementById('loading-msg').innerHTML = "❌ Error: Could not load graph_data.js.";
+            document.getElementById('loading-msg').innerHTML = "❌ Error: Could not load graph_data.js. Ensure the file is in the same directory.";
         }
     };
 
@@ -207,6 +142,7 @@
             const instanceId = typeof edge.target === 'object' ? edge.target.id : edge.target; 
             const schemaPath = typeof edge.source === 'object' ? edge.source.id : edge.source; 
             const instanceNode = langInstances.find(n => n.id === instanceId);
+            // Ignore semantic attribute edges by checking if instanceNode was found
             if(instanceNode) {
                 questionPool.push({ path: schemaPath, instance: instanceNode, potentialPoints: 20 });
             }
@@ -255,7 +191,6 @@
         if (playerScore > 0) display.style.color = '#2ecc71';
     }
 
-    // 🌟 SEPARATED AVATAR + SCENARIO SELECTION LOGIC
     function updateQuestionAvatar(pathString) {
         if (!pathString) return;
         const parts = pathString.split(' - ');
@@ -265,7 +200,6 @@
         const addrGender = parts[2];
         const socialContext = parts[3]; 
 
-        // 1. Resolve Target Person Avatar
         let personEmoji = "👤";
         let generationLabel = "Same Generation";
 
@@ -286,20 +220,13 @@
             personEmoji = (addrGender === "Male") ? "🧑‍🦱" : "👩‍🦱";
         }
 
-        // 2. Resolve Scenario Environment Emoji
-        let scenarioEmoji = "🌤️";
-        if (socialContext === "Formal") {
-            scenarioEmoji = "🏢"; 
-        } else if (socialContext === "Informal") {
-            scenarioEmoji = "☕"; 
-        } else {
-            scenarioEmoji = "🏠"; 
-        }
+        // 💅 Cleaned up default state initialization
+        let scenarioEmoji = "🏠";
+        if (socialContext === "Formal") scenarioEmoji = "🏢"; 
+        else if (socialContext === "Informal") scenarioEmoji = "☕"; 
 
-        // 3. Inject them into separate DOM elements
         document.getElementById('avatar-emoji').innerText = personEmoji;
         document.getElementById('scenario-emoji').innerText = scenarioEmoji;
-        
         document.getElementById('meta-gen').innerText = generationLabel;
         document.getElementById('meta-gender').innerText = `${addrGender} Target • ${socialContext}`;
     }
@@ -309,55 +236,24 @@
         const parts = pathString.split(' - ');
         if(parts.length < 5) return pathString;
         
-        // 🌟 Exact match to our 5-Layer Python Architecture
-        const broadAge = parts[0];
-        const specificAge = parts[1];
-        const addrGender = parts[2];
-        const socialContext = parts[3];
-        const spkGender = parts[4];
+        const specificAge = parts[1], addr = parts[2], social = parts[3], spk = parts[4];
 
-        // 1. Map who the Player is in this scenario
-        let spkStr = "You";
-        if (spkGender.includes("Male")) {
-            spkStr = "You (male)";
-        } else if (spkGender.includes("Female")) {
-            spkStr = "You (female)";
-        }
-
-        // 2. Map who the target Listener is
-        let addrStr = "someone";
-        if (addrGender === "Male") {
-            addrStr = "a male";
-        } else if (addrGender === "Female") {
-            addrStr = "a female";
-        }
+        let spkStr = spk.includes("Male") ? "I (male)" : (spk.includes("Female") ? "I (female)" : "I");
+        let addrStr = addr === "Male" ? "a male" : (addr === "Female" ? "a female" : "someone");
         
-        // 3. Map the Generation Context beautifully
         let ageStr = "";
-        if (specificAge.includes("Grandparents")) {
-            ageStr = "who belongs to your grandparents' generation";
-        } else if (specificAge.includes("Parents")) {
-            ageStr = "who belongs to your parents' generation";
-        } else if (specificAge.includes("Older")) {
-            ageStr = "who is older than you (but in your same generation)";
-        } else if (specificAge.includes("Younger")) {
-            ageStr = "who is younger than you (but in your same generation)";
-        } else {
-            ageStr = "who is exactly your age";
-        }
+        if (specificAge.includes("Grandparents")) ageStr = "who belongs to my grandparents' generation";
+        else if (specificAge.includes("Parents")) ageStr = "who belongs to my parents' generation";
+        else if (specificAge.includes("Older")) ageStr = "who is older than me (but in my same generation)";
+        else if (specificAge.includes("Younger")) ageStr = "who is younger than me (but in my same generation)";
+        else ageStr = "who is exactly my age";
 
-        // 4. Map the Social Setting
-        let socialStr = "in a standard, everyday setting.";
-        if (socialContext === "Formal") {
-            socialStr = "in a formal/polite setting.";
-        } else if (socialContext === "Informal") {
-            socialStr = "in a casual/friendly setting.";
-        }
+        let socialStr = social === "Formal" ? "in a formal/polite setting." : (social === "Informal" ? "in a casual/friendly setting." : "in a standard, everyday setting.");
         
-        // Combine them into a flawless sentence
-        return `${spkStr} are talking to ${addrStr} ${ageStr}, ${socialStr}`;
+        return `${spkStr} am talking to ${addrStr} ${ageStr}, ${socialStr}`;
     }
 
+    // 🌟 EVALUATOR READS DYNAMIC RULES
     function evaluateMistake(correctPath, wrongPath) {
         if(!correctPath || !wrongPath || correctPath === wrongPath) return { hint: "Hint: Not the best fit.", penalty: 0, severity: "Minor" };
         
@@ -392,7 +288,7 @@
         else if (penalty >= 4) severity = "Major Generational Mistake 🔴";
         else if (penalty >= 2) severity = "Moderate Context Misalignment 🟠";
 
-        return { hint: "💡 <b>Hint:</b> You chose a pronoun with the " + hints.join(" AND ") + ".", penalty: penalty, severity: severity };
+        return { hint: "💡 <b>Hint:</b> I chose a pronoun with the " + hints.join(" AND ") + ".", penalty: penalty, severity: severity };
     }
 
     function loadNextInQueue() {
@@ -401,15 +297,15 @@
         
         if (currentQueue.length === 0) {
             let scoreMessage = "";
-            if (playerScore >= 90) scoreMessage = "Outstanding! You have near-native cultural fluency! 🏆";
-            else if (playerScore >= 70) scoreMessage = "Great job! You have a solid grasp on social nuances. 👍";
+            if (playerScore >= 90) scoreMessage = "Outstanding! I have near-native cultural fluency! 🏆";
+            else if (playerScore >= 70) scoreMessage = "Great job! I have a solid grasp on social nuances. 👍";
             else if (playerScore >= 40) scoreMessage = "Good effort! Keep practicing those generational rules. 📚";
             else scoreMessage = "Keep practicing! Cultural fluency takes time. 🌱";
 
             document.getElementById('queue-counter').innerText = "🎉 All Done!";
             document.getElementById('bounty-display').style.display = 'none';
             document.getElementById('level-display').style.display = 'none';
-            document.getElementById('avatar-container').style.display = 'none'; // Hide on end card
+            document.getElementById('avatar-container').style.display = 'none'; 
             document.getElementById('scenario-text').innerHTML = `
                 <div style="text-align: center; margin: 10px 0;">
                     <div style="font-size: 16px; color: #7f8c8d;">Final Score</div>
@@ -427,27 +323,30 @@
         
         document.getElementById('bounty-display').style.display = 'block';
         document.getElementById('level-display').style.display = 'block';
-        document.getElementById('avatar-container').style.display = 'flex'; // Ensure avatar box is visible
+        document.getElementById('avatar-container').style.display = 'flex'; 
         document.getElementById('bounty-display').innerText = `🎯 Question Value: ${currentQuestion.potentialPoints} pts`;
         
         let questionIndexNumber = (totalQuestionsInRound - currentQueue.length) + 1; 
         let levelText = "📊 Level: Warm-up (Easy)";
-        if (questionIndexNumber === 3) levelText = "📊 Level: Intermediate (Medium)";
-        if (questionIndexNumber >= 4) levelText = "📊 Level: Advanced (Hard)";
-        if (currentQuestion.potentialPoints < 20) levelText = "📊 Level: Review Mode";
+        let cardElement = document.getElementById('avatar-container');
+        
+        if (questionIndexNumber <= 2) {
+            cardElement.style.borderLeftColor = "#2ecc71";
+        } else if (questionIndexNumber === 3) {
+            levelText = "📊 Level: Intermediate (Medium)";
+            cardElement.style.borderLeftColor = "#e67e22";
+        } else {
+            levelText = "📊 Level: Advanced (Hard)";
+            cardElement.style.borderLeftColor = "#8e44ad";
+        }
+        
+        if (currentQuestion.potentialPoints < 20) {
+            levelText = "📊 Level: Review Mode";
+            cardElement.style.borderLeftColor = "#34495e";
+        }
         
         document.getElementById('level-display').innerText = levelText;
-
-        // Dynamic Accent Border color based on level
-        let cardElement = document.getElementById('avatar-container');
-        if (questionIndexNumber <= 2) cardElement.style.borderLeftColor = "#2ecc71"; // Green
-        else if (questionIndexNumber === 3) cardElement.style.borderLeftColor = "#e67e22"; // Orange
-        else cardElement.style.borderLeftColor = "#8e44ad"; // Purple
-        if (currentQuestion.potentialPoints < 20) cardElement.style.borderLeftColor = "#34495e"; // Review Gray
-        
-        // 🌟 DYNAMICALLY TRIGGER THE AVATAR GENERATION
         updateQuestionAvatar(currentQuestion.path);
-        
         document.getElementById('scenario-text').innerText = generateScenarioText(currentQuestion.path);
 
         const cleanText = (str) => str ? str.replace(/\s+/g, ' ').trim() : "";
@@ -474,10 +373,13 @@
             });
             if (isAlsoCorrect) continue;
 
+            // Only grab edges pointing from Schema Paths to Pronoun Instances
             const possibleEdges = graphEdges.filter(e => {
                 let t = typeof e.target === 'object' ? e.target.id : e.target;
-                return t === inst.id;
+                let s = typeof e.source === 'object' ? e.source.id : e.source;
+                return t === inst.id && s.includes(' - '); // Safety check ignoring generic attribute links
             });
+            
             if(possibleEdges.length === 0) continue;
 
             let bestEdge = possibleEdges[0];
@@ -544,7 +446,7 @@
             
             playerScore += currentQuestion.potentialPoints;
             updateScoreDisplay();
-            feedback.innerHTML = `<b>🎉 Correct!</b> You earned <b>+${currentQuestion.potentialPoints} points</b>!`;
+            feedback.innerHTML = `<b>🎉 Correct!</b> I earned <b>+${currentQuestion.potentialPoints} points</b>!`;
             
             currentQueue.shift(); 
             document.getElementById('next-btn').style.display = 'block';
@@ -563,7 +465,7 @@
             feedback.innerHTML = `
                 <div class="severity-badge">${evaluation.severity}</div><br>
                 <i>${evaluation.hint}</i><br><br>
-                You can still earn up to <b>${currentQuestion.potentialPoints} points</b> when this comes back around!`;
+                I can still earn up to <b>${currentQuestion.potentialPoints} points</b> when this comes back around!`;
                 
             let failedQ = currentQueue.shift();
             currentQueue.push(failedQ);

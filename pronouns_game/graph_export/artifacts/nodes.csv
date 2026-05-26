@@ -1,91 +1,106 @@
-﻿Node ID,Node Type,Language,Term (I/Me),Term (You)
-Same Age - Exactly same age - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Male - Informal - Male spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Male - Informal - Female spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Female - Informal - Male spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Female - Informal - Female spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Male - Formal - Male spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Male - Formal - Female spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Female - Formal - Male spk,schema_path,N/A,N/A,N/A
-Same Age - Exactly same age - Female - Formal - Female spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Male - Informal - Male spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Male - Informal - Female spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Female - Informal - Male spk,schema_path,N/A,N/A,N/A
-Younger - Younger (same gen) - Female - Informal - Female spk,schema_path,N/A,N/A,N/A
-Older - Older (same gen) - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Older (same gen) - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older - Older (same gen) - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Older (same gen) - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older - Parents' gen - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Parents' gen - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older - Parents' gen - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Parents' gen - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older - Grandparents' gen - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Grandparents' gen - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older - Grandparents' gen - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Grandparents' gen - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older - Exactly same age - Male - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Exactly same age - Male - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Older - Exactly same age - Female - Neutral - Male spk,schema_path,N/A,N/A,N/A
-Older - Exactly same age - Female - Neutral - Female spk,schema_path,N/A,N/A,N/A
-Instance_41a5c8,instance,Madarin,我 (wǒ),你 (nǐ)
-Instance_771ab7,instance,Cantonese,我 (ngo5),你 (nei5)
-Instance_22741d,instance,Teochew,我 (guá),你 (lí)
-Instance_7617a6,instance,Nepali,म (ma),तँ (ta) / तिमी (timi)
-Instance_218b8f,instance,Urdu,میں,تم (tum)
-Instance_743600,instance,Urdu,میں,آپ (aap)
-Instance_85139a,instance,Vietnamese,tôi/mình,bạn
-Instance_e406a4,instance,Vietnamese,tui,bạn
-Instance_b7dc95,instance,Vietnamese,tao,mày
-Instance_b4d7d3,instance,Mandarin,我 (wǒ),你 / 小 + name (nǐ / xiǎo)
-Instance_a43428,instance,Cantonese,我 (ngo5),細佬 (sai3 lou2)
-Instance_8ed4e8,instance,Cantonese,我 (ngo5),細妹 (sai3 mui6)
-Instance_8fab65,instance,Teochew,我 (guá),细弟 (sè-tī)
-Instance_f2c428,instance,Teochew,我 (guá),细妹 (sè-muē)
-Instance_56f31d,instance,Nepali,म (ma),तँ (ta) / तिमी (timi)
-Instance_17f42f,instance,Urdu,میں,تم (tum) or تو (tu)
-Instance_6ec719,instance,Vietnamese,anh,em
-Instance_90885b,instance,Vietnamese,chị,em
-Instance_56b7ce,instance,Mandarin,我 (wǒ),哥哥 (gēge)
-Instance_d490b4,instance,Mandarin,我 (wǒ),姐姐 (jiějie)
-Instance_a713f3,instance,Cantonese,我 (ngo5),哥哥 (go1 go1)
-Instance_18b548,instance,Cantonese,我 (ngo5),姐姐 (ze2 ze2)
-Instance_aef264,instance,Teochew,我 (guá),阿兄 (a-hiang)
-Instance_5c7bfb,instance,Teochew,我 (guá),阿姐 (a-jié)
-Instance_96569d,instance,Nepali,म (ma),तपाईं (tapai) and हजुर (Hajur)
-Instance_f8440a,instance,Urdu,میں,بھائی (bhai / bhaiya)
-Instance_f81c6d,instance,Urdu,میں,باجی (baji / apa)
-Instance_ce63f1,instance,Vietnamese,em,anh
-Instance_d055a4,instance,Vietnamese,em,chị
-Instance_fb4cc6,instance,Mandarin,我 (wǒ),叔叔 (shūshu)
-Instance_2e961e,instance,Mandarin,我 (wǒ),阿姨 (āyí)
-Instance_0508f5,instance,Cantonese,我 (ngo5),叔叔 (suk1 suk1)
-Instance_8f6322,instance,Cantonese,我 (ngo5),阿姨 (aa3 ji4)
-Instance_8d6122,instance,Teochew,我 (guá),阿叔 (a-zik)
-Instance_0b4ca7,instance,Teochew,我 (guá),阿姨 (a-î)
-Instance_76ce1f,instance,English,-,uncle
-Instance_d9ad50,instance,English,-,aunty
-Instance_8f7007,instance,Nepali,म (ma),तपाईं (tapai) and हजुर (Hajur)
-Instance_5c444e,instance,Urdu,میں,Uncle / چچا (chacha)
-Instance_3c9bc3,instance,Urdu,میں,Aunty /خالہ (khala)
-Instance_150241,instance,Vietnamese,con/cháu,chú/cậu
-Instance_7e031a,instance,Vietnamese,con/cháu,cô/dì
-Instance_0ab9e8,instance,Vietnamese,con/cháu,bác
-Instance_f0702d,instance,Mandarin,我 (wǒ),爷爷 (yéye)
-Instance_6f60d2,instance,Mandarin,我 (wǒ),奶奶 (nǎinai)
-Instance_a2769e,instance,Cantonese,我 (ngo5),爺爺 (je4 je4)
-Instance_6ffc69,instance,Cantonese,我 (ngo5),奶奶 (naai5 naai5)
-Instance_b1dbc9,instance,Teochew,我 (guá),阿公 (a-gong)
-Instance_1cf635,instance,Teochew,我 (guá),阿嬷 (a-má)
-Instance_8c0c77,instance,Urdu,میں,دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji)
-Instance_a96ac4,instance,Vietnamese,con/cháu,ông
-Instance_6a6820,instance,Vietnamese,con/cháu,bà
-Instance_38bda7,instance,Darija,ana,nta
-Instance_184655,instance,Darija,ana,nti
+id,type,category,language,term_i,term_you,label
+Same Age - Exactly same age - Male - Neutral - Male spk,schema_path,,,,,
+Age: Same Age,attribute,Broad Age,,,,
+Gen: Exactly same age,attribute,Specific Gen,,,,
+Target: Male,attribute,Addressee Gender,,,,
+Context: Neutral,attribute,Social Context,,,,
+Spk: Male spk,attribute,Speaker Gender,,,,
+Same Age - Exactly same age - Male - Neutral - Female spk,schema_path,,,,,
+Spk: Female spk,attribute,Speaker Gender,,,,
+Same Age - Exactly same age - Female - Neutral - Male spk,schema_path,,,,,
+Target: Female,attribute,Addressee Gender,,,,
+Same Age - Exactly same age - Female - Neutral - Female spk,schema_path,,,,,
+Instance_f84837,instance,,Madarin,我 (wǒ),你 (nǐ),Madarin: 我 (wǒ)/你 (nǐ)
+Instance_6c6710,instance,,Cantonese,我 (ngo5),你 (nei5),Cantonese: 我 (ngo5)/你 (nei5)
+Instance_5c824c,instance,,Teochew,我 (guá),你 (lí),Teochew: 我 (guá)/你 (lí)
+Instance_54ba62,instance,,Nepali,म (ma),तँ (ta) / तिमी (timi),Nepali: म (ma)/तँ (ta) / तिमी (timi)
+Same Age - Exactly same age - Male - Informal - Male spk,schema_path,,,,,
+Context: Informal,attribute,Social Context,,,,
+Same Age - Exactly same age - Male - Informal - Female spk,schema_path,,,,,
+Same Age - Exactly same age - Female - Informal - Male spk,schema_path,,,,,
+Same Age - Exactly same age - Female - Informal - Female spk,schema_path,,,,,
+Instance_727bd0,instance,,Urdu,میں,تم (tum),Urdu: میں/تم (tum)
+Same Age - Exactly same age - Male - Formal - Male spk,schema_path,,,,,
+Context: Formal,attribute,Social Context,,,,
+Same Age - Exactly same age - Male - Formal - Female spk,schema_path,,,,,
+Same Age - Exactly same age - Female - Formal - Male spk,schema_path,,,,,
+Same Age - Exactly same age - Female - Formal - Female spk,schema_path,,,,,
+Instance_32b66d,instance,,Urdu,میں,آپ (aap),Urdu: میں/آپ (aap)
+Instance_8f9fbd,instance,,Vietnamese,tôi/mình,bạn,Vietnamese: tôi/mình/bạn
+Instance_e74aaa,instance,,Vietnamese,tui,bạn,Vietnamese: tui/bạn
+Instance_be7aa3,instance,,Vietnamese,tao,mày,Vietnamese: tao/mày
+Younger - Younger (same gen) - Male - Neutral - Male spk,schema_path,,,,,
+Age: Younger,attribute,Broad Age,,,,
+Gen: Younger (same gen),attribute,Specific Gen,,,,
+Younger - Younger (same gen) - Male - Neutral - Female spk,schema_path,,,,,
+Younger - Younger (same gen) - Female - Neutral - Male spk,schema_path,,,,,
+Younger - Younger (same gen) - Female - Neutral - Female spk,schema_path,,,,,
+Instance_78a5c4,instance,,Mandarin,我 (wǒ),你 / 小 + name (nǐ / xiǎo),Mandarin: 我 (wǒ)/你 / 小 + name (nǐ / xiǎo)
+Instance_7ac91f,instance,,Cantonese,我 (ngo5),細佬 (sai3 lou2),Cantonese: 我 (ngo5)/細佬 (sai3 lou2)
+Instance_aa951b,instance,,Cantonese,我 (ngo5),細妹 (sai3 mui6),Cantonese: 我 (ngo5)/細妹 (sai3 mui6)
+Instance_ae2ca5,instance,,Teochew,我 (guá),细弟 (sè-tī),Teochew: 我 (guá)/细弟 (sè-tī)
+Instance_3a9562,instance,,Teochew,我 (guá),细妹 (sè-muē),Teochew: 我 (guá)/细妹 (sè-muē)
+Instance_c83a74,instance,,Nepali,म (ma),तँ (ta) / तिमी (timi),Nepali: म (ma)/तँ (ta) / तिमी (timi)
+Younger - Younger (same gen) - Male - Informal - Male spk,schema_path,,,,,
+Younger - Younger (same gen) - Male - Informal - Female spk,schema_path,,,,,
+Younger - Younger (same gen) - Female - Informal - Male spk,schema_path,,,,,
+Younger - Younger (same gen) - Female - Informal - Female spk,schema_path,,,,,
+Instance_373a7d,instance,,Urdu,میں,تم (tum) or تو (tu),Urdu: میں/تم (tum) or تو (tu)
+Instance_35bc7a,instance,,Vietnamese,anh,em,Vietnamese: anh/em
+Instance_dc47a1,instance,,Vietnamese,chị,em,Vietnamese: chị/em
+Older - Older (same gen) - Male - Neutral - Male spk,schema_path,,,,,
+Age: Older,attribute,Broad Age,,,,
+Gen: Older (same gen),attribute,Specific Gen,,,,
+Older - Older (same gen) - Male - Neutral - Female spk,schema_path,,,,,
+Instance_05f3a8,instance,,Mandarin,我 (wǒ),哥哥 (gēge),Mandarin: 我 (wǒ)/哥哥 (gēge)
+Older - Older (same gen) - Female - Neutral - Male spk,schema_path,,,,,
+Older - Older (same gen) - Female - Neutral - Female spk,schema_path,,,,,
+Instance_c6a5dd,instance,,Mandarin,我 (wǒ),姐姐 (jiějie),Mandarin: 我 (wǒ)/姐姐 (jiějie)
+Instance_a5e91a,instance,,Cantonese,我 (ngo5),哥哥 (go1 go1),Cantonese: 我 (ngo5)/哥哥 (go1 go1)
+Instance_49057b,instance,,Cantonese,我 (ngo5),姐姐 (ze2 ze2),Cantonese: 我 (ngo5)/姐姐 (ze2 ze2)
+Instance_416628,instance,,Teochew,我 (guá),阿兄 (a-hiang),Teochew: 我 (guá)/阿兄 (a-hiang)
+Instance_a0e633,instance,,Teochew,我 (guá),阿姐 (a-jié),Teochew: 我 (guá)/阿姐 (a-jié)
+Instance_f2ab8e,instance,,Nepali,म (ma),तपाईं (tapai) and हजुर (Hajur),Nepali: म (ma)/तपाईं (tapai) and हजुर (Hajur)
+Instance_786ec9,instance,,Urdu,میں,بھائی (bhai / bhaiya),Urdu: میں/بھائی (bhai / bhaiya)
+Instance_b39746,instance,,Urdu,میں,باجی (baji / apa),Urdu: میں/باجی (baji / apa)
+Instance_79f159,instance,,Vietnamese,em,anh,Vietnamese: em/anh
+Instance_ae44ac,instance,,Vietnamese,em,chị,Vietnamese: em/chị
+Older - Parents' gen - Male - Neutral - Male spk,schema_path,,,,,
+Gen: Parents' gen,attribute,Specific Gen,,,,
+Older - Parents' gen - Male - Neutral - Female spk,schema_path,,,,,
+Instance_26cd37,instance,,Mandarin,我 (wǒ),叔叔 (shūshu),Mandarin: 我 (wǒ)/叔叔 (shūshu)
+Older - Parents' gen - Female - Neutral - Male spk,schema_path,,,,,
+Older - Parents' gen - Female - Neutral - Female spk,schema_path,,,,,
+Instance_1bec79,instance,,Mandarin,我 (wǒ),阿姨 (āyí),Mandarin: 我 (wǒ)/阿姨 (āyí)
+Instance_ae5866,instance,,Cantonese,我 (ngo5),叔叔 (suk1 suk1),Cantonese: 我 (ngo5)/叔叔 (suk1 suk1)
+Instance_d50e74,instance,,Cantonese,我 (ngo5),阿姨 (aa3 ji4),Cantonese: 我 (ngo5)/阿姨 (aa3 ji4)
+Instance_9eb1a4,instance,,Teochew,我 (guá),阿叔 (a-zik),Teochew: 我 (guá)/阿叔 (a-zik)
+Instance_fc2eaa,instance,,Teochew,我 (guá),阿姨 (a-î),Teochew: 我 (guá)/阿姨 (a-î)
+Instance_a16730,instance,,English,-,uncle,English: -/uncle
+Instance_20f320,instance,,English,-,aunty,English: -/aunty
+Instance_8b4154,instance,,Nepali,म (ma),तपाईं (tapai) and हजुर (Hajur),Nepali: म (ma)/तपाईं (tapai) and हजुर (Hajur)
+Instance_b27f72,instance,,Urdu,میں,Uncle / چچا (chacha),Urdu: میں/Uncle / چچا (chacha)
+Instance_521a9c,instance,,Urdu,میں,Aunty /خالہ (khala),Urdu: میں/Aunty /خالہ (khala)
+Instance_276130,instance,,Vietnamese,con/cháu,chú/cậu,Vietnamese: con/cháu/chú/cậu
+Instance_1eeb0e,instance,,Vietnamese,con/cháu,cô/dì,Vietnamese: con/cháu/cô/dì
+Instance_cdc15c,instance,,Vietnamese,con/cháu,bác,Vietnamese: con/cháu/bác
+Older - Grandparents' gen - Male - Neutral - Male spk,schema_path,,,,,
+Gen: Grandparents' gen,attribute,Specific Gen,,,,
+Older - Grandparents' gen - Male - Neutral - Female spk,schema_path,,,,,
+Instance_d0b7a1,instance,,Mandarin,我 (wǒ),爷爷 (yéye),Mandarin: 我 (wǒ)/爷爷 (yéye)
+Older - Grandparents' gen - Female - Neutral - Male spk,schema_path,,,,,
+Older - Grandparents' gen - Female - Neutral - Female spk,schema_path,,,,,
+Instance_57790f,instance,,Mandarin,我 (wǒ),奶奶 (nǎinai),Mandarin: 我 (wǒ)/奶奶 (nǎinai)
+Instance_77e105,instance,,Cantonese,我 (ngo5),爺爺 (je4 je4),Cantonese: 我 (ngo5)/爺爺 (je4 je4)
+Instance_54b8f6,instance,,Cantonese,我 (ngo5),奶奶 (naai5 naai5),Cantonese: 我 (ngo5)/奶奶 (naai5 naai5)
+Instance_c16c30,instance,,Teochew,我 (guá),阿公 (a-gong),Teochew: 我 (guá)/阿公 (a-gong)
+Instance_b2b61a,instance,,Teochew,我 (guá),阿嬷 (a-má),Teochew: 我 (guá)/阿嬷 (a-má)
+Instance_4a5581,instance,,Urdu,میں,دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji),Urdu: میں/دادا جی (dada ji) / دادی جی (dadi ji) or نانا جی (nana ji) / نانی جی (nani ji)
+Instance_11a4fa,instance,,Vietnamese,con/cháu,ông,Vietnamese: con/cháu/ông
+Instance_48d213,instance,,Vietnamese,con/cháu,bà,Vietnamese: con/cháu/bà
+Older - Exactly same age - Male - Neutral - Male spk,schema_path,,,,,
+Older - Exactly same age - Male - Neutral - Female spk,schema_path,,,,,
+Instance_823aa0,instance,,Darija,ana,nta,Darija: ana/nta
+Older - Exactly same age - Female - Neutral - Male spk,schema_path,,,,,
+Older - Exactly same age - Female - Neutral - Female spk,schema_path,,,,,
+Instance_d615e4,instance,,Darija,ana,nti,Darija: ana/nti
